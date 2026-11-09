@@ -124,7 +124,7 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
   <div class="section-heading"><div><span class="section-kicker">MEMÓRIA EDITORIAL</span><h2>Do arquivo</h2><p class="section-intro">Textos que merecem uma segunda leitura — porque a sua relevância não termina na data de publicação.</p></div><a class="heading-link" href="{{ '/arquivo/' | relative_url }}">TODO O ARQUIVO ↗</a></div>
   <div class="archive-preview-grid">
     {% if archive_remaining.size > 0 %}
-      {% for post in archive_remaining limit: 3 %}
+      {% for post in archive_remaining limit: 4 %}
       <a class="archive-preview-card" href="{{ post.url | relative_url }}">
         {% if post.image %}<span class="archive-preview-image"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy"></span>{% endif %}
         <span class="archive-preview-date">{{ post.date | date: "%d.%m.%Y" }}</span>
