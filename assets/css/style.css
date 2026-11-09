@@ -487,3 +487,13 @@ main{max-width:1360px;padding-left:clamp(18px,4vw,58px);padding-right:clamp(18px
 @media(max-width:480px){
   .masthead-logo{width:94%;max-height:112px}
 }
+
+
+/* Restaurar a dimensão do logótipo original do cabeçalho */
+.masthead-logo{
+  width:min(460px,78%);
+  max-height:112px;
+}
+@media(max-width:760px){
+  .masthead-logo{width:min(350px,84%);max-height:82px}
+}
