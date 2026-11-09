@@ -429,3 +429,11 @@ main{max-width:1360px;padding-left:clamp(18px,4vw,58px);padding-right:clamp(18px
 /* Fundo do cabeçalho/logótipo — harmonizado com a navegação */
 .site-header,.masthead{background-color:#8b1825}
 .masthead-tagline{color:#f3e6df}
+
+
+/* Cabeçalho — vinho médio, com contraste mais profundo */
+.site-header,.masthead,.main-nav{background-color:#5b0d17}
+.main-nav{border-top-color:rgba(241,235,221,.22)}
+.main-nav a{color:#fff8f3}
+.main-nav a:hover,.main-nav a:focus{background-color:#741321;color:#fff}
+.masthead-tagline{color:#f3e6df}
