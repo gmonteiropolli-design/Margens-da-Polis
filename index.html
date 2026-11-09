@@ -3,10 +3,6 @@ layout: default
 title: "Margens da Pólis"
 description: "Jornal independente de ideias sobre sociedade, poder, cultura, território e história."
 ---
-<section class="edition-line"><span>ANÁLISE · REFLEXÃO · PENSAMENTO CRÍTICO</span><span>JORNAL INDEPENDENTE</span></section>
-
-<div class="editorial-motto"><span class="section-kicker">MARGENS DA PÓLIS</span><p>Pensar o presente. Compreender o mundo.</p></div>
-
 {% assign current_posts = site.posts | where_exp: "post", "post.from_archive != true" %}
 {% assign archive_posts = site.posts | where: "from_archive", true %}
 {% assign featured = current_posts | where: "featured", true | first %}
