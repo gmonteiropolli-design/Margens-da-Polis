@@ -34,22 +34,76 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
 
 {% if current_posts.size > 0 %}
 <section class="latest-section">
-  <div class="section-heading"><div><span class="section-kicker">DA REDACÇÃO</span><h2>Últimas leituras</h2><p class="section-intro">Ideias, acontecimentos e processos — lidos para lá da superfície.</p></div><a class="heading-link" href="{{ '/arquivo/' | relative_url }}">VER ARQUIVO ↗</a></div>
-  {% if current_posts.size > 0 %}
-  <div class="story-grid">
-    {% for post in current_posts limit: 9 %}
-      {% unless post.url == featured.url %}
-      <article class="story-card">
-        {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% endif %}
-        <div class="card-content"><span class="section-kicker">{{ post.categories.first | default: "REFLEXÃO" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-        <div class="story-meta">{{ post.date | date: "%d.%m.%Y" }}</div></div>
-      </article>
-      {% endunless %}
-    {% endfor %}
-  </div>
-  {% else %}
-  <div class="empty-state"><h3>As primeiras páginas estão por escrever.</h3><p>Os artigos serão publicados e organizados nesta edição digital.</p></div>
+  <div class="section-heading"><div><span class="section-kicker">DA REDACÇÃO</span><h2>Últimas leituras</h2><p class="section-intro">Publicações organizadas por área temática.</p></div><a class="heading-link" href="{{ '/arquivo/' | relative_url }}">VER ARQUIVO ↗</a></div>
+
+  {% assign society_posts = current_posts | where_exp: "post", "post.categories contains 'Sociedade e Poder'" %}
+  {% assign culture_posts = current_posts | where_exp: "post", "post.categories contains 'Cultura e Ideias'" %}
+  {% assign notebooks_posts = current_posts | where_exp: "post", "post.categories contains 'Cadernos'" %}
+
+  {% if society_posts.size > 0 %}
+  <section class="category-reading-section">
+    <div class="category-reading-heading"><span class="section-kicker">01 / TEMA</span><h3>Sociedade e Poder</h3></div>
+    <div class="story-grid">
+      {% assign visible_count = 0 %}
+      {% for post in society_posts %}
+        {% unless post.url == featured.url %}
+          {% if visible_count < 3 %}
+          <article class="story-card">
+            {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% endif %}
+            <div class="card-content"><span class="section-kicker">SOCIEDADE E PODER</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+            <div class="story-meta">{{ post.date | date: "%d.%m.%Y" }}</div></div>
+          </article>
+          {% assign visible_count = visible_count | plus: 1 %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if culture_posts.size > 0 %}
+  <section class="category-reading-section">
+    <div class="category-reading-heading"><span class="section-kicker">02 / TEMA</span><h3>Cultura e Ideias</h3></div>
+    <div class="story-grid">
+      {% assign visible_count = 0 %}
+      {% for post in culture_posts %}
+        {% unless post.url == featured.url %}
+          {% if visible_count < 3 %}
+          <article class="story-card">
+            {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% endif %}
+            <div class="card-content"><span class="section-kicker">CULTURA E IDEIAS</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+            <div class="story-meta">{{ post.date | date: "%d.%m.%Y" }}</div></div>
+          </article>
+          {% assign visible_count = visible_count | plus: 1 %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if notebooks_posts.size > 0 %}
+  <section class="category-reading-section">
+    <div class="category-reading-heading"><span class="section-kicker">03 / TEMA</span><h3>Cadernos</h3></div>
+    <div class="story-grid">
+      {% assign visible_count = 0 %}
+      {% for post in notebooks_posts %}
+        {% unless post.url == featured.url %}
+          {% if visible_count < 3 %}
+          <article class="story-card">
+            {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% endif %}
+            <div class="card-content"><span class="section-kicker">CADERNOS</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+            <div class="story-meta">{{ post.date | date: "%d.%m.%Y" }}</div></div>
+          </article>
+          {% assign visible_count = visible_count | plus: 1 %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </section>
   {% endif %}
 </section>
 {% endif %}
