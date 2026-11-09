@@ -30,7 +30,7 @@
       <a href="{{ '/sobre/' | relative_url }}">Sobre</a>
     </nav>
   </header>
-  <main id="conteudo">{{ content }}</main>
+  <main id="conteudo">{% if page.body %}{{ page.body }}{% else %}{{ content }}{% endif %}</main>
   <footer class="site-footer">
     <div class="footer-brand">Margens <i>da</i> Pólis</div>
     <p>Sociedade e Poder · Cultura e Ideias · Cadernos</p>
