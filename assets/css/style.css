@@ -1388,3 +1388,67 @@ body.home .lead-copy .text-link{margin-top:12px !important}
   body.home .lead-art{height:auto !important;aspect-ratio:16/9 !important}
   body.home .lead-image img{height:100% !important}
 }
+
+
+/* HOMEPAGE — destaque principal realmente compacto */
+body.home .lead-story{
+  grid-template-columns:minmax(0,.78fr) minmax(0,1fr) !important;
+  align-items:center !important;
+  gap:clamp(16px,2vw,28px) !important;
+  padding:10px 0 16px !important;
+  margin:0 0 12px !important;
+}
+body.home .lead-image,
+body.home .lead-art{
+  display:block !important;
+  width:100% !important;
+  height:clamp(170px,19vw,245px) !important;
+  min-height:0 !important;
+  max-height:245px !important;
+  aspect-ratio:auto !important;
+  overflow:hidden !important;
+}
+body.home .lead-image img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  min-height:0 !important;
+  object-fit:cover !important;
+}
+body.home .lead-copy{padding:0 !important}
+body.home .lead-copy h1{
+  font-size:clamp(29px,3vw,43px) !important;
+  line-height:1 !important;
+  margin:8px 0 10px !important;
+}
+body.home .lead-summary{
+  max-width:390px !important;
+  font-size:13px !important;
+  line-height:1.4 !important;
+}
+body.home .lead-copy .story-meta{
+  margin-top:8px !important;
+  padding-top:6px !important;
+}
+body.home .lead-copy .text-link{margin-top:8px !important}
+@media(max-width:700px){
+  body.home .lead-story{
+    grid-template-columns:minmax(0,1fr) !important;
+    gap:0 !important;
+    padding:8px 0 14px !important;
+  }
+  body.home .lead-copy{padding:0 0 10px !important}
+  body.home .lead-copy h1{
+    font-size:clamp(28px,7.2vw,38px) !important;
+    line-height:1.02 !important;
+    margin:7px 0 9px !important;
+  }
+  body.home .lead-summary{font-size:12px !important;line-height:1.4 !important}
+  body.home .lead-image,
+  body.home .lead-art{
+    height:auto !important;
+    max-height:none !important;
+    aspect-ratio:16/7 !important;
+  }
+  body.home .lead-image img{height:100% !important}
+}
