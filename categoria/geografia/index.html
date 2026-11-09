@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Geografia"
+description: "Território, espaço, paisagem e identidade."
+permalink: /categoria/geografia/
+---
+<section class="listing-page">
+  <span class="section-kicker">CAMPOS DE ANÁLISE</span>
+  <h1>Geografia</h1>
+  <p class="lead-summary">Território, espaço, paisagem e identidade.</p>
+  <div class="story-grid">
+    {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Geografia'" %}
+    {% for post in posts %}
+    <article class="story-card">
+      {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% else %}<a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>{% endif %}
+      <div class="card-content"><span class="section-kicker">Geografia</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<div class="story-meta">{{ post.date | date: "%d.%m.%Y" }} · {{ post.author | default: "Autor" }}</div></div>
+    </article>
+    {% endfor %}
+  </div>
+  {% if posts.size == 0 %}<div class="empty-state"><span class="empty-rule"></span><h3>Ainda não existem artigos nesta secção.</h3><p>As publicações desta área aparecerão aqui.</p></div>{% endif %}
+</section>
