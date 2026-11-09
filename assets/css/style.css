@@ -683,3 +683,20 @@ body{color:#242322}
   color:#16434A;
 }
 .topic-list a:hover{color:#681D2C}
+
+
+/* Tipografia sem serifas — preservar a inicial destacada */
+:root{
+  --serif:"DM Sans",Arial,sans-serif;
+  --sans:"DM Sans",Arial,sans-serif;
+}
+.article-body>p:first-of-type:first-letter{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif !important;
+  font-size:4.1em;
+  line-height:.78;
+  font-weight:700;
+  color:#681D2C !important;
+}
+@media(max-width:700px){
+  .article-body>p:first-of-type:first-letter{font-size:3.5em}
+}
