@@ -1278,3 +1278,22 @@ body.home .category-reading-grid .story-card .story-meta{font-size:8px !importan
   }
   body.home .category-reading-grid .story-card h3{font-size:17px !important}
 }
+
+
+/* HOMEPAGE — logótipo ampliado */
+body.home .masthead-logo{
+  width:min(520px,84%) !important;
+  max-height:116px !important;
+}
+@media(max-width:760px){
+  body.home .masthead-logo{
+    width:min(410px,90%) !important;
+    max-height:94px !important;
+  }
+}
+@media(max-width:390px){
+  body.home .masthead-logo{
+    width:min(340px,94%) !important;
+    max-height:78px !important;
+  }
+}
