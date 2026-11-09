@@ -1,18 +1,68 @@
 ---
 layout: default
 ---
+{% assign article_words = content | number_of_words %}
+{% assign reading_minutes = article_words | divided_by: 200.0 | ceil %}
 <article class="article-page">
+  <nav class="article-breadcrumb" aria-label="Navegação estrutural">
+    <a href="{{ '/' | relative_url }}">Início</a><span>／</span>
+    {% if page.categories.first %}
+      <a href="{{ '/categoria/' | append: page.categories.first | downcase | replace: ' ', '-' | append: '/' | relative_url }}">{{ page.categories.first }}</a><span>／</span>
+    {% endif %}
+    <span class="breadcrumb-current">Artigo</span>
+  </nav>
+
   <header class="article-header">
-    <a class="eyebrow" href="{{ '/categoria/' | append: page.categories.first | downcase | replace: ' ', '-' | append: '/' | relative_url }}">{{ page.categories.first | default: "ANÁLISE" }}</a>
+    <span class="article-kicker">MARGENS DA PÓLIS <i>／</i> {{ page.categories.first | default: "ENSAIO" }}</span>
     <h1>{{ page.title }}</h1>
     {% if page.description %}<p class="article-deck">{{ page.description }}</p>{% endif %}
     <div class="article-meta">
-      <span>Por {{ page.author | default: "Autor" }}</span>
+      <span>Por <strong>{{ page.author | default: "Redacção" }}</strong></span>
       <span>{{ page.date | date: "%d.%m.%Y" }}</span>
+      <span>{{ reading_minutes | at_least: 1 }} min de leitura</span>
     </div>
   </header>
-  {% if page.image %}<figure class="article-cover"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}"><figcaption>{{ page.image_caption }}</figcaption></figure>{% endif %}
+
+  {% if page.image %}
+  <figure class="article-cover">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
+    {% if page.image_caption or page.image_credit %}
+    <figcaption>{% if page.image_caption %}{{ page.image_caption }}{% endif %}{% if page.image_credit %}<span>{{ page.image_credit }}</span>{% endif %}</figcaption>
+    {% endif %}
+  </figure>
+  {% endif %}
+
   <div class="article-body">{{ content }}</div>
-  <div class="article-end"><span>—</span><p>Margens da Polis</p></div>
-  <a class="back-link" href="{{ '/' | relative_url }}">← Voltar à página inicial</a>
+
+  <footer class="article-footer">
+    <div class="article-end"><span>✳</span><p>Margens da Pólis</p><small>Pensar o mundo a partir das suas margens.</small></div>
+    <div class="article-share">
+      <span>PARTILHAR ESTE TEXTO</span>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a href="mailto:?subject={{ page.title | url_encode }}&body={{ page.url | absolute_url | url_encode }}">Email ↗</a>
+    </div>
+  </footer>
+
+  {% assign related_posts = site.related_posts | where_exp: "post", "post.url != page.url" %}
+  {% if related_posts.size > 0 %}
+  <section class="related-section" aria-label="Artigos relacionados">
+    <div class="section-heading"><div><span class="section-kicker">CONTINUE A EXPLORAR</span><h2>Leituras relacionadas</h2></div></div>
+    <div class="story-grid">
+      {% for post in related_posts limit: 3 %}
+      <article class="story-card">
+        {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% else %}<a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>{% endif %}
+        <div class="card-content">
+          <span class="section-kicker">{{ post.categories.first | default: "REFLEXÃO" }}</span>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+          <div class="story-meta">{{ post.date | date: "%d.%m.%Y" }}</div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <a class="back-link" href="{{ '/' | relative_url }}">← Regressar à página inicial</a>
 </article>
