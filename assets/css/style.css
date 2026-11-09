@@ -1003,3 +1003,69 @@ body.home .dossier-band{margin-top:32px}
  body.home .section-heading h2,body.home .archive-section h2,body.home .topics-section h2{font-size:32px}
  body.home .story-grid{gap:20px 14px}
 }
+
+
+/* HOMEPAGE — cabeçalho compacto e mais publicações visíveis */
+body.home .utility-bar{display:none !important}
+body.home .masthead{padding:5px 12px 4px !important;min-height:0 !important}
+body.home .masthead-logo{width:min(340px,58%) !important;max-height:76px !important}
+body.home .main-nav a{padding:9px 15px 8px !important}
+body.home main{padding-bottom:28px !important}
+body.home .lead-story{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  gap:24px !important;
+  padding:14px 0 18px !important;
+}
+body.home .lead-image,body.home .lead-art{
+  min-height:0 !important;
+  height:auto !important;
+  aspect-ratio:16/9 !important;
+}
+body.home .lead-image img{min-height:0 !important;height:100% !important}
+body.home .lead-copy{padding:2px 0 !important}
+body.home .lead-copy h1{
+  font-size:clamp(30px,3.2vw,45px) !important;
+  line-height:.98 !important;
+  margin:10px 0 !important;
+}
+body.home .lead-summary{font-size:13px !important;line-height:1.45 !important}
+body.home .lead-copy .story-meta{margin-top:10px !important;padding-top:7px !important}
+body.home .lead-copy .text-link{margin-top:9px !important;padding:6px 9px !important}
+body.home .latest-section{padding-top:18px !important}
+body.home .section-heading{margin-bottom:14px !important;padding-bottom:8px !important}
+body.home .section-heading h2,body.home .archive-section h2,body.home .topics-section h2{font-size:clamp(26px,2.8vw,36px) !important}
+body.home .section-intro{font-size:11px !important;margin-top:4px !important}
+body.home .story-grid{gap:17px 16px !important}
+body.home .card-image{aspect-ratio:16/9 !important;margin-bottom:9px !important}
+body.home .story-card{padding-bottom:12px !important}
+body.home .story-card h3{font-size:clamp(17px,1.65vw,21px) !important;line-height:1.08 !important;margin:6px 0 !important}
+body.home .story-card p{font-size:11px !important;line-height:1.45 !important;margin:5px 0 !important}
+body.home .story-card .story-meta{margin-top:7px !important}
+body.home .archive-section{padding-top:22px !important}
+body.home .archive-preview-grid{gap:15px !important}
+body.home .archive-preview-image{aspect-ratio:16/9 !important;margin-bottom:8px !important}
+body.home .archive-preview-card{padding-bottom:10px !important}
+body.home .archive-preview-card strong{font-size:clamp(17px,1.7vw,21px) !important}
+body.home .topics-section{padding-top:22px !important}
+body.home .topic-list a{padding:11px 5px !important}
+body.home .manifesto{margin-top:26px !important;padding:28px 20px 25px !important}
+@media(max-width:760px){
+  body.home .masthead{padding:4px 10px 3px !important}
+  body.home .masthead-logo{width:min(290px,68%) !important;max-height:62px !important}
+  body.home .main-nav a{padding:8px 9px !important;font-size:8px !important}
+  body.home .lead-story{grid-template-columns:1fr !important;gap:10px !important;padding:12px 0 16px !important}
+  body.home .lead-copy{grid-column:1 !important;grid-row:1 !important;padding:0 0 5px !important}
+  body.home .lead-image,body.home .lead-art{grid-column:1 !important;grid-row:2 !important;aspect-ratio:16/7 !important}
+  body.home .lead-copy h1{font-size:clamp(29px,7vw,40px) !important;margin:8px 0 !important}
+  body.home .lead-summary{font-size:12px !important}
+  body.home .story-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:15px 12px !important}
+  body.home .card-image{aspect-ratio:4/3 !important}
+  body.home .story-card h3{font-size:16px !important}
+  body.home .story-card p{font-size:10px !important}
+  body.home .section-heading h2,body.home .archive-section h2,body.home .topics-section h2{font-size:27px !important}
+}
+@media(max-width:390px){
+  body.home .masthead-logo{width:min(250px,72%) !important;max-height:54px !important}
+  body.home .main-nav a{padding:7px 7px !important;font-size:7px !important}
+  body.home .lead-image,body.home .lead-art{aspect-ratio:16/8 !important}
+}
