@@ -497,3 +497,49 @@ main{max-width:1360px;padding-left:clamp(18px,4vw,58px);padding-right:clamp(18px
 @media(max-width:760px){
   .masthead-logo{width:min(350px,84%);max-height:82px}
 }
+
+
+/* Uniformizar os tons da página Sobre e eliminar barras decorativas */
+:root{
+  --paper:#fbf8f1;
+  --ink:#302927;
+  --wine:#a45a62;
+  --wine-dark:#85434b;
+  --wine-mid:#a96a70;
+  --gold:#c6b99f;
+}
+body{background:#fbf8f1;color:#302927}
+.utility-bar{background:#a96a70;color:#fffaf5}
+.site-header,.masthead,.main-nav{background:#85434b}
+.site-header{border:0}
+.main-nav{border:0}
+.main-nav a{color:#fffaf5}
+.main-nav a:hover,.main-nav a:focus{background:#a96a70;color:#fff}
+.masthead-tagline{color:#fff3ed}
+main{background:transparent}
+.about-page{
+  background:transparent;
+  color:#302927;
+}
+.about-page h1{color:#302927}
+.about-page h2{color:#85434b}
+.about-page .about-intro{color:#514443}
+.about-rule{display:none}
+.about-page blockquote{
+  background:#f1ede5;
+  border:0;
+  color:#403735;
+}
+.about-page blockquote p{color:#403735}
+.about-page cite{color:#746762}
+.about-page>p:not(.about-intro){color:#302927}
+.site-footer{
+  background:#eadfd8;
+  color:#403735;
+  border:0;
+}
+.site-footer .footer-motto,.site-footer p{color:#625452}
+.site-footer a{color:#85434b}
+@media(max-width:760px){
+  .site-header,.masthead,.main-nav{border:0}
+}
