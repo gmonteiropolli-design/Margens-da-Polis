@@ -611,3 +611,9 @@ html, body, body > main, main#conteudo, article.about-page {
   font-weight:500;
   color:#c6a7a0;
 }
+
+
+/* Cabeçalho — fundo cinzento-chumbo na área do logótipo */
+.site-header,.masthead{
+  background-color:#292727 !important;
+}
