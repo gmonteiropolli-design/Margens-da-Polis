@@ -111,7 +111,7 @@ De forma a caminhar na contramão, os franceses e espanhóis trabalham principal
 
 ![](https://lh7-us.googleusercontent.com/Hnr8OKI8g0I7aBt-VckNZgC91m0n1amgDF64jOsREW2T1E7GKFTaiMLwnEXaZ9UQZ8afqP8pfMmU-sAlQH8KFv8SHdYmGTTcdb14C6NQbtNpTfQNnMK5oQtkrXjxAyMp65PJJN5YAEDS5Blq-EtgrZI)
 
-                     **  *Fonte:*** <em>Indicadores de Integração de Imigrantes de 2022</em>
+                     **  *Fonte:*** *Indicadores de Integração de Imigrantes de 2022*
 
 Em adição aos cargos e profissões ocupadas, abaixo é possível verificar o tipo de contrato por nacionalidade. Entre os trabalhadores sem termo nota-se os chineses, franceses, ucranianos, cabo verdianos, angolanos, espanhóis e romenos, enquanto as nacionalidades de contratos com termos certos e incertos destacam-se os brasileiros, nepaleses e indianos (que ainda possuem 13,4% de contratos temporários e de termo incerto). Assim, afere-se que os vínculos mais frágeis aplicam-se principalmente aqueles que são extracomunitários e de fluxos de imigração mais recentes.
 
@@ -133,7 +133,7 @@ Apesar da utilização do mercado informal como entrada para o país e o início
 
 Desse modo, é o escopo desse trabalho essa população os trabalhadores informais e em cargos não qualificados, que representam uma grande percentagem dos imigrantes, como demonstrado anteriormente. Assim, deseja-se compreender como acontece a manutenção da população estrangeira no mercado informal e uberizado, assim como a sua relação com outros aspetos da vida e a exclusão social.
 
-2. **As condições de vida e trabalho dos trabalhadores informais** **e “uberizados”** 
+2. **As condições de vida e trabalho dos trabalhadores informais** **e “uberizados”**
 
 A fim de contextualizar o modo pelo qual a vida dos trabalhadores imigrantes e precarizados se estabelece hoje, vale retornar o conceito de pós-fordismo. Segundo Porto (2016), o novo modelo deseja “substituir o poder central onipresente do ordenador por formas de auto-organização descentralizadas, por uma rede de subunidades relativamente autônomas que se coordenariam a si mesmas” (p. 3). Logo, a produção *just in time* transforma não só o modo de produção mundial, mas alcança o trabalhador das plataformas e o trabalho individualizado independente da sua localidade, que apenas exige como pré-requisito uma rede de conexão.
 
@@ -209,7 +209,7 @@ Abaixo é possível ver a evolução acerca da perceção sobre a discriminaçã
 
 Configurar-se a um novo país é um processo de extrema complexidade e que não deve ser minimizado. As questões laborais relacionam-se intimamente com a discriminação, o preconceito e a xenofobia, de forma com que, mutuamente criam e garantem a manutenção dos imigrantes como uma classe inferiorizada. Logo, a precarização do trabalho e consequentemente de toda a vivência em um novo território aprofundam essa complexidade e consolidam mais um empecilho a ser enfrentado pelos imigrantes.
 
-3. **Análise comparativa entre fontes de informação**  
+3. **Análise comparativa entre fontes de informação**
 
 A fim de verificar quais as questões mais atuais relacionadas aos imigrantes, foi realizada uma busca por notícias publicadas em meios de comunicação portugueses dos anos de 2022 e 2023, de modo a compreender quais os principais factos e processos recentes relacionados à população estrangeira e ao mercado de trabalho. O critério subjacente na escolha das matérias é a exclusão social e sua ligação tanto com as questões laborais, como aos imigrantes.
 
