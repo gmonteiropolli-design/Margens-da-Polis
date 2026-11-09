@@ -617,3 +617,9 @@ html, body, body > main, main#conteudo, article.about-page {
 .site-header,.masthead{
   background-color:#292727 !important;
 }
+
+
+/* Faixa superior — igualar ao vermelho de destaque do índice */
+.utility-bar{
+  background-color:#5b0d17 !important;
+}
