@@ -556,3 +556,19 @@ html, body, body > main, main#conteudo, article.about-page {
   background: #f8f6f0 !important;
   background-color: #f8f6f0 !important;
 }
+
+
+/* Vinho — recuperar profundidade sem escurecer os fundos claros */
+:root{
+  --wine:#5b0d17;
+  --wine-dark:#35070c;
+  --wine-mid:#741321;
+}
+.utility-bar{background:#35070c;color:#f1e7df}
+.site-header,.masthead,.main-nav{background-color:#5b0d17}
+.site-header{border-bottom:0}
+.main-nav{border-top-color:rgba(255,248,243,.18);border-bottom:0}
+.main-nav a{color:#fff8f3}
+.main-nav a:hover,.main-nav a:focus{background:#741321;color:#fff}
+.masthead-tagline{color:#f3e6df}
+.about-page h2,.site-footer a{color:#5b0d17}
