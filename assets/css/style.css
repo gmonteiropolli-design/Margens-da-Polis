@@ -201,3 +201,25 @@ a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
  .card-image,.card-placeholder{aspect-ratio:16/10}
  .lead-copy h1{font-size:38px}
 }
+
+/* Hierarquia da primeira página: destaque, leitura e ritmo editorial */
+.feature-label{display:inline-flex;align-items:center;gap:9px;color:var(--wine);font-size:9px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase}
+.feature-label span{color:var(--gold);font-size:13px}
+.lead-copy h1{max-width:570px;margin-top:17px;margin-bottom:19px}
+.lead-image{position:relative;display:block}
+.lead-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 68%,rgba(28,13,16,.48))}
+.image-caption{position:absolute;z-index:1;bottom:16px;left:18px;color:#fff;font-size:8px;font-weight:700;letter-spacing:1.8px}
+.section-intro{margin:8px 0 0;color:var(--muted);font:italic 14px/1.5 var(--serif)}
+.latest-section .section-heading{align-items:end}
+.latest-section .section-heading h2{margin-top:7px}
+.story-card{position:relative}
+.story-card .section-kicker{font-size:8px}
+.story-card h3{margin-top:8px;margin-bottom:10px}
+.story-card p{margin:0;color:#655c56}
+.story-card .story-meta{padding-top:11px;border-top:1px solid #e7dfd5}
+.card-placeholder{background:linear-gradient(135deg,#eee7df,#e3d8cd)}
+.card-placeholder span{font:italic 48px var(--serif);letter-spacing:-4px}
+@media(max-width:760px){
+ .latest-section .section-heading{align-items:start}
+ .section-intro{max-width:36ch}
+}
