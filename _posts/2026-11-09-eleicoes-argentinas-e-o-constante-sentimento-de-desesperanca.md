@@ -2,7 +2,7 @@
 title: Eleições Argentinas e o constante sentimento de desesperança
 date: 2023-08-09
 author: Autor
-featured: false
+featured: true
 dossier: false
 description: Milei vence as eleições primárias na Argentina, o que apesar de
   ainda não o consagrar como presidente, representa o avanço da extrema direita
