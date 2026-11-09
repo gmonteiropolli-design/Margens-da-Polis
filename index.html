@@ -36,9 +36,9 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
 <section class="latest-section">
   <div class="section-heading"><div><span class="section-kicker">DA REDACÇÃO</span><h2>Últimas leituras</h2><p class="section-intro">Publicações organizadas por área temática.</p></div><a class="heading-link" href="{{ '/indice-tematico/' | relative_url }}">EXPLORAR TEMAS ↗</a></div>
 
-  {% assign society_posts = current_posts | where_exp: "post", "post.categories == 'Sociedade e Poder' or post.categories contains 'Sociedade e Poder'" %}
-  {% assign culture_posts = current_posts | where_exp: "post", "post.categories == 'Cultura e Ideias' or post.categories contains 'Cultura e Ideias'" %}
-  {% assign notebooks_posts = current_posts | where_exp: "post", "post.categories == 'Cadernos' or post.categories contains 'Cadernos'" %}
+  {% assign society_posts = current_posts | where: "categories", "Sociedade e Poder" %}
+  {% assign culture_posts = current_posts | where: "categories", "Cultura e Ideias" %}
+  {% assign notebooks_posts = current_posts | where: "categories", "Cadernos" %}
 
   {% if society_posts.size > 0 %}
   <section class="category-reading-section">
