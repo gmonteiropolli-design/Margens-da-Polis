@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Sociedade e Poder"
+description: "Política, história, instituições, economia e dinâmicas sociais."
+permalink: /categoria/sociedade-e-poder/
+---
+<section class="listing-page">
+  <span class="section-kicker">SECÇÃO</span>
+  <h1>Sociedade e Poder</h1>
+  <p class="lead-summary">Política, história, instituições, economia e dinâmicas sociais.</p>
+  <div class="story-grid">
+    {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Sociedade e Poder'" %}
+    {% for post in posts %}
+    <article class="story-card">
+      {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% else %}<a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>{% endif %}
+      <div class="card-content"><span class="section-kicker">Sociedade e Poder</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<div class="story-meta">{{ post.date | date: "%d.%m.%Y" }} · {{ post.author | default: "Autor" }}</div></div>
+    </article>
+    {% endfor %}
+  </div>
+  {% if posts.size == 0 %}<div class="empty-state"><span class="empty-rule"></span><h3>Ainda não existem artigos nesta secção.</h3><p>As publicações sobre sociedade e poder aparecerão aqui.</p></div>{% endif %}
+</section>
