@@ -543,3 +543,9 @@ main{background:transparent}
 @media(max-width:760px){
   .site-header,.masthead,.main-nav{border:0}
 }
+
+
+/* Fundo contínuo: a página e a área de texto usam exactamente a mesma cor */
+html,body,main,.about-page{
+  background-color:#f8f6f0 !important;
+}
