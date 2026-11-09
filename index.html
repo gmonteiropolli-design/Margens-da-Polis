@@ -18,7 +18,7 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
   {% endif %}
   <div class="lead-copy">
     {% if featured %}
-      <span class="feature-label">{% if featured.from_archive %}DO ARQUIVO{% else %}EM DESTAQUE{% endif %} <span>／</span> {{ featured.categories.first | default: "ENSAIO" }}</span>
+      <span class="feature-label">{% if featured.from_archive %}DO ARQUIVO{% else %}EM DESTAQUE{% endif %} <span>／</span> {{ featured.categories | default: "ENSAIO" }}</span>
       <h1><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h1>
       {% if featured.description %}<p class="lead-summary">{{ featured.description }}</p>{% endif %}
       <div class="story-meta">{{ featured.date | date: "%d.%m.%Y" }} <span>·</span> {{ featured.author | default: "Margens da Pólis" }}</div>
@@ -36,9 +36,9 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
 <section class="latest-section">
   <div class="section-heading"><div><span class="section-kicker">DA REDACÇÃO</span><h2>Últimas leituras</h2><p class="section-intro">Publicações organizadas por área temática.</p></div><a class="heading-link" href="{{ '/indice-tematico/' | relative_url }}">EXPLORAR TEMAS ↗</a></div>
 
-  {% assign society_posts = current_posts | where: "categories", "Sociedade e Poder" %}
-  {% assign culture_posts = current_posts | where: "categories", "Cultura e Ideias" %}
-  {% assign notebooks_posts = current_posts | where: "categories", "Cadernos" %}
+  {% assign society_posts = current_posts | where_exp: "post", "post.categories == 'Sociedade e Poder' or post.categories contains 'Sociedade e Poder'" %}
+  {% assign culture_posts = current_posts | where_exp: "post", "post.categories == 'Cultura e Ideias' or post.categories contains 'Cultura e Ideias'" %}
+  {% assign notebooks_posts = current_posts | where_exp: "post", "post.categories == 'Cadernos' or post.categories contains 'Cadernos'" %}
 
   {% if society_posts.size > 0 %}
   <section class="category-reading-section">
