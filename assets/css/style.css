@@ -472,3 +472,18 @@ main{max-width:1360px;padding-left:clamp(18px,4vw,58px);padding-right:clamp(18px
 }
 .about-page blockquote p{font:italic 16px/1.75 Arial,Helvetica,sans-serif}
 .about-page cite{font-size:13px;color:#514944}
+
+
+/* Monograma MP original — maior no cabeçalho */
+.masthead-logo{
+  width:min(620px,90%);
+  max-height:160px;
+  height:auto;
+  object-fit:contain;
+}
+@media(max-width:760px){
+  .masthead-logo{width:min(440px,92%);max-height:132px}
+}
+@media(max-width:480px){
+  .masthead-logo{width:94%;max-height:112px}
+}
