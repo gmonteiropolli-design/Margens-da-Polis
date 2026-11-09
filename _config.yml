@@ -1,0 +1,24 @@
+title: "Margens da Polis"
+description: "Publicação independente de política, história, geografia, sociedade e desenvolvimento."
+url: "https://gmonteiropolli-design.github.io"
+baseurl: "/Margens-da-Polis"
+lang: "pt-PT"
+timezone: "Europe/Lisbon"
+markdown: kramdown
+permalink: /artigos/:year/:month/:day/:title/
+paginate: 8
+plugins: []
+exclude:
+  - README.md
+  - .pages.yml
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Autor"
+      lang: "pt-PT"
