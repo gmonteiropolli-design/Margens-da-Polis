@@ -769,3 +769,63 @@ body{color:#242322}
   .archive-preview-grid{grid-template-columns:1fr;gap:22px}
   .archive-preview-image{aspect-ratio:16/9}
 }
+
+
+/* Regresso à paleta bordô e branco quente — sem azul-petróleo */
+:root{
+  --paper:#F8F6F0;
+  --ink:#242322;
+  --muted:#706b65;
+  --wine:#5B0D17;
+  --wine-dark:#35070C;
+  --wine-mid:#741321;
+  --line:#D8D0C5;
+  --gold:#C4A27A;
+}
+html,body,main,main#conteudo,article.about-page{
+  background-color:#F8F6F0 !important;
+}
+body{color:#242322}
+.utility-bar{
+  background-color:#5B0D17 !important;
+  color:#F8F6F0;
+}
+.site-header,.masthead{
+  background-color:#5B0D17 !important;
+}
+.main-nav{
+  background-color:#5B0D17 !important;
+  border-color:rgba(248,246,240,.2);
+}
+.main-nav a{color:#F8F6F0}
+.main-nav a:hover,.main-nav a:focus{
+  background-color:#741321;
+  color:#fff;
+}
+.site-footer{
+  background-color:#35070C !important;
+  color:#F8F6F0;
+  border-top:4px solid #5B0D17;
+}
+.site-footer p,.site-footer .footer-motto{color:#E8DED5}
+.site-footer a{color:#C4A27A}
+.footer-brand i{color:#C4A27A}
+.edition-line{border-color:#242322;color:#5B0D17}
+.section-kicker,.eyebrow{color:#5B0D17}
+.feature-label,.article-kicker,.image-caption,
+.editorial-motto .section-kicker{background-color:#5B0D17}
+.heading-link,.text-link{color:#5B0D17;border-color:#C4A27A}
+.section-heading{border-color:#5B0D17}
+.dossier-band,.territory-mark{background-color:#35070C}
+.dossier-band{border-left-color:#5B0D17}
+.manifesto{background-color:#5B0D17}
+.article-header h1,.about-page h1,.listing-page h1,.special-listing>h1{
+  color:#35070C;
+}
+.article-body h2,.article-body h3,.about-page h2{color:#5B0D17}
+.article-body blockquote{
+  border-left-color:#5B0D17;
+  background:#EEE9DF;
+  color:#35070C;
+}
+.topic-list a:hover{color:#5B0D17}
