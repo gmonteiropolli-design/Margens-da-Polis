@@ -1085,3 +1085,22 @@ body.home .category-reading-heading h3{
   body.home .category-reading-section{margin:19px 0 23px}
   body.home .category-reading-heading h3{font-size:21px}
 }
+
+
+/* HOMEPAGE — logótipo com maior presença */
+body.home .masthead-logo{
+  width:min(430px,72%) !important;
+  max-height:96px !important;
+}
+@media(max-width:760px){
+  body.home .masthead-logo{
+    width:min(350px,82%) !important;
+    max-height:78px !important;
+  }
+}
+@media(max-width:390px){
+  body.home .masthead-logo{
+    width:min(300px,86%) !important;
+    max-height:68px !important;
+  }
+}
