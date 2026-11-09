@@ -846,3 +846,130 @@ body.home .latest-section{padding-top:30px}
   body.home .lead-image{grid-row:auto;aspect-ratio:16/9}
   body.home .lead-copy h1{font-size:clamp(44px,12vw,66px)}
 }
+
+
+/* HOMEPAGE — composição de revista inspirada no Times Writer */
+body.home main{max-width:1440px;padding-left:clamp(18px,4.2vw,64px);padding-right:clamp(18px,4.2vw,64px)}
+body.home .lead-story{
+  display:grid;
+  grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr);
+  align-items:stretch;
+  gap:clamp(28px,4.2vw,66px);
+  padding:clamp(24px,3vw,42px) 0 clamp(34px,4vw,58px);
+  border-bottom:1px solid var(--ink);
+}
+body.home .lead-image,body.home .lead-art{
+  grid-column:1;
+  grid-row:1;
+  position:relative;
+  display:block;
+  width:100%;
+  min-height:490px;
+  height:auto;
+  aspect-ratio:5/4;
+  overflow:hidden;
+  border:0;
+  background:var(--wine-dark);
+}
+body.home .lead-image img{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:490px;
+  object-fit:cover;
+  filter:grayscale(.48) contrast(1.08);
+}
+body.home .lead-image:after{
+  content:"";
+  position:absolute;
+  inset:45% 0 0;
+  background:linear-gradient(transparent,rgba(25,8,10,.48));
+  pointer-events:none;
+}
+body.home .lead-image .image-caption{
+  z-index:1;
+  left:0;
+  bottom:0;
+  padding:11px 14px;
+  font-size:9px;
+  letter-spacing:1.8px;
+}
+body.home .lead-copy{
+  grid-column:2;
+  grid-row:1;
+  align-self:center;
+  padding:12px 0;
+}
+body.home .feature-label{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 9px;
+  font-size:9px;
+  letter-spacing:1.65px;
+}
+body.home .lead-copy h1{
+  margin:22px 0 20px;
+  max-width:610px;
+  font:800 clamp(48px,5.5vw,82px)/.88 var(--display);
+  letter-spacing:-.035em;
+  text-transform:uppercase;
+}
+body.home .lead-copy h1 a{color:var(--ink)}
+body.home .lead-copy h1 a:hover{color:var(--wine)}
+body.home .lead-summary{
+  max-width:530px;
+  margin:0;
+  color:#514944;
+  font:500 clamp(15px,1.35vw,18px)/1.7 var(--sans);
+}
+body.home .lead-copy .story-meta{
+  margin-top:22px;
+  padding-top:13px;
+  border-top:1px solid var(--line);
+}
+body.home .lead-copy .text-link{
+  margin-top:22px;
+  padding:10px 13px;
+  background:var(--wine);
+  color:var(--paper);
+  border:0;
+}
+body.home .latest-section{padding-top:38px}
+body.home .section-heading{align-items:end}
+body.home .section-heading h2,
+body.home .archive-section h2,
+body.home .topics-section h2{
+  font:800 clamp(34px,4.2vw,52px)/.92 var(--display);
+  text-transform:uppercase;
+}
+body.home .section-intro{margin:8px 0 0;color:var(--muted);font-size:13px}
+body.home .story-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 24px}
+body.home .story-card{padding-bottom:20px}
+body.home .card-image{aspect-ratio:4/3;height:auto}
+body.home .story-card h3{font:700 clamp(22px,2.4vw,31px)/.98 var(--display);text-transform:uppercase}
+body.home .archive-section{padding-top:44px}
+body.home .archive-preview-card strong{font:700 clamp(21px,2.2vw,29px)/.98 var(--display)}
+body.home .dossier-band{margin-top:42px}
+@media(max-width:900px){
+  body.home .lead-story{grid-template-columns:minmax(0,1.05fr) minmax(270px,.95fr);gap:28px}
+  body.home .lead-image,body.home .lead-art,
+  body.home .lead-image img{min-height:400px}
+  body.home .lead-copy h1{font-size:clamp(43px,5.5vw,62px)}
+}
+@media(max-width:700px){
+  body.home .lead-story{grid-template-columns:1fr;gap:0;padding:20px 0 30px}
+  body.home .lead-copy{grid-column:1;grid-row:1;padding:8px 0 22px}
+  body.home .lead-image,body.home .lead-art{grid-column:1;grid-row:2;min-height:0;aspect-ratio:16/10}
+  body.home .lead-image img{min-height:0}
+  body.home .lead-copy h1{font-size:clamp(45px,11vw,68px);margin:15px 0}
+  body.home .lead-summary{font-size:15px}
+  body.home .story-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}
+  body.home .section-heading h2,body.home .archive-section h2,body.home .topics-section h2{font-size:38px}
+}
+@media(max-width:480px){
+  body.home .story-grid{grid-template-columns:1fr}
+  body.home .card-image{aspect-ratio:16/9}
+  body.home .section-heading{gap:12px}
+  body.home .heading-link{max-width:112px;white-space:normal;text-align:right;line-height:1.5}
+}
