@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Dossiê da semana"
+description: "Leituras em profundidade sobre temas centrais do nosso tempo."
+permalink: /dossie/
+---
+<section class="listing-page special-listing">
+  <span class="section-kicker">LEITURA EM PROFUNDIDADE</span>
+  <h1>Dossiê da semana</h1>
+  <p class="listing-intro">Um tema, várias perspectivas. Reunimos textos que ajudam a compreender um problema para além da notícia e do comentário imediato.</p>
+  {% assign dossiers = site.posts | where: "dossier", true %}
+  {% if dossiers.size > 0 %}
+  <div class="story-grid">{% for post in dossiers %}
+    <article class="story-card">{% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% endif %}
+    <span class="section-kicker">{{ post.categories.first | default: "DOSSIÊ" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<div class="story-meta">{{ post.date | date: "%d.%m.%Y" }}</div></article>
+  {% endfor %}</div>
+  {% else %}
+  <div class="empty-state"><h3>O próximo dossiê está a ser preparado.</h3><p>Quando um artigo integrar um dossiê, basta assinalar «Incluir no Dossiê da semana» no editor. Os textos relacionados serão reunidos aqui.</p></div>
+  {% endif %}
+</section>
