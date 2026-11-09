@@ -1,5 +1,5 @@
 :root{
-  --wine:#85001f;--wine-dark:#4b0014;--wine-mid:#ad1238;--paper:#fbf8f2;
+  --wine:#a00025;--wine-dark:#650018;--wine-mid:#c21b43;--paper:#fbf8f2;
   --ink:#171515;--muted:#756c68;--line:#d8d0c7;--gold:#b99a72;
   --serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif
 }
@@ -31,7 +31,7 @@ main{max-width:1260px;margin:auto;padding:0 30px 72px}
 .text-link span{font-size:16px}
 .lead-image,.lead-art{height:350px;overflow:hidden}
 .lead-image img{width:100%;height:100%;object-fit:cover;display:block}
-.lead-art{background:radial-gradient(circle at 65% 35%,#9d2745 0 12%,transparent 12.5%),linear-gradient(135deg,#a5002b,#4a0012);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#f4e9e2;position:relative}
+.lead-art{background:radial-gradient(circle at 65% 35%,#9d2745 0 12%,transparent 12.5%),linear-gradient(135deg,#b9002d,#650018);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#f4e9e2;position:relative}
 .lead-art:before,.lead-art:after{content:"";position:absolute;border:1px solid rgba(220,195,158,.35);border-radius:50%;width:270px;height:270px}
 .lead-art:after{width:215px;height:215px}
 .lead-art span{font:500 100px var(--serif);letter-spacing:-8px;z-index:1}
