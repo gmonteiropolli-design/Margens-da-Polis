@@ -418,3 +418,9 @@ main{max-width:1360px;padding-left:clamp(18px,4vw,58px);padding-right:clamp(18px
 .dossier-band{border-left-color:var(--wine)}
 .manifesto{background-color:var(--wine)}
 .territory-mark{background:linear-gradient(145deg,var(--wine-dark),var(--wine))}
+
+
+/* Navegação — faixa mais clara sob o logótipo */
+.main-nav{background:#8b1825;border-top-color:rgba(241,235,221,.28)}
+.main-nav a{color:#fff8f3}
+.main-nav a:hover,.main-nav a:focus{background:#a32335;color:#fff}
