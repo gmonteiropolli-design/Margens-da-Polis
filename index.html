@@ -8,18 +8,25 @@ description: "Análise crítica e reflexão independente sobre os processos que 
 {% assign featured = site.posts | where: "featured", true | first %}
 {% if featured == nil %}{% assign featured = site.posts.first %}{% endif %}
 {% if featured %}
-<section class="lead-story">
+<section class="lead-story" aria-label="Artigo em destaque">
   <div class="lead-copy">
-    <span class="section-kicker">{{ featured.categories.first | default: "EM DESTAQUE" }}</span>
+    <span class="feature-label">LEITURA EM DESTAQUE <span>／</span> {{ featured.categories.first | default: "ENSAIO" }}</span>
     <h1><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h1>
     {% if featured.description %}<p class="lead-summary">{{ featured.description }}</p>{% endif %}
     <div class="story-meta">{{ featured.date | date: "%d.%m.%Y" }} <span>·</span> Por {{ featured.author | default: "Autor" }}</div>
     <a class="text-link" href="{{ featured.url | relative_url }}">LER ARTIGO <span>→</span></a>
   </div>
-  {% if featured.image %}<a class="lead-image" href="{{ featured.url | relative_url }}"><img src="{{ featured.image | relative_url }}" alt="{{ featured.image_alt | default: featured.title }}"></a>{% else %}<div class="lead-art" aria-hidden="true"><span>MP</span><small>POLIS · TERRITÓRIO · HISTÓRIA</small></div>{% endif %}
+  {% if featured.image %}
+  <a class="lead-image" href="{{ featured.url | relative_url }}" aria-label="Ler {{ featured.title }}">
+    <img src="{{ featured.image | relative_url }}" alt="{{ featured.image_alt | default: featured.title }}">
+    <span class="image-caption">DOSSIÊ · ARTIGO PRINCIPAL</span>
+  </a>
+  {% else %}
+  <div class="lead-art" aria-hidden="true"><span>MP</span><small>POLIS · TERRITÓRIO · HISTÓRIA</small></div>
+  {% endif %}
 </section>
 {% else %}
-<section class="intro-lead">
+<section class="intro-lead" aria-label="Apresentação da publicação">
   <div class="lead-copy">
     <span class="section-kicker">PUBLICAÇÃO INDEPENDENTE</span>
     <h1>Interpretar o presente. Compreender os processos. Interrogar o mundo.</h1>
@@ -31,7 +38,7 @@ description: "Análise crítica e reflexão independente sobre os processos que 
 {% endif %}
 
 <section class="latest-section">
-  <div class="section-heading"><div><span class="section-kicker">JORNAL DE IDEIAS</span><h2>Últimas publicações</h2></div><span class="heading-note">ARTIGOS E ENSAIOS</span></div>
+  <div class="section-heading"><div><span class="section-kicker">JORNAL DE IDEIAS</span><h2>Leituras recentes</h2><p class="section-intro">Ideias, acontecimentos e processos — lidos para lá da superfície.</p></div><span class="heading-note">ARTIGOS<br> E ENSAIOS</span></div>
   {% if site.posts.size > 0 %}
   <div class="story-grid">
     {% for post in site.posts limit: 9 %}
