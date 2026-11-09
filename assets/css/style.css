@@ -1069,3 +1069,19 @@ body.home .manifesto{margin-top:26px !important;padding:28px 20px 25px !importan
   body.home .main-nav a{padding:7px 7px !important;font-size:7px !important}
   body.home .lead-image,body.home .lead-art{aspect-ratio:16/8 !important}
 }
+
+/* HOMEPAGE — separadores das leituras por categoria */
+body.home .category-reading-section{margin:24px 0 28px}
+body.home .category-reading-heading{
+  display:flex;align-items:baseline;gap:13px;
+  border-bottom:1px solid var(--line);padding:0 0 8px;margin:0 0 14px;
+}
+body.home .category-reading-heading .section-kicker{flex:0 0 auto}
+body.home .category-reading-heading h3{
+  margin:0;color:var(--wine);font-family:inherit;font-size:clamp(21px,2.1vw,27px);
+  line-height:1.05;font-weight:700;letter-spacing:-.02em;
+}
+@media(max-width:760px){
+  body.home .category-reading-section{margin:19px 0 23px}
+  body.home .category-reading-heading h3{font-size:21px}
+}
