@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Mapas e Território"
+description: "Geografia, cidades, fronteiras, paisagens e transformações territoriais."
+permalink: /mapas-e-territorio/
+---
+<section class="listing-page special-listing">
+  <span class="section-kicker">GEOGRAFIA · CIDADES · FRONTEIRAS</span>
+  <h1>Mapas e território</h1>
+  <p class="listing-intro">O espaço não é um cenário neutro. É história, poder, conflito, circulação e vida quotidiana. Esta secção reúne leituras sobre lugares e as forças que os transformam.</p>
+  {% assign maps = site.posts | where: "mapa_territorio", true %}
+  {% if maps.size > 0 %}
+  <div class="story-grid">{% for post in maps %}
+    <article class="story-card">{% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% endif %}
+    <span class="section-kicker">{{ post.categories.first | default: "TERRITÓRIO" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<div class="story-meta">{{ post.date | date: "%d.%m.%Y" }}</div></article>
+  {% endfor %}</div>
+  {% else %}
+  <div class="empty-state"><h3>Um atlas em construção.</h3><p>Os textos desta área aparecerão aqui quando forem assinalados como «Incluir em Mapas e Território» no editor de artigos.</p></div>
+  {% endif %}
+</section>
