@@ -36,7 +36,7 @@ content:
       - name: author
         label: Autor
         type: string
-        default: "Autor"
+        default: "Giulia Polli"
       - name: description
         label: Resumo / linha fina
         type: text
