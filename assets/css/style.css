@@ -1104,3 +1104,9 @@ body.home .masthead-logo{
     max-height:68px !important;
   }
 }
+
+
+/* Cabeçalho — linha fina entre o logótipo e a navegação */
+.site-header .masthead{
+  border-bottom:1px solid rgba(248,246,240,.24) !important;
+}
