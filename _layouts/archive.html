@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="listing-page archive-page">
+  <header class="listing-header">
+    <span class="section-kicker">MEMÓRIA EDITORIAL</span>
+    <h1>Do Arquivo</h1>
+    <p class="section-intro">Textos recuperados de outros momentos do projecto. Leituras que regressam porque continuam a ajudar-nos a pensar o presente.</p>
+  </header>
+  {% assign archive_posts = site.posts | where: "from_archive", true %}
+  {% if archive_posts.size > 0 %}
+  <div class="story-grid">
+    {% for post in archive_posts %}
+    <article class="story-card">
+      {% if post.image %}
+      <a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>
+      {% else %}
+      <a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>
+      {% endif %}
+      <div class="card-content">
+        <span class="section-kicker">{{ post.categories.first | default: "DO ARQUIVO" }}</span>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+        <div class="story-meta">{{ post.date | date: "%d.%m.%Y" }}</div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state"><h2>O arquivo está a ser preparado.</h2><p>Em breve, textos de outros momentos do projecto voltarão a estar disponíveis nesta secção.</p></div>
+  {% endif %}
+</article>
