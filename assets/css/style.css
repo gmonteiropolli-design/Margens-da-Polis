@@ -1,5 +1,5 @@
 :root{
-  --wine:#650d25;--wine-dark:#350714;--wine-mid:#8b1837;--paper:#fbf8f2;
+  --wine:#85001f;--wine-dark:#4b0014;--wine-mid:#ad1238;--paper:#fbf8f2;
   --ink:#171515;--muted:#756c68;--line:#d8d0c7;--gold:#b99a72;
   --serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif
 }
@@ -8,7 +8,7 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 .utility-bar{height:29px;padding:0 max(calc((100% - 1260px)/2),24px);background:var(--wine-dark);color:#e9dfe0;display:flex;align-items:center;justify-content:space-between;font-size:9px;letter-spacing:1.7px}
-.site-header{background:var(--paper);color:var(--ink);border-bottom:1px solid var(--line)}
+.site-header{background:#fffdf9;color:var(--ink);border-bottom:1px solid var(--line)}
 .masthead{min-height:142px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:21px 16px 17px;position:relative;background:var(--paper)}
 .masthead-mark{display:none}
 .masthead-name{font:500 clamp(38px,5.6vw,66px)/.98 var(--serif);letter-spacing:-2.4px;color:var(--wine)}
@@ -31,7 +31,7 @@ main{max-width:1260px;margin:auto;padding:0 30px 72px}
 .text-link span{font-size:16px}
 .lead-image,.lead-art{height:350px;overflow:hidden}
 .lead-image img{width:100%;height:100%;object-fit:cover;display:block}
-.lead-art{background:radial-gradient(circle at 65% 35%,#9d2745 0 12%,transparent 12.5%),linear-gradient(135deg,#79122f,#310713);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#f4e9e2;position:relative}
+.lead-art{background:radial-gradient(circle at 65% 35%,#9d2745 0 12%,transparent 12.5%),linear-gradient(135deg,#a5002b,#4a0012);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#f4e9e2;position:relative}
 .lead-art:before,.lead-art:after{content:"";position:absolute;border:1px solid rgba(220,195,158,.35);border-radius:50%;width:270px;height:270px}
 .lead-art:after{width:215px;height:215px}
 .lead-art span{font:500 100px var(--serif);letter-spacing:-8px;z-index:1}
