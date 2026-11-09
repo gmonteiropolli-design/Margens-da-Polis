@@ -572,3 +572,10 @@ html, body, body > main, main#conteudo, article.about-page {
 .main-nav a:hover,.main-nav a:focus{background:#741321;color:#fff}
 .masthead-tagline{color:#f3e6df}
 .about-page h2,.site-footer a{color:#5b0d17}
+
+
+/* Faixa superior, antes do logótipo — vinho quase negro */
+.utility-bar{
+  background-color:#210408 !important;
+  color:#eee4dc;
+}
