@@ -424,3 +424,8 @@ main{max-width:1360px;padding-left:clamp(18px,4vw,58px);padding-right:clamp(18px
 .main-nav{background:#8b1825;border-top-color:rgba(241,235,221,.28)}
 .main-nav a{color:#fff8f3}
 .main-nav a:hover,.main-nav a:focus{background:#a32335;color:#fff}
+
+
+/* Fundo do cabeçalho/logótipo — harmonizado com a navegação */
+.site-header,.masthead{background-color:#8b1825}
+.masthead-tagline{color:#f3e6df}
