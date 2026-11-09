@@ -51,12 +51,34 @@ content:
         type: boolean
       - name: dossier
         label: Incluir no Dossiê da semana
-        type: boolean      - name: temas
+        type: boolean
+      - name: temas
         label: Temas (separar por vírgulas)
         type: string
       - name: body
         label: Texto do artigo
         type: rich-text
+
+  - name: about
+    label: Sobre
+    type: file
+    path: sobre.md
+    format: yaml-frontmatter
+    operations:
+      delete: false
+    fields:
+      - name: title
+        label: Título da página
+        type: string
+      - name: description
+        label: Descrição
+        type: text
+      - name: body
+        label: Texto da página
+        type: rich-text
+        options:
+          format: html
+          switcher: false
 
   - name: pages
     label: Páginas
