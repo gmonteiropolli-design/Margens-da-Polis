@@ -700,3 +700,18 @@ body{color:#242322}
 @media(max-width:700px){
   .article-body>p:first-of-type:first-letter{font-size:3.5em}
 }
+
+
+/* Texto corrido justificado */
+.article-body,
+.about-page,
+.listing-page .listing-intro{
+  text-align:justify;
+  text-justify:inter-word;
+}
+.article-body p,
+.about-page>p,
+.about-page blockquote p{
+  text-align:justify;
+  text-justify:inter-word;
+}
