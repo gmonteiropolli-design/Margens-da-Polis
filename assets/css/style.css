@@ -596,3 +596,18 @@ html, body, body > main, main#conteudo, article.about-page {
 @media(max-width:480px){
   .masthead-logo{width:96%;max-height:125px}
 }
+
+
+/* Rodapé — harmonizar a assinatura com a tipografia editorial */
+.footer-brand{
+  font:600 clamp(29px,3.2vw,36px)/1.1 var(--serif);
+  letter-spacing:-1.2px;
+  text-transform:none;
+}
+.footer-brand i{
+  font-family:var(--serif);
+  font-size:.72em;
+  font-style:italic;
+  font-weight:500;
+  color:#c6a7a0;
+}
