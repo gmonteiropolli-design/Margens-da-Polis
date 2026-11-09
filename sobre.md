@@ -1,19 +1,70 @@
 ---
 layout: default
 title: "Sobre"
-description: "Conheça a linha editorial e os objetivos do Margens da Polis."
+description: "Cartografias do Desvio — deslocar para o centro o que foi relegado à margem."
 permalink: /sobre/
 ---
 <article class="about-page">
-  <span class="section-kicker">SOBRE O PROJETO</span>
-  <h1>Margens da Polis</h1>
-  <p class="about-intro">Um espaço independente de reflexão, análise e pensamento crítico.</p>
+  <span class="section-kicker">SOBRE O PROJECTO</span>
+  <h1>Cartografias do Desvio</h1>
+  <p class="about-intro">Deslocar para o centro o que foi relegado à margem.</p>
   <div class="about-rule"></div>
-  <p>O <em>Margens da Polis</em> é uma publicação independente dedicada à sociedade e ao poder, à cultura e às ideias, e à reflexão livre.</p>
-  <p>Procura acompanhar e interpretar os acontecimentos contemporâneos, estabelecendo pontes entre o passado e o presente, entre as estruturas de poder e as sociedades, entre os territórios e as suas transformações.</p>
-  <p>Através de textos autorais, análise crítica e reflexão interdisciplinar, procura contribuir para uma compreensão mais profunda da realidade e das ideias que a atravessam.</p>
-  <h2>Uma publicação independente</h2>
-  <p>O projeto parte da convicção de que a realidade exige observação, contexto e questionamento. Não basta descrever acontecimentos: importa interrogar as suas causas, reconhecer os seus antecedentes e analisar as suas consequências.</p>
-  <p>Mais do que acompanhar a atualidade, importa compreender os processos que a produzem.</p>
-  <div class="about-signature">Pensar o mundo a partir das suas margens.</div>
+
+  <blockquote>
+    <p>«Nunca há um documento da cultura que não seja, simultaneamente, um documento da barbárie.»</p>
+    <cite>— Walter Benjamin, <em>Sobre o Conceito de História</em>, tese VII.</cite>
+  </blockquote>
+
+  <p>A afirmação de Walter Benjamin de que todo o documento da cultura é também um documento da barbárie constitui uma das ideias que mais me fazem pensar sobre a forma como conhecemos e interpretamos o mundo. Aquilo que reconhecemos como património cultural, progresso, desenvolvimento ou civilização não existe de forma isolada das relações de poder e dos processos históricos que o tornaram possível. Por detrás das grandes narrativas de conquista, das instituições, das obras culturais e das ideias que atravessam diferentes épocas, existem também histórias de exploração, violência, desigualdade e exclusão que nem sempre recebem a mesma atenção.</p>
+
+  <p>Interessa-me, por isso, compreender não apenas aquilo que as sociedades produzem, mas também as condições em que essas produções se tornam possíveis, as experiências que deixam pelo caminho e as perspectivas que acabam por ser privilegiadas na construção da nossa memória colectiva. Talvez seja essa curiosidade que me tenha levado a aproximar de áreas tão distintas, mas profundamente relacionadas, como a filosofia, a política, a economia, a história e os Estudos Globais e do Desenvolvimento.</p>
+
+  <p>Sou brasileira, vivo em Portugal e, ao longo do meu percurso académico e pessoal, fui desenvolvendo um interesse particular pelas diferentes formas de organização das sociedades, pelas relações entre países e povos e pelas desigualdades que atravessam o mundo contemporâneo. A experiência de viver entre diferentes referências culturais e geográficas também contribuiu para ampliar as minhas perspectivas e despertar o interesse pelas formas como os contextos históricos, políticos e sociais influenciam a maneira como interpretamos a realidade.</p>
+
+  <p>A literatura teve igualmente um papel importante nesse percurso. Consequência de crescer num ambiente em que os livros sempre estiveram presentes, desenvolvi desde cedo o hábito da leitura e, com ele, uma curiosidade que acabou por ultrapassar os limites da ficção. Se, inicialmente, os livros me permitiam imaginar universos distintos e conhecer experiências diferentes das minhas, descobri posteriormente o potencial da literatura e do pensamento de me aproximarem da própria realidade. A leitura tornou-se, assim, uma forma de estabelecer relações entre diferentes áreas do conhecimento, questionar ideias e encontrar novas maneiras de compreender aquilo que me rodeia.</p>
+
+  <p>A minha formação académica acompanha parte desse caminho. Sou licenciada em Administração Pública e Ciência Política e mestre em Filosofia, Política e Economia. Nos últimos anos, tenho dedicado particular atenção aos Estudos Globais e do Desenvolvimento, área que passou a ocupar um lugar central nos meus interesses e reflexões. Interessa-me especialmente compreender as relações entre desenvolvimento, poder e desigualdade, as dinâmicas que estruturam o sistema internacional, as diferenças entre experiências históricas e sociais e os discursos que sustentam determinadas concepções de progresso. A estes temas juntam-se a filosofia política, a história, a geopolítica, a sociologia, a literatura e a cultura, campos que considero fundamentais para pensar a complexidade das sociedades contemporâneas.</p>
+
+  <p>Foi deste conjunto de interesses, leituras e inquietações que surgiu a <em>Margens da Pólis</em>. O projecto teve uma primeira versão em 2021, durante a minha licenciatura, quando criei um espaço para reunir textos e reflexões sobre assuntos que me despertavam curiosidade. Com o passar do tempo, o projecto ficou suspenso, mas a vontade de escrever e de recuperar aquele espaço permaneceu. Regressar agora à <em>Margens da Pólis</em> representa, por isso, uma oportunidade de retomar um percurso iniciado há alguns anos, revisitar textos antigos, relê-los à luz das experiências e dos conhecimentos adquiridos entretanto e, naturalmente, desenvolver novas ideias.</p>
+
+  <p>Não pretendo recuperar o que escrevi como se o tempo não tivesse passado. Pelo contrário, interessa-me reconhecer as mudanças de perspectiva, contextualizar pensamentos anteriores e perceber de que forma determinadas questões continuam actuais, enquanto outras exigem novas interpretações. A <em>Margens da Pólis</em> pretende ser, simultaneamente, um arquivo em reconstrução e um projecto em permanente evolução.</p>
+
+  <h2>O que significa olhar a partir das margens?</h2>
+
+  <p>O nome <em>Margens da Pólis</em> surgiu, em parte, como uma brincadeira com o meu próprio nome, mas acabou por adquirir um significado que ultrapassa essa coincidência. A palavra <em>pólis</em>, de origem grega, é utilizada aqui não como referência à Grécia Antiga, à tradição clássica ou a um modelo político específico, mas como uma abstracção do espaço colectivo: a sociedade, a comunidade, o lugar onde se estabelecem relações, conflitos, hierarquias e formas de organização da vida em comum.</p>
+
+  <p>As margens, por sua vez, representam um lugar de observação. Não necessariamente um espaço geográfico, mas uma posição a partir da qual se torna possível questionar aquilo que é apresentado como central, universal ou evidente. Interessa-me olhar para a sociedade a partir das suas periferias — geográficas, políticas, económicas, culturais e simbólicas —, prestando atenção às experiências que raramente ocupam o centro das narrativas e às vozes que nem sempre têm oportunidade de contar a sua própria história.</p>
+
+  <p>Esta perspectiva aproxima-se também do meu interesse pelos Estudos Globais e do Desenvolvimento, sobretudo pela necessidade de questionar as hierarquias que organizam o mundo e as diferentes formas como são construídas as ideias de desenvolvimento, modernidade e progresso. Interessa-me compreender como determinadas experiências históricas se tornam referências universais, enquanto outras são tratadas como excepções, atrasos ou desvios. Interessa-me, ainda, perceber quem tem o poder de produzir conhecimento, definir conceitos e estabelecer as narrativas através das quais interpretamos as sociedades.</p>
+
+  <p>É neste sentido que a ideia de cartografias do desvio orienta o projecto: desenhar outros mapas para pensar o mundo, aproximar realidades que habitualmente são observadas separadamente e deslocar o olhar para aquilo que permanece fora do campo de visão dominante.</p>
+
+  <h2>Um espaço de pensamento e escrita</h2>
+
+  <p>A <em>Margens da Pólis</em> é uma publicação independente dedicada à reflexão sobre Estudos Globais e do Desenvolvimento, em diálogo com a filosofia, a política, a economia, a história, a geopolítica, a literatura e a cultura.</p>
+
+  <p>Aqui cabem ensaios, comentários, análises, crónicas e reflexões sobre temas diversos. Não se trata de um jornal de notícias nem de um projecto de investigação jornalística, mas de um espaço de escrita e interpretação, no qual acontecimentos, ideias, livros e fenómenos sociais podem servir de ponto de partida para perguntas mais amplas. A intenção é explorar questões, estabelecer relações entre diferentes campos do conhecimento e desenvolver perspectivas próprias, sem a pretensão de apresentar respostas definitivas.</p>
+
+  <p>Acredito que compreender a realidade exige, muitas vezes, ultrapassar as fronteiras disciplinares e questionar as categorias através das quais organizamos o nosso pensamento. Uma questão política pode ser também filosófica; um fenómeno económico não pode ser inteiramente compreendido sem considerar as suas dimensões históricas e sociais; e uma obra literária pode revelar tanto sobre uma época e uma sociedade como qualquer documento institucional. É precisamente nessas aproximações que encontro grande parte do interesse em escrever.</p>
+
+  <p>Há, neste projecto, uma preocupação particular com a memória e com a forma como contamos a história. A segunda passagem de Walter Benjamin que escolho destacar ajuda a traduzir essa preocupação:</p>
+
+  <blockquote>
+    <p>«O materialista histórico considera sua tarefa escovar a história a contrapelo.»</p>
+    <cite>— Walter Benjamin, <em>Sobre o Conceito de História</em>, tese VII.</cite>
+  </blockquote>
+
+  <p>Esta imagem acompanha uma das inquietações centrais da <em>Margens da Pólis</em>: a necessidade de interrogar as narrativas dominantes, revisitar o passado a partir de outras perspectivas e reconhecer que aquilo que conhecemos como história, cultura ou progresso também é atravessado por silêncios, disputas e relações de poder. Escovar a história a contrapelo significa, neste contexto, não aceitar as narrativas herdadas como interpretações completas ou incontestáveis, mas procurar compreender aquilo que ficou de fora e as experiências que foram secundarizadas na construção da memória colectiva.</p>
+
+  <p>Afinal, se os mapas não são o território, também as narrativas que construímos sobre o mundo não são o próprio mundo. Há sempre outros percursos por traçar, outras experiências por conhecer e outras histórias por contar.</p>
+
+  <p>A <em>Margens da Pólis</em> nasce dessa vontade de continuar a procurar, ler, escrever e questionar. É um espaço onde se cruzam interesses académicos, leituras, curiosidades e reflexões pessoais, sem a necessidade de permanecer dentro de uma única área temática ou de uma interpretação definitiva. Mais do que oferecer respostas, interessa-me construir perguntas, explorar contradições e encontrar outras formas de olhar para aquilo que julgamos conhecer.</p>
+
+  <p class="about-signature">Deslocar para o centro o que foi relegado à margem. É esta a ideia que orienta as Cartografias do Desvio e que dá sentido à existência deste projecto.</p>
+
+  <div class="about-editorial-note">
+    <h2>Nota editorial</h2>
+    <p>Todo o material escrito publicado neste espaço é de autoria própria. Os créditos e as referências relativos às imagens utilizadas podem ser consultados no final de cada página.</p>
+    <p>A autora reserva-se a liberdade de adoptar, em diferentes momentos, distintas variantes da língua portuguesa, pelo que poderão coexistir neste espaço formas de português brasileiro e português europeu.</p>
+  </div>
 </article>
