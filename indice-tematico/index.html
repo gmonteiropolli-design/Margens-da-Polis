@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Índice temático"
+description: "Navegue pelos temas, secções e assuntos abordados em Margens da Pólis."
+permalink: /indice-tematico/
+---
+<section class="listing-page special-listing">
+  <span class="section-kicker">GUIA DE LEITURA</span>
+  <h1>Índice temático</h1>
+  <p class="listing-intro">Uma outra forma de percorrer o jornal: por campos de reflexão, problemas e assuntos que atravessam diferentes artigos.</p>
+  <div class="index-theme-group"><h2>Campos editoriais</h2>
+    <div class="topic-list">
+      <a href="{{ '/categoria/sociedade-e-poder/' | relative_url }}"><span>01</span><strong>Sociedade e Poder</strong><i>Política, história, instituições e dinâmicas sociais</i><b>↗</b></a>
+      <a href="{{ '/categoria/cultura-e-ideias/' | relative_url }}"><span>02</span><strong>Cultura e Ideias</strong><i>Livros, arte, pensamento e criação</i><b>↗</b></a>
+      <a href="{{ '/categoria/cadernos/' | relative_url }}"><span>03</span><strong>Cadernos</strong><i>Ensaios, crónicas e reflexões livres</i><b>↗</b></a>
+      <a href="{{ '/mapas-e-territorio/' | relative_url }}"><span>04</span><strong>Mapas e Território</strong><i>Geografia, cidades, fronteiras e paisagem</i><b>↗</b></a>
+    </div>
+  </div>
+  {% if site.posts.size > 0 %}
+  <div class="index-theme-group"><h2>Assuntos dos artigos</h2>
+    <div class="archive-strip">{% for post in site.posts %}
+      <div class="index-entry"><span>{{ post.date | date: "%Y" }}</span><div><strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong>{% if post.temas %}<p>{{ post.temas }}</p>{% elsif post.categories %}<p>{{ post.categories | join: " · " }}</p>{% endif %}</div></div>
+    {% endfor %}</div>
+  </div>
+  {% else %}
+  <div class="empty-state"><h3>O índice será construído com os artigos.</h3><p>Ao editar um artigo, indique os seus temas no campo «Temas». Esses assuntos serão apresentados aqui para facilitar a descoberta de leituras relacionadas.</p></div>
+  {% endif %}
+</section>
