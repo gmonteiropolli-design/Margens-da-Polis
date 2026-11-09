@@ -62,9 +62,15 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
 
 <section class="archive-section">
   <div class="section-heading"><div><span class="section-kicker">MEMÓRIA EDITORIAL</span><h2>Do arquivo</h2><p class="section-intro">Textos que merecem uma segunda leitura — porque a sua relevância não termina na data de publicação.</p></div><a class="heading-link" href="{{ '/arquivo/' | relative_url }}">TODO O ARQUIVO ↗</a></div>
-  <div class="archive-strip">
+  <div class="archive-preview-grid">
     {% if archive_posts.size > 0 %}
-      {% for post in archive_posts limit: 3 %}<a href="{{ post.url | relative_url }}"><span>{{ post.date | date: "%Y" }}</span><strong>{{ post.title }}</strong><i>LER ↗</i></a>{% endfor %}
+      {% for post in archive_posts limit: 3 %}
+      <a class="archive-preview-card" href="{{ post.url | relative_url }}">
+        {% if post.image %}<span class="archive-preview-image"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy"></span>{% endif %}
+        <span class="archive-preview-date">{{ post.date | date: "%d.%m.%Y" }}</span>
+        <strong>{{ post.title }}</strong>
+      </a>
+      {% endfor %}
     {% else %}
       <p class="section-intro">Os primeiros textos recuperados serão reunidos aqui.</p>
     {% endif %}
