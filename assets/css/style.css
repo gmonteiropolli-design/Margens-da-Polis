@@ -437,3 +437,38 @@ main{max-width:1360px;padding-left:clamp(18px,4vw,58px);padding-right:clamp(18px
 .main-nav a{color:#fff8f3}
 .main-nav a:hover,.main-nav a:focus{background-color:#741321;color:#fff}
 .masthead-tagline{color:#f3e6df}
+
+
+/* Página Sobre — leitura mais clara, tipografia sem serifa e texto justificado */
+.about-page{
+  background:#f8f6f0;
+  color:#171717;
+  padding:clamp(24px,4vw,48px);
+}
+.about-page h1,
+.about-page h2,
+.about-page p,
+.about-page blockquote,
+.about-page cite{
+  font-family:Arial,Helvetica,sans-serif;
+}
+.about-page h1{color:#171717}
+.about-page h2{color:#5b0d17;font-weight:700}
+.about-page .about-intro{
+  color:#292522;
+  font:600 20px/1.6 Arial,Helvetica,sans-serif;
+}
+.about-page>p:not(.about-intro){
+  color:#171717;
+  font:16px/1.85 Arial,Helvetica,sans-serif;
+  text-align:justify;
+  hyphens:auto;
+}
+.about-page blockquote{
+  color:#292522;
+  background:#eee9df;
+  border-left:5px solid #5b0d17;
+  font:italic 16px/1.75 Arial,Helvetica,sans-serif;
+}
+.about-page blockquote p{font:italic 16px/1.75 Arial,Helvetica,sans-serif}
+.about-page cite{font-size:13px;color:#514944}
