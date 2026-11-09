@@ -49,6 +49,15 @@ content:
       - name: featured
         label: Destacar na página inicial
         type: boolean
+      - name: dossier
+        label: Incluir no Dossiê da semana
+        type: boolean
+      - name: mapa_territorio
+        label: Incluir em Mapas e Território
+        type: boolean
+      - name: temas
+        label: Temas (separar por vírgulas)
+        type: string
       - name: body
         label: Texto do artigo
         type: rich-text
