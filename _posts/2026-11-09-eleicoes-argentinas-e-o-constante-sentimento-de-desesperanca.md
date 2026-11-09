@@ -12,6 +12,7 @@ description: Milei vence as eleições primárias na Argentina, o que apesar de
 image: /assets/uploads/milei.jpg
 image_credit: https://expresso.pt/america-latina/2023-08-19-Argentina-Javier-Milei-o-ultraliberal-que-deu-vantagem-a-extrema-direita-e-assustou-os-mercados-733f6977
 from_archive: true
+categories: Sociedade e Poder
 ---
 Javier Milei vence as eleições primárias na Argentina, o que apesar de ainda não o consagrar como presidente, representa o avanço da extrema direita no país. Anarcocapitalista, defensor do fim do Banco Central, da dolarização da economia argentina e da privatização dos serviços públicos (e assim não é de surpreender que seus ídolos sejam Bolsonaro e Trump), o protagonismo do candidato expõe o descontentamento generalizado com a institucionalidade política e o desejo por mudanças significativas, mas que caminham em uma direção alarmante. Apesar das eleições decisivas acontecerem só em Outubro, a popularidade de Milei nos permite discutir a capacidade do ultraliberalismo de simular um discurso anti sistêmico e oferecer uma alternativa às questões atuais, mas que garante a manutenção de interesses dos poderes dominantes e a degradação de direitos comuns.
 
