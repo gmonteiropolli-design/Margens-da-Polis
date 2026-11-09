@@ -579,3 +579,20 @@ html, body, body > main, main#conteudo, article.about-page {
   background-color:#210408 !important;
   color:#eee4dc;
 }
+
+
+/* Logótipo ampliado após remoção do subtítulo */
+.masthead{
+  padding:18px 16px;
+}
+.masthead-logo{
+  width:min(620px,90%);
+  max-height:180px;
+}
+@media(max-width:760px){
+  .masthead{padding:14px 12px}
+  .masthead-logo{width:min(480px,94%);max-height:145px}
+}
+@media(max-width:480px){
+  .masthead-logo{width:96%;max-height:125px}
+}
