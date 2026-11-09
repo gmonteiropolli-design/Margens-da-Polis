@@ -1110,3 +1110,78 @@ body.home .masthead-logo{
 .site-header .masthead{
   border-bottom:1px solid rgba(248,246,240,.24) !important;
 }
+
+
+/* HOMEPAGE — três áreas temáticas em paralelo */
+body.home .category-reading-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  align-items:stretch;
+}
+body.home .category-reading-grid .category-reading-section{
+  min-width:0;
+  margin:0;
+  padding:17px 15px 12px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.34);
+}
+body.home .category-reading-grid .category-reading-heading{
+  display:block;
+  min-height:62px;
+  margin:0 0 12px;
+  padding:0 0 10px;
+  border-bottom:2px solid var(--wine);
+}
+body.home .category-reading-grid .category-reading-heading .section-kicker{
+  display:block;
+  margin-bottom:7px;
+  font-size:8px;
+}
+body.home .category-reading-grid .category-reading-heading h3{
+  font-size:clamp(18px,1.65vw,23px);
+  line-height:1.02;
+}
+body.home .category-reading-grid .story-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+}
+body.home .category-reading-grid .story-card{
+  padding:0 0 12px;
+  margin:0 0 12px;
+  border-bottom:1px solid var(--line);
+}
+body.home .category-reading-grid .story-card:last-child{
+  margin-bottom:0;
+  border-bottom:0;
+}
+body.home .category-reading-grid .story-card .section-kicker{font-size:7px;letter-spacing:1.2px}
+body.home .category-reading-grid .story-card h3{
+  margin:5px 0 0;
+  font-size:clamp(16px,1.35vw,19px);
+  line-height:1.08;
+}
+body.home .category-reading-grid .story-card p{display:none}
+body.home .category-reading-grid .story-card .story-meta{margin-top:6px;font-size:8px}
+body.home .category-reading-grid .story-card:first-child .card-image{
+  display:block;
+  height:auto;
+  aspect-ratio:16/9;
+  margin:0 0 9px;
+}
+body.home .category-reading-grid .story-card:not(:first-child) .card-image{display:none}
+@media(max-width:900px){
+  body.home .category-reading-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  body.home .category-reading-grid .category-reading-section:last-child{grid-column:1/-1}
+  body.home .category-reading-grid .category-reading-section:last-child .story-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px}
+}
+@media(max-width:600px){
+  body.home .category-reading-grid{grid-template-columns:1fr;gap:12px}
+  body.home .category-reading-grid .category-reading-section:last-child{grid-column:auto}
+  body.home .category-reading-grid .category-reading-section:last-child .story-grid{grid-template-columns:1fr}
+  body.home .category-reading-grid .category-reading-section{padding:15px 13px 10px}
+  body.home .category-reading-grid .category-reading-heading{min-height:0}
+  body.home .category-reading-grid .category-reading-heading h3{font-size:21px}
+  body.home .category-reading-grid .story-card h3{font-size:18px}
+}
