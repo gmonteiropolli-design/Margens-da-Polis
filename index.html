@@ -37,7 +37,7 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
   <div class="section-heading"><div><span class="section-kicker">DA REDACÇÃO</span><h2>Últimas leituras</h2><p class="section-intro">Ideias, acontecimentos e processos — lidos para lá da superfície.</p></div><a class="heading-link" href="{{ '/arquivo/' | relative_url }}">VER ARQUIVO ↗</a></div>
   {% if current_posts.size > 0 %}
   <div class="story-grid">
-    {% for post in current_posts limit: 6 %}
+    {% for post in current_posts limit: 9 %}
       {% unless post.url == featured.url %}
       <article class="story-card">
         {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% endif %}
