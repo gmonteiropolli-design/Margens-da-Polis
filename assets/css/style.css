@@ -111,4 +111,11 @@ main{max-width:1260px;margin:auto;padding:0 30px 72px}
  .story-grid{grid-template-columns:1fr}.card-image,.card-placeholder{height:185px}
  .section-heading{align-items:start;gap:8px}.heading-note{max-width:95px;text-align:right;line-height:1.5}
  .footer-bottom{flex-wrap:wrap;gap:13px}.article-header h1,.about-page h1{font-size:39px}
+} .masthead-logo {
+    display: block;
+    width: min(680px, 90%);
+    height: auto;
+    max-height: 190px;
+    object-fit: contain;
+    margin: 0 auto;
 }
