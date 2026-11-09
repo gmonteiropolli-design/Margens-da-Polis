@@ -1,0 +1,75 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: posts
+    label: Artigos
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date, categories, author]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Título
+        type: string
+        required: true
+      - name: date
+        label: Data de publicação
+        type: date
+        required: true
+      - name: categories
+        label: Secção
+        type: select
+        options:
+          values:
+            - Política
+            - História
+            - Geografia
+            - Sociedade
+            - Desenvolvimento
+            - Opinião
+            - Atualidade
+      - name: author
+        label: Autor
+        type: string
+        default: "Autor"
+      - name: description
+        label: Resumo / linha fina
+        type: text
+      - name: image
+        label: Imagem de destaque
+        type: image
+      - name: image_alt
+        label: Descrição da imagem
+        type: string
+      - name: featured
+        label: Destacar na página inicial
+        type: boolean
+      - name: body
+        label: Texto do artigo
+        type: rich-text
+
+  - name: pages
+    label: Páginas
+    type: collection
+    path: pages
+    exclude: ["index.md"]
+    fields:
+      - name: title
+        label: Título
+        type: string
+      - name: body
+        label: Conteúdo
+        type: rich-text
+
+settings:
+  content:
+    merge: true
