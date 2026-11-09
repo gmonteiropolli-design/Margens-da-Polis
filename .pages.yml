@@ -30,13 +30,9 @@ content:
         type: select
         options:
           values:
-            - Política
-            - História
-            - Geografia
-            - Sociedade
-            - Desenvolvimento
-            - Opinião
-            - Atualidade
+            - Sociedade e Poder
+            - Cultura e Ideias
+            - Cadernos
       - name: author
         label: Autor
         type: string
