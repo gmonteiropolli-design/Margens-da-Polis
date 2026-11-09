@@ -46,6 +46,15 @@ content:
       - name: image_alt
         label: Descrição da imagem
         type: string
+      - name: image_caption
+        label: Legenda da imagem
+        type: string
+      - name: image_credit
+        label: Crédito da imagem
+        type: string
+      - name: from_archive
+        label: Publicar em Do Arquivo
+        type: boolean
       - name: featured
         label: Destacar na página inicial
         type: boolean
