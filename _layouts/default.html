@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#541b2b">
+  <meta name="theme-color" content="#650d25">
   <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -16,8 +16,7 @@
   <div class="utility-bar"><span>PUBLICAÇÃO INDEPENDENTE</span><span>POLÍTICA · HISTÓRIA · GEOGRAFIA · SOCIEDADE</span></div>
   <header class="site-header">
     <a class="masthead" href="{{ '/' | relative_url }}" aria-label="Margens da Polis — página inicial">
-      <span class="masthead-mark">M<span>P</span></span>
-      <span class="masthead-name">MARGENS <i>DA</i> POLIS</span>
+      <span class="masthead-name">Margens <i>da</i> Pólis</span>
       <span class="masthead-tagline">Pensar o mundo a partir das suas margens</span>
     </a>
     <nav class="main-nav" aria-label="Navegação principal">
@@ -30,11 +29,9 @@
       <a href="{{ '/sobre/' | relative_url }}">Sobre</a>
     </nav>
   </header>
-
   <main id="conteudo">{{ content }}</main>
-
   <footer class="site-footer">
-    <div class="footer-brand">MARGENS <i>DA</i> POLIS</div>
+    <div class="footer-brand">Margens <i>da</i> Pólis</div>
     <p>Política · História · Geografia · Sociedade · Desenvolvimento</p>
     <p class="footer-motto">Pensar o mundo a partir das suas margens.</p>
     <div class="footer-bottom"><span>© {{ 'now' | date: '%Y' }} Margens da Polis</span><a href="{{ '/sobre/' | relative_url }}">Sobre o projeto</a><a href="{{ '/feed.xml' | relative_url }}">RSS</a></div>
