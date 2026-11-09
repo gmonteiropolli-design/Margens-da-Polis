@@ -549,3 +549,10 @@ main{background:transparent}
 html,body,main,.about-page{
   background-color:#f8f6f0 !important;
 }
+
+
+/* Correcção final do fundo contínuo — sem painel central distinto */
+html, body, body > main, main#conteudo, article.about-page {
+  background: #f8f6f0 !important;
+  background-color: #f8f6f0 !important;
+}
