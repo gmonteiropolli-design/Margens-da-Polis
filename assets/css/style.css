@@ -623,3 +623,63 @@ html, body, body > main, main#conteudo, article.about-page {
 .utility-bar{
   background-color:#5b0d17 !important;
 }
+
+
+/* PALETA 4 — bordô, azul-petróleo e branco quente */
+:root{
+  --paper:#F7F4EC;
+  --ink:#242322;
+  --muted:#706b65;
+  --wine:#681D2C;
+  --wine-dark:#16434A;
+  --wine-mid:#681D2C;
+  --line:#D8D0C5;
+  --gold:#C4A27A;
+}
+html,body,main,main#conteudo,article.about-page{
+  background-color:#F7F4EC !important;
+}
+body{color:#242322}
+.utility-bar{
+  background-color:#681D2C !important;
+  color:#F7F4EC;
+}
+.site-header,.masthead{
+  background-color:#16434A !important;
+}
+.main-nav{
+  background-color:#681D2C !important;
+  border-color:rgba(247,244,236,.2);
+}
+.main-nav a{color:#F7F4EC}
+.main-nav a:hover,.main-nav a:focus{
+  background-color:#16434A;
+  color:#fff;
+}
+.site-footer{
+  background-color:#16434A !important;
+  color:#F7F4EC;
+  border-top:4px solid #681D2C;
+}
+.site-footer p,.site-footer .footer-motto{color:#E4E0D7}
+.site-footer a{color:#C4A27A}
+.footer-brand i{color:#C4A27A}
+.edition-line{border-color:#242322;color:#681D2C}
+.section-kicker,.eyebrow{color:#681D2C}
+.feature-label,.article-kicker,.image-caption,
+.editorial-motto .section-kicker{background-color:#681D2C}
+.heading-link,.text-link{color:#681D2C;border-color:#C4A27A}
+.section-heading{border-color:#681D2C}
+.dossier-band,.territory-mark{background-color:#16434A}
+.dossier-band{border-left-color:#681D2C}
+.manifesto{background-color:#681D2C}
+.article-header h1,.about-page h1,.listing-page h1,.special-listing>h1{
+  color:#16434A;
+}
+.article-body h2,.article-body h3,.about-page h2{color:#681D2C}
+.article-body blockquote{
+  border-left-color:#681D2C;
+  background:#EEE9DF;
+  color:#16434A;
+}
+.topic-list a:hover{color:#681D2C}
