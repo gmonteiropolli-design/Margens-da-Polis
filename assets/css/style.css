@@ -136,3 +136,68 @@ main{max-width:1260px;margin:auto;padding:0 30px 72px}
 }
 .main-nav a { color: #f7edf0; }
 .main-nav a:hover, .main-nav a:focus { background: var(--wine); color: #fff; }
+
+
+/* Direção visual: revista editorial, grelha equilibrada e fotografia documental */
+:root{
+  --paper:#faf7f0;
+  --ink:#211b19;
+  --wine:#8f102e;
+  --wine-dark:#3a0b19;
+  --wine-mid:#ad2947;
+  --line:#d9cfc3;
+  --gold:#b69a73;
+}
+body{background:var(--paper)}
+.utility-bar{background:#310a17;color:#e8d9d8}
+.site-header{background:#310a17;border-bottom:0}
+.masthead{background:#310a17}
+.masthead-logo{width:min(420px,76%);max-height:104px}
+.masthead-tagline{color:#e8d9d8;font-size:14px;letter-spacing:.35px}
+.main-nav{max-width:none;background:#310a17;border-top:1px solid rgba(255,255,255,.14);border-bottom:3px solid var(--wine)}
+.main-nav a{padding:14px 18px;color:#f5ebea;font-size:9px;letter-spacing:1.45px}
+main{max-width:1200px}
+.edition-line{font-size:9px;letter-spacing:1.8px;padding:18px 0 14px}
+.lead-story,.intro-lead{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;padding:42px 0 46px}
+.lead-copy h1{font-size:clamp(38px,4.5vw,60px);line-height:1.04;letter-spacing:-1.35px}
+.lead-summary{font-size:18px;line-height:1.75}
+.lead-image{height:370px;background:#e8e0d6}
+.lead-image img,.card-image img,.article-cover img{filter:saturate(.86) contrast(1.03)}
+.lead-image img{transition:transform .65s ease}
+.lead-image:hover img{transform:scale(1.025)}
+.latest-section,.topics-section{padding-top:47px}
+.section-heading{margin-bottom:25px}
+.section-heading h2{font-size:31px;letter-spacing:-.4px}
+.story-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 26px}
+.story-card{padding-bottom:22px}
+.card-image,.card-placeholder{height:auto;aspect-ratio:16/10;background:#e8e0d6}
+.card-image img{transition:transform .6s ease}
+.card-image:hover img{transform:scale(1.035)}
+.story-card h3{font-size:23px;line-height:1.18;letter-spacing:-.25px}
+.story-card p{font-size:13px;line-height:1.75}
+.section-kicker{letter-spacing:1.75px}
+.story-meta{font-size:9px;letter-spacing:.7px}
+.topic-list a{padding:18px 6px}
+.topic-list strong{font-size:22px}
+.manifesto{background:#4a0d20;margin-top:58px;padding:49px 28px 44px}
+.site-footer{background:#310a17}
+.article-page{padding-top:54px}
+.article-header h1{letter-spacing:-.8px}
+.article-cover img{display:block}
+.article-body{line-height:1.95}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+@media(max-width:760px){
+ .masthead-logo{width:min(390px,82%);max-height:92px}
+ .lead-story,.intro-lead{grid-template-columns:1fr;gap:22px;padding:30px 0}
+ .lead-image,.lead-art{height:270px;grid-row:1}
+ .story-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 17px}
+ .card-image,.card-placeholder{height:auto;aspect-ratio:4/3}
+}
+@media(max-width:480px){
+ .masthead-logo{width:88%;max-height:82px}
+ .masthead-tagline{font-size:12px}
+ .main-nav a{padding:10px 9px;font-size:8px;letter-spacing:1px}
+ .story-grid{grid-template-columns:1fr}
+ .card-image,.card-placeholder{aspect-ratio:16/10}
+ .lead-copy h1{font-size:38px}
+}
