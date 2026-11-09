@@ -40,6 +40,8 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
   {% assign culture_posts = current_posts | where: "categories", "Cultura e Ideias" %}
   {% assign notebooks_posts = current_posts | where: "categories", "Cadernos" %}
 
+  <div class="category-reading-grid">
+
   {% if society_posts.size > 0 %}
   <section class="category-reading-section">
     <div class="category-reading-heading"><span class="section-kicker">01 / TEMA</span><h3>Sociedade e Poder</h3></div>
@@ -105,6 +107,8 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
     </div>
   </section>
   {% endif %}
+
+  </div>
 </section>
 {% endif %}
 
