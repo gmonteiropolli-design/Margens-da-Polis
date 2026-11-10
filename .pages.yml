@@ -61,6 +61,15 @@ content:
       - name: dossier
         label: Incluir no Dossiê da semana
         type: boolean
+      - name: weekly_highlight
+        label: Incluir em Destaques da Semana
+        type: boolean
+      - name: news_source_name
+        label: Fonte da notícia
+        type: string
+      - name: news_source_url
+        label: Ligação para a notícia original
+        type: string
       - name: temas
         label: Temas (separar por vírgulas)
         type: string
