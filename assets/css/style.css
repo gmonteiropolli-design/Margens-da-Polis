@@ -2963,3 +2963,54 @@ body.archive-site .archive-page{
 /* LOGÓTIPO DO RODAPÉ — escala ainda mais discreta */
 .site-footer .footer-logo{width:min(112px,34vw);max-height:30px}
 @media(max-width:600px){.site-footer .footer-logo{width:min(92px,34vw);max-height:25px}}
+
+
+/* DO ARQUIVO — catálogo horizontal, imagens pequenas e memória documental */
+.archive-site .archive-page{max-width:1200px;padding-top:18px}
+.archive-site .archive-masthead{margin-bottom:24px;padding-bottom:16px}
+.archive-site .archive-title-row{padding:12px 0 8px}
+.archive-site .archive-title-row h1{font-size:clamp(42px,5.2vw,66px);line-height:.88}
+.archive-site .archive-eyebrow{margin:8px 0 5px;font-size:8px;letter-spacing:1.7px}
+.archive-site .archive-count strong{font-size:42px}
+.archive-site .archive-intro-row{margin-top:10px;gap:20px}
+.archive-site .archive-intro-row p{max-width:650px;font-size:13px;line-height:1.55}
+.archive-site .archive-index-mark{display:none}
+.archive-site .archive-margin-note{display:none}
+.archive-site .archive-section-heading{margin-bottom:8px}
+.archive-site .archive-section-heading h2{font-size:24px}
+.archive-site .archive-list{border-top:1px solid var(--wine,#5B0D17)}
+.archive-site .archive-list-entry{
+  display:grid;grid-template-columns:34px 116px minmax(0,1fr) 28px;
+  gap:18px;align-items:center;padding:13px 5px;
+  border-bottom:1px solid var(--line,#D8D0C5);
+  transition:background .2s,padding .2s;
+}
+.archive-site .archive-list-entry:hover{background:rgba(196,162,122,.09);padding-left:10px;padding-right:10px}
+.archive-site .archive-list-number{align-self:start;padding-top:4px;color:var(--gold,#C4A27A);font:700 17px/1 'Barlow Condensed',sans-serif}
+.archive-site .archive-list-thumb{display:block;width:116px;height:76px;overflow:hidden;background:#e7dfd4}
+.archive-site .archive-list-thumb img{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(.28) sepia(.12);transition:filter .3s,transform .4s}
+.archive-site .archive-list-entry:hover .archive-list-thumb img{filter:grayscale(0);transform:scale(1.04)}
+.archive-site .archive-list-thumb>span{height:100%;display:grid;place-items:center;background:var(--wine-dark,#35070C);color:var(--gold,#C4A27A);font:700 30px 'Barlow Condensed',sans-serif}
+.archive-site .archive-list-copy{min-width:0}
+.archive-site .archive-list-meta{display:flex;gap:14px;align-items:center;color:var(--wine,#5B0D17);font:700 8px/1.3 'DM Sans',sans-serif;letter-spacing:1.2px;text-transform:uppercase}
+.archive-site .archive-list-meta time{color:var(--muted,#706b65)}
+.archive-site .archive-list-copy h3{margin:5px 0 4px;font:700 clamp(20px,2.2vw,27px)/1.05 'Barlow Condensed',sans-serif;text-transform:uppercase}
+.archive-site .archive-list-copy h3 a{color:var(--ink,#242322)}
+.archive-site .archive-list-copy h3 a:hover{color:var(--wine,#5B0D17)}
+.archive-site .archive-list-copy p{margin:0;color:#655d56;font:400 12px/1.5 'DM Sans',sans-serif}
+.archive-site .archive-list-arrow{color:var(--wine,#5B0D17);font-size:20px;text-align:center}
+@media(max-width:760px){
+ .archive-site .archive-title-row h1{font-size:clamp(38px,10vw,52px)}
+ .archive-site .archive-intro-row p{font-size:12px}
+ .archive-site .archive-list-entry{grid-template-columns:25px 82px minmax(0,1fr) 18px;gap:10px;padding:11px 0}
+ .archive-site .archive-list-thumb{width:82px;height:62px}
+ .archive-site .archive-list-copy h3{font-size:19px}
+ .archive-site .archive-list-copy p{font-size:11px;line-height:1.4}
+ .archive-site .archive-list-meta{font-size:7px;gap:8px;flex-wrap:wrap}
+ .archive-site .archive-list-number{font-size:14px}
+}
+@media(max-width:420px){
+ .archive-site .archive-list-entry{grid-template-columns:20px 68px minmax(0,1fr) 14px;gap:8px}
+ .archive-site .archive-list-thumb{width:68px;height:56px}
+ .archive-site .archive-list-copy p{display:none}
+}
