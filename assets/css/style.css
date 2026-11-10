@@ -2312,3 +2312,94 @@ body.home .category-reading-section .story-card .story-meta{font-size:9px!import
   body.home .category-reading-section .story-card p{font-size:12px!important;line-height:1.45!important;margin:5px 0!important}
   body.home .category-reading-section .story-card .section-kicker{font-size:8px!important}
 }
+
+
+/* ARQUIVO AUTORAL — imagem, memória e percurso de escrita */
+.archive-page{--archive-accent:#5B0D17}
+.archive-masthead{
+  position:relative;
+  padding-bottom:30px;
+  border-bottom:7px solid var(--archive-accent);
+}
+.archive-overline{
+  border-bottom:1px solid var(--archive-accent);
+  font-size:10px;letter-spacing:2.2px;
+}
+.archive-title-row{padding:32px 0 25px}
+.archive-eyebrow{
+  display:inline-block;padding:6px 9px;
+  background:var(--archive-accent);color:#F8F6F0!important;
+  letter-spacing:2px;
+}
+.archive-title-row h1{font-size:clamp(72px,11vw,150px);letter-spacing:-4px}
+.archive-intro-row{
+  grid-template-columns:70px minmax(300px,1fr) minmax(140px,230px);
+  padding-top:22px;
+}
+.archive-intro-row p{
+  max-width:850px;font-size:clamp(17px,1.55vw,21px);
+  line-height:1.62;font-weight:450;
+}
+.archive-index-mark{
+  width:62px;height:78px;
+  font-size:13px;letter-spacing:1.5px;
+  box-shadow:5px 5px 0 var(--gold,#C4A27A);
+}
+.archive-catalogue{margin-top:38px}
+.archive-catalogue-heading{
+  grid-template-columns:54px 290px minmax(0,1fr) 100px;
+  align-items:end;
+}
+.archive-catalogue-heading span:nth-child(2){grid-column:2/4}
+.archive-record{
+  grid-template-columns:54px 290px minmax(0,1fr) 100px;
+  gap:24px;padding:28px 0;
+}
+.archive-record-number{font-size:30px;font-weight:700}
+.archive-record-image{
+  position:relative;
+  aspect-ratio:5/4;
+  border:1px solid rgba(91,13,23,.2);
+  background:#e4ddd2;
+}
+.archive-record-image img{
+  filter:grayscale(12%) saturate(.82) contrast(1.06);
+}
+.archive-image-stamp{
+  position:absolute;left:9px;bottom:9px;
+  padding:6px 8px;background:var(--wine-dark,#35070C);
+  color:#F8F6F0;font:700 8px/1 'DM Sans',sans-serif;
+  letter-spacing:1.5px;
+}
+.archive-record-copy{padding:2px 0}
+.archive-record-meta{font-size:9px;letter-spacing:1.4px}
+.archive-record-copy h2{
+  font-size:clamp(28px,3.1vw,42px);
+  line-height:1.02;max-width:780px;
+}
+.archive-record-copy p{font-size:14px;line-height:1.65}
+.archive-record-link{
+  margin-top:3px;padding-bottom:4px;
+  border-bottom:1px solid var(--gold,#C4A27A);
+}
+.archive-record-date span:first-child{font-size:45px}
+.archive-colophon{border-top-width:7px;padding-top:15px}
+@media(max-width:900px){
+ .archive-catalogue-heading{grid-template-columns:40px 220px minmax(0,1fr) 76px;gap:16px}
+ .archive-record{grid-template-columns:40px 220px minmax(0,1fr) 76px;gap:16px}
+ .archive-record-copy h2{font-size:29px}
+}
+@media(max-width:600px){
+ .archive-overline{font-size:7px;letter-spacing:1px}
+ .archive-title-row{padding:26px 0 20px}
+ .archive-title-row h1{font-size:clamp(60px,17vw,90px);letter-spacing:-2px}
+ .archive-intro-row{grid-template-columns:45px minmax(0,1fr);gap:14px}
+ .archive-intro-row p{font-size:14px;line-height:1.55}
+ .archive-index-mark{width:42px;height:58px;font-size:10px;box-shadow:3px 3px 0 var(--gold,#C4A27A)}
+ .archive-catalogue-heading{grid-template-columns:26px minmax(0,1fr) 48px;gap:9px}
+ .archive-record{grid-template-columns:26px 104px minmax(0,1fr);gap:9px;padding:17px 0}
+ .archive-record-image{aspect-ratio:1/1}
+ .archive-image-stamp{left:4px;bottom:4px;padding:4px 5px;font-size:6px;letter-spacing:.8px}
+ .archive-record-copy h2{font-size:20px}
+ .archive-record-date{margin-top:calc(100% + 8px)}
+}
