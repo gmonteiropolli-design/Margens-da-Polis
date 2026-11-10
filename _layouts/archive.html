@@ -1,32 +1,46 @@
 ---
 layout: default
 ---
-<article class="listing-page archive-page">
-  <header class="listing-header">
-    <span class="section-kicker">MEMÓRIA EDITORIAL</span>
-    <h1>Do Arquivo</h1>
-    <p class="section-intro">Textos recuperados de outros momentos do projecto. Leituras que regressam porque continuam a ajudar-nos a pensar o presente.</p>
-  </header>
+<article class="archive-page">
   {% assign archive_posts = site.posts | where: "from_archive", true %}
+  <header class="archive-masthead">
+    <div class="archive-overline"><span>HEMEROTECA</span><span>MEMÓRIA EDITORIAL / 01—∞</span></div>
+    <div class="archive-title-row">
+      <div>
+        <p class="archive-eyebrow">TEXTOS QUE REGRESSAM</p>
+        <h1>Do <em>Arquivo</em></h1>
+      </div>
+      <div class="archive-count"><strong>{{ archive_posts.size | prepend: "00" | slice: -2, 2 }}</strong><span>TEXTOS<br>RECUPERADOS</span></div>
+    </div>
+    <div class="archive-intro-row">
+      <span class="archive-index-mark">MP<br>—<br>ARQ</span>
+      <p>Textos recuperados de outros momentos do projecto. Leituras que regressam porque continuam a ajudar-nos a pensar o presente.</p>
+      <span class="archive-rule-note">CONSULTA<br>CRONOLOGIA EDITORIAL</span>
+    </div>
+  </header>
   {% if archive_posts.size > 0 %}
-  <div class="story-grid">
+  <section class="archive-catalogue" aria-label="Textos do arquivo">
+    <div class="archive-catalogue-heading"><span>REGISTO</span><span>DOCUMENTO / TÍTULO</span><span>DATA</span></div>
     {% for post in archive_posts %}
-    <article class="story-card">
+    <article class="archive-record">
+      <div class="archive-record-number">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</div>
       {% if post.image %}
-      <a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>
+      <a class="archive-record-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>
       {% else %}
-      <a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>
+      <a class="archive-record-image archive-record-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>
       {% endif %}
-      <div class="card-content">
-        <span class="section-kicker">{{ post.categories.first | default: "DO ARQUIVO" }}</span>
+      <div class="archive-record-copy">
+        <div class="archive-record-meta"><span>{{ post.categories.first | default: "DO ARQUIVO" }}</span><span>{{ post.date | date: "%Y" }}</span></div>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-        <div class="story-meta">{{ post.date | date: "%d.%m.%Y" }}</div>
+        <a class="archive-record-link" href="{{ post.url | relative_url }}">CONSULTAR DOCUMENTO <span>↗</span></a>
       </div>
+      <time class="archive-record-date" datetime="{{ post.date | date_to_xmlschema }}"><span>{{ post.date | date: "%d" }}</span><span>{{ post.date | date: "%m.%Y" }}</span></time>
     </article>
     {% endfor %}
-  </div>
+  </section>
   {% else %}
-  <div class="empty-state"><h2>O arquivo está a ser preparado.</h2><p>Em breve, textos de outros momentos do projecto voltarão a estar disponíveis nesta secção.</p></div>
+  <div class="archive-empty"><span>ARQUIVO / 00</span><h2>O arquivo está a ser preparado.</h2><p>Em breve, textos de outros momentos do projecto voltarão a estar disponíveis nesta secção.</p></div>
   {% endif %}
+  <footer class="archive-colophon"><span>MARGENS DA PÓLIS</span><span>FIM DO CATÁLOGO — CONTINUA A ESCREVER-SE</span></footer>
 </article>
