@@ -21,6 +21,7 @@ layout: default
       <span>{{ page.date | date: "%d.%m.%Y" }}</span>
       <span>{{ reading_minutes | at_least: 1 }} min de leitura</span>
     </div>
+    {% if page.temas %}<div class="article-topics"><span>LEITURAS POR TEMA</span>{% for tema in page.temas %}<a href="{{ '/indice-tematico/' | relative_url }}">{{ tema }}</a>{% endfor %}</div>{% endif %}
   </header>
 
   {% if page.image %}
@@ -32,7 +33,9 @@ layout: default
   </figure>
   {% endif %}
 
-  <div class="article-body">{{ content }}</div>
+  <div class="article-reading-layout">
+    <div class="article-body">{{ content }}</div>
+  </div>
 
   <footer class="article-footer">
     <div class="article-end"><span>✳</span><p>Margens da Pólis</p><small>Pensar o mundo a partir das suas margens.</small></div>
