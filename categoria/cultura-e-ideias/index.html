@@ -4,18 +4,22 @@ title: "Cultura e Ideias"
 description: "Livros, arte, cinema, pensamento e criação."
 permalink: /categoria/cultura-e-ideias/
 ---
-<section class="listing-page">
-  <span class="section-kicker">SECÇÃO</span>
-  <h1>Cultura e Ideias</h1>
-  <p class="lead-summary">Livros, arte, cinema, pensamento e criação.</p>
-  <div class="story-grid">
-    {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Cultura'" | where_exp: "post", "post.from_archive != true" %}
+<section class="listing-page section-page culture-page">
+  <header class="culture-masthead">
+    <span class="culture-edition">MARGENS DA PÓLIS <i>／</i> SECÇÃO 02</span>
+    <div class="culture-title-wrap"><span class="culture-side-note">LIVROS<br>IMAGENS<br>PENSAMENTO<br>CRIAÇÃO</span><h1>Cultura<br><em>e Ideias</em></h1><span class="culture-asterisk">✳</span></div>
+    <div class="culture-intro"><p>Um lugar para a criação, a leitura e o pensamento. Livros, arte, cinema e ideias que ajudam a interpretar o mundo.</p><span>02 — ENSAIOS<br>VISUAIS & CRÍTICOS</span></div>
+  </header>
+  {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Cultura'" | where_exp: "post", "post.from_archive != true" %}
+  <div class="culture-feed-label"><span>EXPLORAÇÃO CULTURAL</span><span>{{ posts.size }} PUBLICAÇÕES</span></div>
+  <div class="culture-feed">
     {% for post in posts %}
-    <article class="story-card">
-      {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% else %}<a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>{% endif %}
-      <div class="card-content"><span class="section-kicker">Cultura e Ideias</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<div class="story-meta">{{ post.date | date: "%d.%m.%Y" }} · {{ post.author | default: "Autor" }}</div></div>
+    <article class="culture-card{% cycle ' culture-card-tall', '', ' culture-card-wide' %}">
+      <a class="culture-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="card-placeholder"><b>MP</b></span>{% endif %}<span class="culture-image-index">FIG. {{ forloop.index | prepend: "00" | slice: -2, 2 }}</span></a>
+      <div class="culture-card-copy"><span class="section-kicker">CULTURA E IDEIAS <i>／</i> {{ post.date | date: "%d.%m.%Y" }}</span><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<a class="section-read-link" href="{{ post.url | relative_url }}">ABRIR LEITURA <span>↗</span></a></div>
     </article>
     {% endfor %}
   </div>
   {% if posts.size == 0 %}<div class="empty-state"><span class="empty-rule"></span><h3>Ainda não existem artigos nesta secção.</h3><p>As publicações sobre cultura e ideias aparecerão aqui.</p></div>{% endif %}
+  <footer class="section-colophon"><span>MP / 02</span><span>FORMAS DE VER, LER E PENSAR</span></footer>
 </section>
