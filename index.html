@@ -32,6 +32,30 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
   </div>
 </section>
 
+{% assign weekly_highlights = current_posts | where: "weekly_highlight", true %}
+{% if weekly_highlights.size > 0 %}
+<section class="weekly-highlights" aria-label="Destaques da Semana">
+  <div class="weekly-heading">
+    <div><span class="section-kicker">OLHAR SOBRE O MUNDO</span><h2>Destaques da Semana</h2><p>Notícias internacionais e breves análises sobre os acontecimentos que ajudam a interpretar o presente.</p></div>
+    <span class="weekly-edition">ACTUALIDADE<br>INTERNACIONAL</span>
+  </div>
+  <div class="weekly-grid">
+    {% for post in weekly_highlights limit: 4 %}
+    <article class="weekly-card">
+      {% if post.image %}<a class="weekly-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy"></a>{% endif %}
+      <div class="weekly-card-copy">
+        <span class="weekly-date">{{ post.date | date: "%d.%m.%Y" }} <span>／</span> ANÁLISE</span>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+        <div class="weekly-card-links"><a class="text-link" href="{{ post.url | relative_url }}">LER ANÁLISE →</a>{% if post.news_source_url %}<a class="weekly-source" href="{{ post.news_source_url }}" target="_blank" rel="noopener noreferrer">FONTE: {{ post.news_source_name | default: "NOTÍCIA ORIGINAL" }} ↗</a>{% endif %}</div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <div class="weekly-colophon"><span>MARGENS DA PÓLIS</span><span>LEITURA CRÍTICA DA ACTUALIDADE INTERNACIONAL</span></div>
+</section>
+{% endif %}
+
 {% if current_posts.size > 0 %}
 <section class="latest-section">
   <div class="section-heading"><div><span class="section-kicker">DA REDACÇÃO</span><h2>Últimas leituras</h2><p class="section-intro">Publicações organizadas por área temática.</p></div><a class="heading-link" href="{{ '/indice-tematico/' | relative_url }}">EXPLORAR TEMAS ↗</a></div>
