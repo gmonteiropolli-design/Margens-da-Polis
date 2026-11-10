@@ -2958,3 +2958,8 @@ body.archive-site .archive-page{
  .notebooks-intro{margin:5px 0 9px;font-size:12px}
  .notebooks-rule{font-size:6px}
 }
+
+
+/* LOGÓTIPO DO RODAPÉ — escala ainda mais discreta */
+.site-footer .footer-logo{width:min(112px,34vw);max-height:30px}
+@media(max-width:600px){.site-footer .footer-logo{width:min(92px,34vw);max-height:25px}}
