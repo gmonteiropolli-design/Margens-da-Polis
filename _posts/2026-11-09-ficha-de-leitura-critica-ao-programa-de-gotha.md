@@ -2,6 +2,10 @@
 title: "Ficha de leitura: Crítica ao Programa de Gotha"
 date: 2024-04-16
 categories: Cadernos
+temas:
+  - "Pensamento e crítica social"
+  - "Trabalho e desigualdades"
+
 author: Giulia Polli
 description: A Crítica ao Programa de Gotha, como o nome indica, realiza uma
   crítica ao programa resultante da união entre dois partidos, a Associação
