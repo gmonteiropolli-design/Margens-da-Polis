@@ -1,28 +1,139 @@
 ---
 layout: default
 title: "Índice temático"
-description: "Navegue pelos temas, secções e assuntos abordados em Margens da Pólis."
+description: "Explore os artigos de Margens da Pólis por temas e assuntos."
 permalink: /indice-tematico/
 ---
-<section class="listing-page special-listing">
-  <span class="section-kicker">GUIA DE LEITURA</span>
-  <h1>Índice temático</h1>
-  <p class="listing-intro">Uma outra forma de percorrer o jornal: por campos de reflexão, problemas e assuntos que atravessam diferentes artigos.</p>
-  <div class="index-theme-group"><h2>Campos editoriais</h2>
-    <div class="topic-list">
-      <a href="{{ '/categoria/sociedade-e-poder/' | relative_url }}"><span>01</span><strong>Sociedade e Poder</strong><i>Política, história, instituições e dinâmicas sociais</i><b>↗</b></a>
-      <a href="{{ '/categoria/cultura-e-ideias/' | relative_url }}"><span>02</span><strong>Cultura e Ideias</strong><i>Livros, arte, pensamento e criação</i><b>↗</b></a>
-      <a href="{{ '/categoria/cadernos/' | relative_url }}"><span>03</span><strong>Cadernos</strong><i>Ensaios, crónicas e reflexões livres</i><b>↗</b></a>
-      <a href="{{ '/mapas-e-territorio/' | relative_url }}"><span>04</span><strong>Mapas e Território</strong><i>Geografia, cidades, fronteiras e paisagem</i><b>↗</b></a>
+<section class="listing-page thematic-index">
+  <header class="thematic-index-header">
+    <span class="section-kicker">GUIA DE LEITURA</span>
+    <h1>Explorar temas</h1>
+    <p class="listing-intro">Os textos de Margens da Pólis organizam-se aqui pelas questões que atravessam — da democracia e do trabalho à literatura, à memória e ao pensamento crítico. Um mesmo artigo pode surgir em mais do que um tema, quando estabelece pontes entre assuntos.</p>
+  </header>
+
+  {% assign democracy_posts = site.posts | where_exp: "post", "post.temas contains 'Democracia e poder'" %}
+  {% if democracy_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">01 / POLÍTICA</span><div><h2>Democracia e poder</h2><p>Instituições, eleições, representação, autoritarismo e disputas políticas.</p></div><span class="thematic-count">{{ democracy_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in democracy_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
     </div>
-  </div>
-  {% if site.posts.size > 0 %}
-  <div class="index-theme-group"><h2>Assuntos dos artigos</h2>
-    <div class="archive-strip">{% for post in site.posts %}
-      <div class="index-entry"><span>{{ post.date | date: "%Y" }}</span><div><strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong>{% if post.temas %}<p>{{ post.temas }}</p>{% elsif post.categories %}<p>{{ post.categories | join: " · " }}</p>{% endif %}</div></div>
-    {% endfor %}</div>
-  </div>
-  {% else %}
-  <div class="empty-state"><h3>O índice será construído com os artigos.</h3><p>Ao editar um artigo, indique os seus temas no campo «Temas». Esses assuntos serão apresentados aqui para facilitar a descoberta de leituras relacionadas.</p></div>
+  </section>
+  {% endif %}
+
+  {% assign work_posts = site.posts | where_exp: "post", "post.temas contains 'Trabalho e desigualdades'" %}
+  {% if work_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">02 / SOCIEDADE</span><div><h2>Trabalho e desigualdades</h2><p>Trabalho, precariedade, direitos sociais, desigualdades e relações económicas.</p></div><span class="thematic-count">{{ work_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in work_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign state_posts = site.posts | where_exp: "post", "post.temas contains 'Estado e políticas públicas'" %}
+  {% if state_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">03 / INSTITUIÇÕES</span><div><h2>Estado e políticas públicas</h2><p>Administração pública, gestão, serviços públicos, educação e cidadania.</p></div><span class="thematic-count">{{ state_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in state_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign memory_posts = site.posts | where_exp: "post", "post.temas contains 'Memória e autoritarismo'" %}
+  {% if memory_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">04 / HISTÓRIA</span><div><h2>Memória e autoritarismo</h2><p>Disputas pela memória, heranças ditatoriais e projectos de transformação social.</p></div><span class="thematic-count">{{ memory_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in memory_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign literature_posts = site.posts | where_exp: "post", "post.temas contains 'Literatura e criação'" %}
+  {% if literature_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">05 / CULTURA</span><div><h2>Literatura e criação</h2><p>Obras literárias, criação artística, leitura e imaginação.</p></div><span class="thematic-count">{{ literature_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in literature_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign thought_posts = site.posts | where_exp: "post", "post.temas contains 'Pensamento e crítica social'" %}
+  {% if thought_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">06 / IDEIAS</span><div><h2>Pensamento e crítica social</h2><p>Teoria social, pensamento crítico, autonomia intelectual e conhecimento.</p></div><span class="thematic-count">{{ thought_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in thought_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign economy_posts = site.posts | where_exp: "post", "post.temas contains 'Economia e desenvolvimento'" %}
+  {% if economy_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">07 / ECONOMIA</span><div><h2>Economia e desenvolvimento</h2><p>Desenvolvimento, dependência, produção, modelos económicos e território.</p></div><span class="thematic-count">{{ economy_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in economy_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
   {% endif %}
 </section>
