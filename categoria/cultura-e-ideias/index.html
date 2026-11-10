@@ -9,7 +9,7 @@ permalink: /categoria/cultura-e-ideias/
   <h1>Cultura e Ideias</h1>
   <p class="lead-summary">Livros, arte, cinema, pensamento e criação.</p>
   <div class="story-grid">
-    {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Cultura e Ideias'" %}
+    {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Cultura'" %}
     {% for post in posts %}
     <article class="story-card">
       {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% else %}<a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>{% endif %}
