@@ -1,6 +1,10 @@
 ---
 title: Eleições Argentinas e o constante sentimento de desesperança
 date: 2023-08-09
+temas:
+  - "Democracia e poder"
+  - "Economia e desenvolvimento"
+
 author: Autor
 featured: true
 dossier: false
