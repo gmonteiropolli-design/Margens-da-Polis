@@ -3,6 +3,11 @@ title: "1 de maio e os dilemas do precariado: a legalização da exploração
   laboral nas plataformas"
 date: 2024-05-03
 categories: Sociedade e Poder
+temas:
+  - "Trabalho e desigualdades"
+  - "Direitos sociais"
+  - "Economia e desenvolvimento"
+
 author: Giulia Polli
 description: No dia 1 de maio comemora-se o Dia Internacional dos Trabalhadores,
   e aproveito a data para discutir o caso do projeto de lei complementar que
