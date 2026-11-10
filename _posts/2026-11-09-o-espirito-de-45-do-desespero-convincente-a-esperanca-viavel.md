@@ -2,6 +2,11 @@
 title: "O Espírito de 45: do desespero convincente à esperança viável"
 date: 2024-12-30
 categories: Sociedade e Poder
+temas:
+  - "Memória e autoritarismo"
+  - "Democracia e poder"
+  - "Pensamento e crítica social"
+
 author: Giulia Polli
 description: A partir da verificação do baixo poder de mobilização da esquerda
   no contexto portugues, o texto propõe realizar um paralelo entre o cenário
