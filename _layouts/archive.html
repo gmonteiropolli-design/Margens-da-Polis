@@ -4,7 +4,7 @@ layout: default
 <article class="archive-page">
   {% assign archive_posts = site.posts | where: "from_archive", true | sort: "date" | reverse %}
   <header class="archive-masthead">
-    <div class="archive-overline"><span>ARQUIVO AUTORAL</span><span>MARGENS DA PÓLIS / MEMÓRIA DE ESCRITA</span></div>
+    <div class="archive-overline"><span>ARQUIVO AUTORAL</span><span>MEMÓRIA DE ESCRITA</span></div>
     <div class="archive-title-row"><div><p class="archive-eyebrow">UM PERCURSO EM TEXTOS</p><h1>Do <em>Arquivo</em></h1></div><div class="archive-count"><strong>{{ archive_posts.size | prepend: "00" | slice: -2, 2 }}</strong><span>TEXTOS<br>RECUPERADOS</span></div></div>
     <div class="archive-intro-row"><span class="archive-index-mark">MP<br>—<br>ARQ</span><p>Este é o arquivo dos meus textos antigos: escritos e publicados em diferentes momentos do meu percurso. Reúno-os aqui para que continuem acessíveis, com as imagens e as datas das suas primeiras publicações. São registos de um caminho de leitura, pesquisa e escrita — não textos novos, mas ideias que vale a pena voltar a encontrar.</p><span class="archive-rule-note">TEXTOS DE AUTORIA PRÓPRIA<br>ORGANIZADOS POR DATA</span></div>
     <div class="archive-margin-note"><span>NOTA DE MARGEM / 001</span><span>O passado não está imóvel: regressa sempre que o voltamos a ler.</span><span class="archive-registration">✳</span></div>
@@ -29,5 +29,5 @@ layout: default
     </div>
   </section>
   {% else %}<div class="archive-empty"><span>ARQUIVO / 00</span><h2>O arquivo está a ser preparado.</h2><p>Em breve, textos de outros momentos do projecto voltarão a estar disponíveis nesta secção.</p></div>{% endif %}
-  <footer class="archive-colophon"><span>MARGENS DA PÓLIS</span><span>FIM DO CATÁLOGO — CONTINUA A ESCREVER-SE</span></footer>
+  <footer class="archive-colophon"><span>MP / ARQUIVO</span><span>FIM DO CATÁLOGO — CONTINUA A ESCREVER-SE</span></footer>
 </article>
