@@ -44,7 +44,7 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
 
   {% if society_posts.size > 0 %}
   <section class="category-reading-section">
-    <div class="category-reading-heading"><span class="section-kicker">01 / TEMA</span><h3>Sociedade e Poder</h3></div>
+    <div class="category-reading-heading"><span class="section-kicker">01 / TEMA</span><h3><a href="{{ '/categoria/sociedade-e-poder/' | relative_url }}">Sociedade e Poder</a></h3></div>
     <div class="story-grid">
       {% assign visible_count = 0 %}
       {% for post in society_posts %}
@@ -66,7 +66,7 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
 
   {% if culture_posts.size > 0 %}
   <section class="category-reading-section">
-    <div class="category-reading-heading"><span class="section-kicker">02 / TEMA</span><h3>Cultura e Ideias</h3></div>
+    <div class="category-reading-heading"><span class="section-kicker">02 / TEMA</span><h3><a href="{{ '/categoria/cultura-e-ideias/' | relative_url }}">Cultura e Ideias</a></h3></div>
     <div class="story-grid">
       {% assign visible_count = 0 %}
       {% for post in culture_posts %}
@@ -88,7 +88,7 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
 
   {% if notebooks_posts.size > 0 %}
   <section class="category-reading-section">
-    <div class="category-reading-heading"><span class="section-kicker">03 / TEMA</span><h3>Cadernos</h3></div>
+    <div class="category-reading-heading"><span class="section-kicker">03 / TEMA</span><h3><a href="{{ '/categoria/cadernos/' | relative_url }}">Cadernos</a></h3></div>
     <div class="story-grid">
       {% assign visible_count = 0 %}
       {% for post in notebooks_posts %}
