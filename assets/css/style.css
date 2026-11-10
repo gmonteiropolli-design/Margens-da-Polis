@@ -2916,3 +2916,45 @@ body.archive-site .archive-page{
 /* RODAPÉ — logótipo em escala reduzida */
 .site-footer .footer-logo{width:min(175px,48vw);max-height:46px}
 @media(max-width:600px){.site-footer .footer-logo{width:min(145px,48vw);max-height:38px}}
+
+
+/* CABEÇALHOS DAS CATEGORIAS — compactos para revelar os artigos logo à entrada */
+.section-page{padding-top:18px;padding-bottom:48px}
+.section-masthead,.culture-masthead,.notebooks-masthead{margin-bottom:20px}
+.society-masthead{padding-bottom:12px}
+.society-masthead>.section-kicker{margin:10px 0 5px;font-size:8px}
+.society-masthead h1{font-size:clamp(42px,5.2vw,66px);line-height:.88;letter-spacing:-.025em}
+.section-intro-line{margin-top:12px;gap:14px}
+.section-intro-line p{font-size:14px;line-height:1.35}
+.section-intro-line>span{font-size:7px;line-height:1.4}
+.section-feed-heading,.culture-feed-label,.notebooks-list-heading{margin-bottom:12px;padding-bottom:7px}
+.culture-masthead{padding-bottom:12px}
+.culture-title-wrap{padding:12px 0 10px;gap:12px}
+.culture-side-note{flex-basis:75px;font-size:7px;line-height:1.5}
+.culture-title-wrap h1{font-size:clamp(42px,5.2vw,66px);line-height:.86;letter-spacing:-.025em}
+.culture-asterisk{font-size:30px}
+.culture-intro{gap:14px}
+.culture-intro p{font-size:14px;line-height:1.35}
+.culture-intro span{font-size:7px;line-height:1.4}
+.notebooks-masthead{padding-bottom:12px}
+.notebooks-title-row{gap:12px;padding:12px 0 8px}
+.notebooks-index{font-size:58px}
+.notebooks-title-row .section-kicker{font-size:7px;margin-bottom:4px}
+.notebooks-title-row h1{font-size:clamp(42px,5.2vw,66px);line-height:.86}
+.notebooks-intro{margin:6px 0 12px calc(58px + 12px);font-size:13px;line-height:1.45}
+.notebooks-rule{padding:6px 0;font-size:7px}
+.society-feed,.culture-feed{gap:22px 20px}
+@media(max-width:760px){
+ .section-page{padding:14px 18px 38px}
+ .society-masthead h1,.culture-title-wrap h1{font-size:clamp(38px,10vw,52px)}
+ .society-masthead>.section-kicker{margin:8px 0 4px}
+ .section-intro-line,.culture-intro{gap:7px}
+ .culture-title-wrap{padding:9px 0 8px}
+ .culture-side-note{flex-basis:52px;font-size:6px}
+ .culture-asterisk{font-size:22px}
+ .notebooks-title-row{padding:9px 0 6px}
+ .notebooks-index{font-size:46px}
+ .notebooks-title-row h1{font-size:clamp(38px,10vw,52px)}
+ .notebooks-intro{margin:5px 0 9px;font-size:12px}
+ .notebooks-rule{font-size:6px}
+}
