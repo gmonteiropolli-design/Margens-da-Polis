@@ -2897,3 +2897,8 @@ body.archive-site .archive-page{
 /* SOBRE — evita repetir no corpo o título já tratado no manifesto */
 .about-content>p:first-of-type,.about-content>h1,.about-content>p:nth-of-type(2){display:none}
 .about-content>p:nth-of-type(3){font-size:18px;line-height:1.75}
+
+
+/* IDENTIDADE — assinatura discreta no rodapé; o cabeçalho mantém a marca principal */
+.footer-brand{font-size:24px;line-height:1;letter-spacing:.01em;opacity:.78;margin-bottom:10px}
+.footer-brand i{font-size:.72em}
