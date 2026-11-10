@@ -3055,3 +3055,25 @@ body.archive-site .archive-page{
  .society-card-lead h2{font-size:30px}
  .culture-card-tall .culture-card-image{aspect-ratio:16/10}
 }
+
+
+/* DO ARQUIVO — aproveitar a largura e dar mais corpo aos textos */
+.archive-site main{max-width:1440px;padding-left:clamp(22px,4vw,64px);padding-right:clamp(22px,4vw,64px)}
+.archive-site .archive-page{width:100%;max-width:none}
+.archive-site .archive-intro-row{display:grid;grid-template-columns:minmax(0,1fr) 170px;align-items:start;gap:34px;width:100%}
+.archive-site .archive-intro-row p{width:100%;max-width:none;margin:0;text-align:justify;text-justify:inter-word;font-size:15px;line-height:1.75}
+.archive-site .archive-rule-note{justify-self:end}
+.archive-site .archive-catalogue{width:100%}
+.archive-site .archive-list-entry{grid-template-columns:38px 132px minmax(0,1fr) 30px;gap:22px}
+.archive-site .archive-list-thumb{width:132px;height:86px}
+.archive-site .archive-list-copy p{max-width:none;text-align:justify;text-justify:inter-word;font-size:13px;line-height:1.65}
+.archive-site .archive-list-copy h3{font-size:clamp(22px,2.3vw,30px)}
+@media(max-width:760px){
+ .archive-site main{padding-left:18px;padding-right:18px}
+ .archive-site .archive-intro-row{grid-template-columns:1fr;gap:10px}
+ .archive-site .archive-intro-row p{font-size:13px;line-height:1.65}
+ .archive-site .archive-rule-note{justify-self:start}
+ .archive-site .archive-list-entry{grid-template-columns:25px 82px minmax(0,1fr) 18px;gap:10px}
+ .archive-site .archive-list-thumb{width:82px;height:62px}
+ .archive-site .archive-list-copy p{font-size:11px;line-height:1.5}
+}
