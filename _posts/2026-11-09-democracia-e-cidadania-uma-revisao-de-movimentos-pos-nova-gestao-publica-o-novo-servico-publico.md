@@ -3,6 +3,11 @@ title: "Democracia e cidadania, uma revisão de “Movimentos Pós-Nova Gestão
   Pública: O Novo Serviço Público”"
 date: 2023-11-11
 categories: Cadernos
+temas:
+  - "Democracia e poder"
+  - "Estado e políticas públicas"
+  - "Cidadania e participação"
+
 author: Giulia Polli
 description: "O texto abaixo propõe dialogar com o ensaio “Movimentos Pós-Nova
   Gestão Pública: o Novo Serviço Público”, de forma a debater principalmente a
