@@ -1980,3 +1980,64 @@ body.home .manifesto>a{font-size:10px}
   body.home .archive-preview-date{font-size:8px}
   body.home .manifesto h2{font-size:27px}
 }
+
+
+/* HOMEPAGE — segunda correcção de escala: leitura mais ampla e legível */
+body.home .utility-bar{font-size:11px!important;padding-top:10px!important;padding-bottom:10px!important}
+body.home .masthead{padding:27px 18px 22px!important}
+body.home .masthead-logo{width:min(620px,88%)!important;max-height:132px!important}
+body.home .main-nav a{font-size:12px!important;padding:16px 21px!important}
+body.home main#conteudo{padding-left:clamp(26px,5vw,76px)!important;padding-right:clamp(26px,5vw,76px)!important}
+body.home .lead-story{padding-top:38px!important;padding-bottom:42px!important;gap:clamp(34px,4.5vw,68px)!important}
+body.home .lead-image,body.home .lead-art{height:clamp(290px,34vw,460px)!important;max-height:460px!important}
+body.home .feature-label{font-size:13px!important}
+body.home .lead-copy h1{font-size:clamp(44px,4.8vw,68px)!important;line-height:1.01!important}
+body.home .lead-summary{font-size:19px!important;line-height:1.72!important}
+body.home .lead-copy .story-meta,body.home .lead-copy .text-link{font-size:11px!important}
+body.home .section-heading h2{font-size:clamp(36px,3.8vw,49px)!important}
+body.home .section-intro{font-size:15px!important}
+body.home .heading-link{font-size:11px!important}
+body.home .category-reading-section{grid-template-columns:minmax(215px,.24fr) minmax(0,1fr)!important;gap:clamp(26px,3.5vw,52px)!important;padding:32px 0 34px!important}
+body.home .category-reading-heading h3{font-size:clamp(27px,2.5vw,36px)!important}
+body.home .story-grid{gap:25px!important}
+body.home .story-card{grid-template-columns:130px minmax(0,1fr)!important;gap:17px!important}
+body.home .story-card .card-image{width:130px!important;height:120px!important}
+body.home .story-card .section-kicker{font-size:10px!important}
+body.home .story-card h3{font-size:clamp(18px,1.45vw,22px)!important;line-height:1.2!important}
+body.home .story-card p{font-size:14px!important;line-height:1.55!important;-webkit-line-clamp:3!important}
+body.home .story-card .story-meta{font-size:10px!important}
+body.home .archive-preview-date{font-size:11px!important}
+body.home .archive-preview-card strong{font-size:20px!important;line-height:1.25!important}
+body.home .manifesto h2{font-size:clamp(32px,3.8vw,50px)!important}
+body.home .manifesto>a{font-size:11px!important}
+@media(max-width:900px){
+ body.home .story-card{grid-template-columns:110px minmax(0,1fr)!important}
+ body.home .story-card .card-image{width:110px!important;height:104px!important}
+ body.home .story-card h3{font-size:19px!important}
+}
+@media(max-width:620px){
+ body.home .utility-bar{font-size:9px!important}
+ body.home .masthead{padding:18px 12px 16px!important}
+ body.home .masthead-logo{width:min(430px,94%)!important;max-height:98px!important}
+ body.home .main-nav a{font-size:11px!important;padding:13px 14px!important}
+ body.home main#conteudo{padding-left:18px!important;padding-right:18px!important}
+ body.home .lead-story{padding:22px 0 28px!important;gap:18px!important}
+ body.home .lead-image,body.home .lead-art{height:auto!important;aspect-ratio:16/9!important}
+ body.home .lead-copy h1{font-size:clamp(36px,9.5vw,47px)!important}
+ body.home .lead-summary{font-size:16px!important;line-height:1.65!important}
+ body.home .section-heading h2{font-size:33px!important}
+ body.home .section-intro{font-size:13px!important}
+ body.home .heading-link{font-size:9px!important}
+ body.home .category-reading-section{padding:24px 0 26px!important;gap:15px!important}
+ body.home .category-reading-heading h3{font-size:28px!important}
+ body.home .story-grid{gap:18px!important}
+ body.home .story-card{grid-template-columns:108px minmax(0,1fr)!important;gap:14px!important}
+ body.home .story-card .card-image{width:108px!important;height:100px!important}
+ body.home .story-card .section-kicker{font-size:9px!important}
+ body.home .story-card h3{font-size:19px!important;line-height:1.22!important}
+ body.home .story-card p{font-size:13px!important;line-height:1.5!important}
+ body.home .story-card .story-meta{font-size:9px!important}
+ body.home .archive-preview-card strong{font-size:17px!important}
+ body.home .archive-preview-date{font-size:9px!important}
+ body.home .manifesto h2{font-size:29px!important}
+}
