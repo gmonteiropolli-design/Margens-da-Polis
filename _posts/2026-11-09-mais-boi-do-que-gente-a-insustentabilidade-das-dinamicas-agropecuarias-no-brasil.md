@@ -3,6 +3,11 @@ title: "Mais boi do que gente: a insustentabilidade das dinâmicas agropecuária
   no Brasil"
 date: 2023-09-23
 categories: Sociedade e Poder
+temas:
+  - "Economia e desenvolvimento"
+  - "Trabalho e desigualdades"
+  - "Ambiente e território"
+
 author: Giulia Polli
 description: Em pesquisa recente divulgada pelo Instituto Brasileiro de
   Geografia e Estatística, há mais cabeças de gado do que gente no Brasil. Com
