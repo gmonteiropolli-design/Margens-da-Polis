@@ -3,6 +3,10 @@ title: "Revisão de Sérgio Lessa: “O processo de produção/reprodução soci
   trabalho e sociabilidade”"
 date: 2025-01-06
 categories: Cadernos
+temas:
+  - "Pensamento e crítica social"
+  - "Trabalho e desigualdades"
+
 author: Giulia Polli
 image: /assets/uploads/images (4).jpg
 from_archive: false
