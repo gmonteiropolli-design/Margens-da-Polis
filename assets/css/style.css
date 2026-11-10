@@ -1917,3 +1917,66 @@ body.home .manifesto h2{font-size:25px}
   .archive-page .story-card{grid-template-columns:1fr}
   .archive-page .story-card .card-image{aspect-ratio:16/8}
 }
+
+
+/* HOMEPAGE — recuperar escala tipográfica e presença editorial */
+body.home .utility-bar{font-size:10px;letter-spacing:1.7px;padding-top:8px;padding-bottom:8px}
+body.home .masthead{padding:22px 16px 18px}
+body.home .masthead-logo{width:min(540px,82%) !important;max-height:116px !important}
+body.home .main-nav a{padding:14px 19px 13px;font-size:11px;letter-spacing:1.2px}
+body.home .lead-story{gap:clamp(28px,4vw,58px);padding:30px 0 34px;margin-bottom:42px}
+body.home .lead-image,body.home .lead-art{height:clamp(250px,30vw,390px);max-height:390px}
+body.home .feature-label{font-size:11px}
+body.home .lead-copy h1{font-size:clamp(38px,4.1vw,58px);line-height:1.02}
+body.home .lead-summary{font-size:17px;line-height:1.7}
+body.home .lead-copy .story-meta{font-size:10px}
+body.home .lead-copy .text-link{font-size:10px}
+body.home .section-heading h2{font-size:clamp(31px,3.3vw,43px)}
+body.home .section-intro{font-size:14px}
+body.home .heading-link{font-size:10px}
+body.home .category-reading-section{grid-template-columns:minmax(195px,.24fr) minmax(0,1fr);gap:clamp(22px,3vw,44px);padding:26px 0 28px}
+body.home .category-reading-heading h3{font-size:clamp(23px,2.2vw,31px)}
+body.home .story-grid{gap:22px}
+body.home .story-card{grid-template-columns:112px minmax(0,1fr);gap:15px}
+body.home .story-card .card-image{width:112px;height:104px}
+body.home .story-card .section-kicker{font-size:9px;letter-spacing:1.2px}
+body.home .story-card h3{font-size:clamp(16px,1.25vw,19px);line-height:1.2}
+body.home .story-card p{font-size:12px;line-height:1.55;-webkit-line-clamp:3}
+body.home .story-card .story-meta{font-size:9px}
+body.home .archive-section{margin:58px 0 52px;padding:30px 0 34px}
+body.home .archive-preview-grid{gap:22px}
+body.home .archive-preview-date{font-size:10px}
+body.home .archive-preview-card strong{font-size:18px;line-height:1.25}
+body.home .manifesto{margin-top:56px;padding:36px clamp(24px,4vw,62px)}
+body.home .manifesto h2{font-size:clamp(28px,3.5vw,46px)}
+body.home .manifesto>a{font-size:10px}
+@media(max-width:900px){
+  body.home .story-card{grid-template-columns:94px minmax(0,1fr)}
+  body.home .story-card .card-image{width:94px;height:90px}
+  body.home .story-card h3{font-size:17px}
+}
+@media(max-width:620px){
+  body.home .utility-bar{font-size:8px}
+  body.home .masthead{padding:16px 12px 14px}
+  body.home .masthead-logo{width:min(390px,92%) !important;max-height:88px !important}
+  body.home .main-nav a{padding:12px 13px;font-size:10px}
+  body.home .lead-story{gap:17px;padding:19px 0 25px;margin-bottom:31px}
+  body.home .lead-image,body.home .lead-art{aspect-ratio:16/9}
+  body.home .lead-copy h1{font-size:clamp(32px,8.8vw,43px)}
+  body.home .lead-summary{font-size:15px;line-height:1.6}
+  body.home .section-heading h2{font-size:30px}
+  body.home .section-intro{font-size:12px}
+  body.home .heading-link{font-size:8px}
+  body.home .category-reading-section{gap:14px;padding:21px 0 23px}
+  body.home .category-reading-heading h3{font-size:25px}
+  body.home .story-grid{gap:16px}
+  body.home .story-card{grid-template-columns:96px minmax(0,1fr);gap:13px}
+  body.home .story-card .card-image{width:96px;height:90px}
+  body.home .story-card .section-kicker{font-size:8px}
+  body.home .story-card h3{font-size:17px;line-height:1.2}
+  body.home .story-card p{font-size:12px;line-height:1.5}
+  body.home .story-card .story-meta{font-size:8px}
+  body.home .archive-preview-card strong{font-size:15px}
+  body.home .archive-preview-date{font-size:8px}
+  body.home .manifesto h2{font-size:27px}
+}
