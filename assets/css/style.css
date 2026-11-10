@@ -2642,3 +2642,17 @@ body.home .lead-summary{font-size:15px!important;line-height:1.52!important}
 @media(prefers-reduced-motion:reduce){
  .margin-easter-egg,.margin-easter-egg-note,.archive-record,.archive-record-image img,.archive-record-copy h2 a,.footer-hidden-note{transition:none}
 }
+
+
+/* HOMEPAGE — reduzir novamente a escala do título principal */
+body.home .lead-copy h1{
+  font-size:clamp(29px,2.65vw,38px)!important;
+  line-height:1.06!important;
+  letter-spacing:-.018em!important;
+}
+@media(max-width:900px){
+  body.home .lead-copy h1{font-size:clamp(28px,3.4vw,35px)!important}
+}
+@media(max-width:620px){
+  body.home .lead-copy h1{font-size:clamp(27px,7vw,33px)!important;line-height:1.07!important}
+}
