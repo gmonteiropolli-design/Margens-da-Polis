@@ -2,6 +2,11 @@
 title: "De derrota em derrota: faz o “L”"
 date: 2024-02-20
 categories: Sociedade e Poder
+temas:
+  - "Democracia e poder"
+  - "Estado e políticas públicas"
+  - "Economia e desenvolvimento"
+
 author: Giulia Polli
 description: Em 2023, os editais de concessões e PPPs chegam ao seu maior número
   na história do Brasil, com 342 licitações que incluem florestas, o sistema de
