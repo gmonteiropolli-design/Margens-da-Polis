@@ -5,7 +5,7 @@ description: "Jornal independente de ideias sobre sociedade, poder, cultura, ter
 ---
 {% assign current_posts = site.posts | where_exp: "post", "post.from_archive != true" %}
 {% assign archive_posts = site.posts | where: "from_archive", true %}
-{% assign featured = site.posts | where: "featured", true | first %}
+{% assign featured = current_posts | where: "featured", true | first %}
 {% if featured == nil %}{% assign featured = current_posts.first %}{% endif %}
 {% if featured == nil %}{% assign featured = archive_posts.first %}{% endif %}
 {% assign archive_remaining = archive_posts | where_exp: "post", "post.url != featured.url" %}
