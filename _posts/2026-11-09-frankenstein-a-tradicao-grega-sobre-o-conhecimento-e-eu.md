@@ -2,6 +2,10 @@
 title: Frankenstein, a tradição grega sobre o conhecimento e eu
 date: 2023-10-06
 categories: Cultura e Ideias
+temas:
+  - "Literatura e criação"
+  - "Ciência e conhecimento"
+
 author: Giulia Polli
 description: O presente texto estabelece relação entre um ensaio de Alvaro
   Bianchi chamado “Temas e Problemas nos projetos de Pesquisa” e o livro de
