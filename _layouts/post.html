@@ -13,7 +13,7 @@ layout: default
   </nav>
 
   <header class="article-header">
-    <span class="article-kicker">MARGENS DA PÓLIS <i>／</i> {{ page.categories.first | default: "ENSAIO" }}</span>
+    <span class="article-kicker">{{ page.categories.first | default: "ENSAIO" }}</span>
     <h1>{{ page.title }}</h1>
     {% if page.description %}<p class="article-deck">{{ page.description }}</p>{% endif %}
     <div class="article-meta">
@@ -38,7 +38,7 @@ layout: default
   </div>
 
   <footer class="article-footer">
-    <div class="article-end"><span>✳</span><p>Margens da Pólis</p><small>Pensar o mundo a partir das suas margens.</small></div>
+    <div class="article-end"><span>✳</span><p>FIM DA LEITURA</p><small>Pensar o mundo a partir das suas margens.</small></div>
     <div class="article-share">
       <span>PARTILHAR ESTE TEXTO</span>
       <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
