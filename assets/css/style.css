@@ -2518,35 +2518,9 @@ body.home .lead-summary{font-size:15px!important;line-height:1.52!important}
 }
 
 
-/* SISTEMA DE SINAIS — pequenas descobertas editoriais */
-.utility-bar{position:relative}
-.margin-easter-egg{
-  position:relative;display:inline-flex;align-items:center;justify-content:center;
-  width:20px;height:20px;margin-left:9px;border:1px solid rgba(248,246,240,.48);
-  border-radius:50%;color:#F8F6F0;font:700 13px/1 Georgia,serif;
-  cursor:help;transition:transform .25s ease,background .25s ease;
-}
-.margin-easter-egg:hover,.margin-easter-egg:focus-visible{
-  transform:rotate(90deg);background:var(--wine-mid,#741321);outline:none;
-}
-.margin-easter-egg-note{
-  position:absolute;z-index:30;right:0;top:calc(100% + 10px);
-  width:max-content;max-width:min(270px,80vw);padding:9px 11px;
-  background:var(--paper,#F8F6F0);color:var(--wine,#5B0D17);
-  border:1px solid var(--wine,#5B0D17);font:700 8px/1.5 'DM Sans',sans-serif;
-  letter-spacing:1.1px;opacity:0;visibility:hidden;transform:translateY(-4px);
-  transition:opacity .2s ease,transform .2s ease,visibility .2s ease;
-}
-.margin-easter-egg:hover .margin-easter-egg-note,
-.margin-easter-egg:focus-visible .margin-easter-egg-note{
-  opacity:1;visibility:visible;transform:translateY(0);
-}
+/* Assinatura discreta no rodapé; sem elementos adicionais na barra superior */
 .footer-motto{position:relative}
-.footer-hidden-note{
-  display:inline-block;color:var(--gold,#C4A27A);font-size:.72em;
-  opacity:.22;transition:opacity .25s ease,letter-spacing .25s ease;
-  letter-spacing:0;
-}
+.footer-hidden-note{display:inline-block;color:var(--gold,#C4A27A);font-size:.72em;opacity:.22;transition:opacity .25s ease,letter-spacing .25s ease;letter-spacing:0}
 .footer-motto:hover .footer-hidden-note{opacity:1;letter-spacing:.4px}
 
 /* ARQUIVO AUTORAL — assinatura gráfica e linguagem de documento recuperado */
@@ -2655,4 +2629,30 @@ body.home .lead-copy h1{
 }
 @media(max-width:620px){
   body.home .lead-copy h1{font-size:clamp(27px,7vw,33px)!important;line-height:1.07!important}
+}
+
+
+/* CORRECÇÃO DE NAVEGAÇÃO E DO ARQUIVO */
+.main-nav{
+  display:flex!important;
+  justify-content:center!important;
+  align-items:center!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+}
+.archive-site main#conteudo{
+  max-width:1260px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.archive-site .archive-page{
+  width:100%!important;
+  max-width:1180px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+@media(max-width:760px){
+  .main-nav{justify-content:center!important}
+  .archive-site .archive-page{width:100%!important}
 }
