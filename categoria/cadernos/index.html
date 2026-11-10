@@ -6,7 +6,7 @@ permalink: /categoria/cadernos/
 ---
 <section class="listing-page section-page notebooks-page">
   <header class="notebooks-masthead">
-    <div class="notebooks-topline"><span>MARGENS DA PÓLIS / CADERNOS</span><span>SECÇÃO 03</span></div>
+    <div class="notebooks-topline"><span>SECÇÃO 03</span><span>ENSAIOS · CRÓNICAS · REFLEXÕES</span></div>
     <div class="notebooks-title-row"><span class="notebooks-index">03</span><div><p class="section-kicker">ENSAIOS · CRÓNICAS · REFLEXÕES</p><h1>Cadernos<span>.</span></h1></div></div>
     <p class="notebooks-intro">Textos de trabalho, pensamento em movimento e reflexões sem uma forma única. Um espaço para desenvolver ideias, registar perguntas e acompanhar percursos.</p>
     <div class="notebooks-rule"><span>NOTAS PARA PENSAR O PRESENTE</span><span>ABERTO / EM CONSTRUÇÃO</span></div>
@@ -18,7 +18,7 @@ permalink: /categoria/cadernos/
     <article class="notebook-entry">
       <span class="notebook-entry-number">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
       {% if post.image %}<a class="notebook-entry-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy"></a>{% else %}<a class="notebook-entry-image notebook-image-placeholder" href="{{ post.url | relative_url }}">MP</a>{% endif %}
-      <div class="notebook-entry-copy"><span class="section-kicker">CADERNOS <i>／</i> {{ post.date | date: "%d.%m.%Y" }}</span><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<a class="section-read-link" href="{{ post.url | relative_url }}">LER CADERNO <span>↗</span></a></div>
+      <div class="notebook-entry-copy"><span class="section-kicker">{{ post.date | date: "%d.%m.%Y" }}</span><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<a class="section-read-link" href="{{ post.url | relative_url }}">LER CADERNO <span>↗</span></a></div>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
     </article>
     {% endfor %}
