@@ -2,6 +2,11 @@
 title: Nova Gestão Pública e a Transformação Neoliberal da AP
 date: 2023-07-31
 categories: Cadernos
+temas:
+  - "Estado e políticas públicas"
+  - "Democracia e poder"
+  - "Trabalho e desigualdades"
+
 author: Giulia Polli
 image: /assets/uploads/Captura de ecrã 2026-11-09 212035.png
 from_archive: false
