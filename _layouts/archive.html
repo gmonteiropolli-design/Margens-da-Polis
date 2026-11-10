@@ -21,7 +21,7 @@ layout: default
         <div class="archive-list-copy">
           <div class="archive-list-meta"><span>{{ post.categories.first | default: "TEXTO" }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time></div>
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          <p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 190 }}</p>
+          <p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 340 }}</p>
         </div>
         <a class="archive-list-arrow" href="{{ post.url | relative_url }}" aria-label="Ler texto">↗</a>
       </article>
