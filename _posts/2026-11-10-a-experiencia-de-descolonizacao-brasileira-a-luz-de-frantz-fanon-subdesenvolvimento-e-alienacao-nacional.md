@@ -66,7 +66,9 @@ Ao considerar os discursos sobre desenvolvimento, é crucial trazer à tona a cr
 
 “Decidamos não imitar a Europa e orientemos os nossos músculos e os nossos cérebros numa nova direção” (2021: 324), clama Fanon nas páginas finais de Os Condenados da Terra. Como elaborou-se acima, não houve um esforço nacional ou autônomo de reconstrução do Brasil, das suas estruturas económicas e simbólicas à luz da independência, legando ao país uma tentativa de reprodução e assimilação de padrões europeus a nível institucional, produtivo e também cultural. “Conformar-se com as antigas exigências da potência tutelar” transforma o antigo país dominado em economicamente dependente (Fanon, 2021: 100), com destaque para as mesmas rotas comerciais e a introdução de investimentos estrangeiros custosos.
 
-	A infraestrutura não desaparece no momento da independência, mas continua a estruturar as relações entre os países dependentes e os desenvolvidos (Salem, 2018). As contribuições de Fanon são muito semelhantes aos legados dos autores dependentistas latino americanos, corrente emergente nos anos 60 na América Latina que permite compreender o papel do colonialismo na integração dos países na economia mundial e os caminhos singulares adotados pelas nações a partir do seu processo de independência. Neste sentido, a Teoria Marxista da Dependência (TMD) parte de uma crítica ao falso sentido de universalidade da economia do desenvolvimento, que tem efeitos diferenciados entre centro e periferia do modelo capitalista, e assemelha-se vigorosamente com Fanon.
+```
+A infraestrutura não desaparece no momento da independência, mas continua a estruturar as relações entre os países dependentes e os desenvolvidos (Salem, 2018). As contribuições de Fanon são muito semelhantes aos legados dos autores dependentistas latino americanos, corrente emergente nos anos 60 na América Latina que permite compreender o papel do colonialismo na integração dos países na economia mundial e os caminhos singulares adotados pelas nações a partir do seu processo de independência. Neste sentido, a Teoria Marxista da Dependência (TMD) parte de uma crítica ao falso sentido de universalidade da economia do desenvolvimento, que tem efeitos diferenciados entre centro e periferia do modelo capitalista, e assemelha-se vigorosamente com Fanon.
+```
 
 Os dependentistas marxistas defendem que, com a consagração do capitalismo mundial com a divisão do mundo em ex-colónias e áreas de influência, em que os países periféricos assumiram o papel de exportadores de produtos primários e importadores de produtos industrializados (Marini, 1973). O Brasil foi inserido na DIT como fornecedor de produtos alimentícios e *commodities*, produzindo elementos fundamentais para a continuidade da Revolução Industrial no continente europeu, o que foi decisivo para os centros hegemónicos confiarem as suas necessidades de meios de subsistência ao comércio exterior (Strauss, 2018). Segundo Guerreri, 
 
@@ -164,4 +166,3 @@ Strauss, D. (2018). O problema da dependência econômica e a desindustrializa
 
 Todaro, M.; Smith, S. (2011). Economic Development. 11 ed. Prentice Hall.
 
-  
