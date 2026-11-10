@@ -2,6 +2,10 @@
 title: A previsível ascensão da extrema direita em Portugal
 date: 2024-03-16
 categories: Sociedade e Poder
+temas:
+  - "Democracia e poder"
+  - "Memória e autoritarismo"
+
 author: Giulia Polli
 description: O PSD elege o primeiro ministro e o Chega triplica suas cadeiras no
   Parlamento. Resultado de uma união entre austeridade, despolitização e um
