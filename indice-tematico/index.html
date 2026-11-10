@@ -136,4 +136,130 @@ permalink: /indice-tematico/
     </div>
   </section>
   {% endif %}
+
+  {% assign rights_posts = site.posts | where_exp: "post", "post.temas contains 'Direitos sociais'" %}
+  {% if rights_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">08 / DIREITOS</span><div><h2>Direitos sociais</h2><p>Direitos laborais, protecção social e condições de vida.</p></div><span class="thematic-count">{{ rights_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in rights_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign culture_thought_posts = site.posts | where_exp: "post", "post.temas contains 'Pensamento e cultura'" %}
+  {% if culture_thought_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">09 / CULTURA</span><div><h2>Pensamento e cultura</h2><p>Leitura, reflexão cultural e relações entre criação e sociedade.</p></div><span class="thematic-count">{{ culture_thought_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in culture_thought_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign science_posts = site.posts | where_exp: "post", "post.temas contains 'Ciência e conhecimento'" %}
+  {% if science_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">10 / CONHECIMENTO</span><div><h2>Ciência e conhecimento</h2><p>Ciência, produção de conhecimento e os seus contextos sociais.</p></div><span class="thematic-count">{{ science_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in science_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign territory_posts = site.posts | where_exp: "post", "post.temas contains 'Ambiente e território'" %}
+  {% if territory_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">11 / TERRITÓRIO</span><div><h2>Ambiente e território</h2><p>Ambiente, usos do território e conflitos em torno dos recursos.</p></div><span class="thematic-count">{{ territory_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in territory_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign education_posts = site.posts | where_exp: "post", "post.temas contains 'Educação e universidade'" %}
+  {% if education_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">12 / EDUCAÇÃO</span><div><h2>Educação e universidade</h2><p>Universidade, trabalho académico e políticas de educação.</p></div><span class="thematic-count">{{ education_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in education_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign citizenship_posts = site.posts | where_exp: "post", "post.temas contains 'Cidadania e participação'" %}
+  {% if citizenship_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">13 / CIDADANIA</span><div><h2>Cidadania e participação</h2><p>Participação política, cidadania e formas de intervenção colectiva.</p></div><span class="thematic-count">{{ citizenship_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in citizenship_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% assign migration_posts = site.posts | where_exp: "post", "post.temas contains 'Migração e exclusão'" %}
+  {% if migration_posts.size > 0 %}
+  <section class="thematic-group">
+    <header class="thematic-group-heading"><span class="section-kicker">14 / MOBILIDADE</span><div><h2>Migração e exclusão</h2><p>Migração, precariedade e processos de exclusão social.</p></div><span class="thematic-count">{{ migration_posts.size }} textos</span></header>
+    <div class="thematic-card-grid">
+      {% for post in migration_posts %}
+      <article class="thematic-card">
+        <a class="thematic-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="thematic-image-placeholder">MP</span>{% endif %}</a>
+        <div class="thematic-card-copy"><span class="section-kicker">{{ post.categories.first | default: "ENSAIO" }} · {{ post.date | date: "%Y" }}</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% assign card_summary = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 190 %}
+        {% if card_summary != "" %}<p>{{ card_summary }}</p>{% endif %}
+        <a class="thematic-read-link" href="{{ post.url | relative_url }}">LER TEXTO ↗</a></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 </section>
