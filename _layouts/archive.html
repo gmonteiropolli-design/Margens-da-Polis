@@ -4,26 +4,26 @@ layout: default
 <article class="archive-page">
   {% assign archive_posts = site.posts | where: "from_archive", true | sort: "date" | reverse %}
   <header class="archive-masthead">
-    <div class="archive-overline"><span>ARQUIVO AUTORAL</span><span>MEMÓRIA DE ESCRITA</span></div>
-    <div class="archive-title-row"><div><p class="archive-eyebrow">UM PERCURSO EM TEXTOS</p><h1>Do <em>Arquivo</em></h1></div><div class="archive-count"><strong>{{ archive_posts.size | prepend: "00" | slice: -2, 2 }}</strong><span>TEXTOS<br>RECUPERADOS</span></div></div>
-    <div class="archive-intro-row"><span class="archive-index-mark">MP<br>—<br>ARQ</span><p>Este é o arquivo dos meus textos antigos, escritos e publicados em diferentes momentos do meu percurso. Reúno aqui textos de minha autoria para que continuem acessíveis, com as imagens e as datas das suas primeiras publicações. São registos de um caminho de leitura, pesquisa e escrita. Não são textos novos, mas ideias que vale a pena voltar a encontrar.</p><span class="archive-rule-note">TEXTOS DE AUTORIA PRÓPRIA<br>ORGANIZADOS POR DATA</span></div>
-    <div class="archive-margin-note"><span>NOTA DE MARGEM / 001</span><span>O passado não está imóvel: regressa sempre que o voltamos a ler.</span><span class="archive-registration">✳</span></div>
+    <div class="archive-overline"><span>SECÇÃO ESPECIAL / TEXTOS ANTERIORES</span><span>MEMÓRIA DE ESCRITA</span></div>
+    <div class="archive-title-row"><div><p class="archive-eyebrow">REGISTOS DE OUTROS TEMPOS</p><h1>Do <em>Arquivo</em></h1></div><div class="archive-count"><strong>{{ archive_posts.size | prepend: "00" | slice: -2, 2 }}</strong><span>TEXTOS<br>DE AUTORIA PRÓPRIA</span></div></div>
+    <div class="archive-intro-row"><p>Textos meus, escritos e publicados em diferentes momentos do meu percurso. Reúno-os aqui para que continuem acessíveis, com as imagens e as datas das primeiras publicações.</p><span class="archive-rule-note">ORGANIZADOS<br>POR DATA ORIGINAL</span></div>
   </header>
   {% if archive_posts.size > 0 %}
   <section class="archive-catalogue" aria-label="Textos do arquivo">
-    <div class="archive-section-heading"><div><span>CATÁLOGO DE ESCRITA</span><h2>Textos que permanecem</h2></div><small>DO MAIS RECENTE AO MAIS ANTIGO</small></div>
-    <div class="archive-card-grid">
+    <div class="archive-section-heading"><div><span>CATÁLOGO / ESCRITA ANTERIOR</span><h2>Textos recuperados</h2></div><small>DO MAIS RECENTE AO MAIS ANTIGO</small></div>
+    <div class="archive-list">
       {% for post in archive_posts %}
-      <article class="archive-card">
-        <a class="archive-card-image" href="{{ post.url | relative_url }}" aria-label="Ler {{ post.title }}">
-          {% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="archive-card-monogram">MP<span>／ARQUIVO</span></span>{% endif %}
-          <span class="archive-card-index">REGISTO {{ forloop.index | prepend: "00" | slice: -2, 2 }}</span><span class="archive-card-image-mark">DO MEU ARQUIVO ✳</span>
+      <article class="archive-list-entry">
+        <span class="archive-list-number">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
+        <a class="archive-list-thumb" href="{{ post.url | relative_url }}" aria-label="Ler {{ post.title }}">
+          {% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span>MP</span>{% endif %}
         </a>
-        <div class="archive-card-copy"><div class="archive-card-meta"><span>{{ post.categories.first | default: "TEXTO" }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time></div>
+        <div class="archive-list-copy">
+          <div class="archive-list-meta"><span>{{ post.categories.first | default: "TEXTO" }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time></div>
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          <p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 220 }}</p>
-          <a class="archive-card-link" href="{{ post.url | relative_url }}">LER TEXTO ORIGINAL <span>↗</span></a>
+          <p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 190 }}</p>
         </div>
+        <a class="archive-list-arrow" href="{{ post.url | relative_url }}" aria-label="Ler texto">↗</a>
       </article>
       {% endfor %}
     </div>
