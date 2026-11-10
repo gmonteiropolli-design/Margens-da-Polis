@@ -1633,3 +1633,17 @@ body.home .lead-copy .text-link{margin-top:8px !important}
   }
   .article-body p,.article-body li,.article-body blockquote{text-align:justify !important}
 }
+
+
+/* Artigos: hierarquia mais contida e imagem menos alta */
+.article-header h1{
+  font-size:clamp(36px,4.2vw,58px) !important;
+  line-height:1.02 !important;
+}
+.article-cover img{
+  max-height:460px !important;
+}
+@media(max-width:700px){
+  .article-header h1{font-size:clamp(32px,7.5vw,42px) !important}
+  .article-cover img{max-height:300px !important}
+}
