@@ -2431,3 +2431,88 @@ body.home .lead-summary{font-size:15px!important;line-height:1.52!important}
  body.home .lead-image,body.home .lead-art{height:auto!important;aspect-ratio:16/9!important}
  body.home .lead-copy h1{font-size:clamp(31px,8vw,39px)!important}
 }
+
+
+/* DESTAQUES DA SEMANA — caderno de actualidade internacional */
+.weekly-highlights{
+  margin:clamp(42px,5vw,72px) 0;
+  padding:clamp(24px,3.2vw,44px) 0 20px;
+  border-top:8px solid var(--wine,#5B0D17);
+  border-bottom:1px solid var(--line,#D8D0C5);
+}
+.weekly-heading{
+  display:flex;justify-content:space-between;align-items:end;gap:24px;
+  padding-bottom:22px;margin-bottom:26px;
+  border-bottom:1px solid var(--line,#D8D0C5);
+}
+.weekly-heading h2{
+  margin:8px 0 7px;color:var(--ink,#242322);
+  font:700 clamp(38px,5vw,64px)/.98 'Barlow Condensed',sans-serif;
+  letter-spacing:-1px;text-transform:uppercase;
+}
+.weekly-heading p{
+  max-width:650px;margin:0;color:var(--muted,#706b65);
+  font:14px/1.6 'DM Sans',sans-serif;
+}
+.weekly-edition{
+  flex:none;padding:9px 12px;border:1px solid var(--wine,#5B0D17);
+  color:var(--wine,#5B0D17);text-align:center;
+  font:700 9px/1.5 'DM Sans',sans-serif;letter-spacing:1.5px;
+}
+.weekly-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:30px 26px;
+}
+.weekly-card{
+  min-width:0;display:grid;grid-template-columns:minmax(140px,.82fr) minmax(0,1.18fr);
+  gap:18px;padding-bottom:24px;border-bottom:1px solid var(--line,#D8D0C5);
+}
+.weekly-image{display:block;aspect-ratio:4/5;overflow:hidden;background:#e5ded4}
+.weekly-image img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.82)}
+.weekly-card-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.weekly-date{
+  color:var(--wine,#5B0D17);
+  font:700 9px/1.4 'DM Sans',sans-serif;letter-spacing:1.2px;
+}
+.weekly-date span{color:var(--gold,#C4A27A)}
+.weekly-card h3{
+  margin:9px 0 8px;font:700 clamp(22px,2.4vw,31px)/1.03 'Barlow Condensed',sans-serif;
+  text-transform:uppercase;
+}
+.weekly-card h3 a{color:var(--ink,#242322);text-decoration:none}
+.weekly-card h3 a:hover{color:var(--wine,#5B0D17)}
+.weekly-card p{
+  margin:0 0 14px;color:#514c47;
+  font:13px/1.6 'DM Sans',sans-serif;
+}
+.weekly-card-links{
+  display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:auto;
+}
+.weekly-card-links .text-link{font-size:9px}
+.weekly-source{
+  color:var(--muted,#706b65);font:700 8px/1.4 'DM Sans',sans-serif;
+  letter-spacing:.8px;text-decoration:none;
+}
+.weekly-source:hover{color:var(--wine,#5B0D17)}
+.weekly-colophon{
+  display:flex;justify-content:space-between;gap:15px;margin-top:18px;padding-top:10px;
+  color:var(--wine,#5B0D17);font:700 8px/1.4 'DM Sans',sans-serif;letter-spacing:1.3px;
+}
+@media(max-width:760px){
+ .weekly-grid{grid-template-columns:1fr;gap:20px}
+ .weekly-card{grid-template-columns:130px minmax(0,1fr);gap:15px}
+ .weekly-card h3{font-size:25px}
+ .weekly-card p{font-size:12px}
+}
+@media(max-width:480px){
+ .weekly-highlights{margin:34px 0;padding-top:22px}
+ .weekly-heading{align-items:flex-start;gap:10px}
+ .weekly-heading h2{font-size:40px}
+ .weekly-heading p{font-size:12px}
+ .weekly-edition{font-size:7px;padding:7px}
+ .weekly-card{grid-template-columns:104px minmax(0,1fr);gap:12px;padding-bottom:18px}
+ .weekly-card h3{font-size:21px;margin:6px 0}
+ .weekly-card p{font-size:11px;line-height:1.45}
+ .weekly-date{font-size:8px}
+ .weekly-colophon{font-size:7px;letter-spacing:.7px}
+}
