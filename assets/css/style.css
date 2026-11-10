@@ -3077,3 +3077,90 @@ body.archive-site .archive-page{
  .archive-site .archive-list-thumb{width:82px;height:62px}
  .archive-site .archive-list-copy p{font-size:11px;line-height:1.5}
 }
+
+
+/* CATEGORIAS — paginação visual de jornal, várias manchetes visíveis */
+.society-feed,
+.culture-feed{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px 20px;
+  align-items:start;
+}
+.society-card,
+.culture-card{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  grid-column:auto;
+  gap:0;
+  padding:0 0 13px;
+  background:transparent;
+  border-bottom:1px solid var(--line);
+}
+.society-card-lead,
+.culture-card-wide{
+  display:flex;
+  flex-direction:column;
+  grid-column:auto;
+  gap:0;
+  padding-bottom:13px;
+}
+.society-card-visual>a,
+.society-card-lead .society-card-visual>a,
+.culture-card-image,
+.culture-card-tall .culture-card-image,
+.culture-card-wide .culture-card-image{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  overflow:hidden;
+}
+.society-card-visual img,
+.culture-card-image img{width:100%;height:100%;object-fit:cover}
+.society-card-number{font-size:7px;letter-spacing:1px}
+.society-card-copy,
+.society-card-lead .society-card-copy,
+.culture-card-copy,
+.culture-card-wide .culture-card-copy{
+  padding:9px 0 0;
+}
+.society-card-copy .section-kicker,
+.culture-card-copy .section-kicker{font-size:7px;letter-spacing:1.1px}
+.society-card-copy h2,
+.society-card-lead h2,
+.culture-card-copy h2,
+.culture-card-wide .culture-card-copy h2{
+  font-size:clamp(18px,1.65vw,22px);
+  line-height:1.12;
+  letter-spacing:-.015em;
+  margin:5px 0 7px;
+}
+.society-card-copy p,
+.culture-card-copy p{
+  font-size:11px;
+  line-height:1.45;
+  margin:0;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.society-card-copy .story-meta{margin-top:7px;padding-top:7px;font-size:7px}
+.society-card-copy .section-read-link,
+.culture-card-copy .section-read-link{margin-top:7px;font-size:7px}
+.culture-image-index{font-size:7px}
+@media(max-width:900px){
+  .society-feed,.culture-feed{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 16px}
+  .society-card-copy h2,.society-card-lead h2,
+  .culture-card-copy h2,.culture-card-wide .culture-card-copy h2{font-size:20px}
+}
+@media(max-width:520px){
+  .society-feed,.culture-feed{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}
+  .society-card-copy h2,.society-card-lead h2,
+  .culture-card-copy h2,.culture-card-wide .culture-card-copy h2{font-size:17px}
+  .society-card-copy p,.culture-card-copy p{font-size:10px;-webkit-line-clamp:2}
+  .society-card-copy .story-meta{font-size:6px}
+  .society-card-copy .section-read-link,.culture-card-copy .section-read-link{font-size:6px;letter-spacing:.7px}
+}
