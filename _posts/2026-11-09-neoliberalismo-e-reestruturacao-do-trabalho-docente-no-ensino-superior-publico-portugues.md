@@ -3,6 +3,11 @@ title: Neoliberalismo e reestruturação do trabalho docente no ensino superior
   público português
 date: 2023-11-20
 categories: Cadernos
+temas:
+  - "Trabalho e desigualdades"
+  - "Educação e universidade"
+  - "Estado e políticas públicas"
+
 author: Giulia Polli
 description: Os professores do ensino superior público português, grupo formado
   por quase 40 mil educadores, têm importância ímpar na formação de indivíduos
