@@ -2,6 +2,11 @@
 title: "Os funcionários na Administração Pública Portuguesa: um retrato social"
 date: 2023-09-02
 categories: Cadernos
+temas:
+  - "Estado e políticas públicas"
+  - "Trabalho e desigualdades"
+  - "Cidadania e participação"
+
 author: Giulia Polli
 description: Compreende-se funcionário público os trabalhadores do Estado que
   devem realizar a prossecução do interesse público. Dessa forma, é possível
