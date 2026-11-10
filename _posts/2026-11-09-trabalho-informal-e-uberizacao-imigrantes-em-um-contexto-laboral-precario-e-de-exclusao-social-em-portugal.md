@@ -3,6 +3,11 @@ title: "Trabalho informal e uberização: imigrantes em um contexto laboral
   precário e de exclusão social em Portugal"
 date: 2024-11-09
 categories: Cadernos
+temas:
+  - "Trabalho e desigualdades"
+  - "Direitos sociais"
+  - "Migração e exclusão"
+
 author: Giulia Polli
 image: /assets/uploads/images (3).jpg
 from_archive: false
