@@ -17,17 +17,18 @@ layout: default
       <p>Este é o arquivo dos meus textos antigos: escritos e publicados em diferentes momentos do meu percurso. Reúno-os aqui para que continuem acessíveis, com as imagens e as datas das suas primeiras publicações. São registos de um caminho de leitura, pesquisa e escrita — não textos novos, mas ideias que vale a pena voltar a encontrar.</p>
       <span class="archive-rule-note">TEXTOS DE AUTORIA PRÓPRIA<br>ORGANIZADOS POR DATA</span>
     </div>
+  <div class="archive-margin-note" aria-label="Nota de arquivo"><span>NOTA DE MARGEM / 001</span><span>O passado não está imóvel: regressa sempre que o voltamos a ler.</span><span class="archive-registration">✳</span></div>
   </header>
   {% if archive_posts.size > 0 %}
   <section class="archive-catalogue" aria-label="Textos do arquivo">
     <div class="archive-catalogue-heading"><span>N.º</span><span>IMAGEM / TEXTO</span><span>DATA ORIGINAL</span></div>
     {% for post in archive_posts %}
     <article class="archive-record">
-      <div class="archive-record-number">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</div>
+      <div class="archive-record-number"><span>{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span><small>REGISTO</small></div>
       {% if post.image %}
-      <a class="archive-record-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"><span class="archive-image-stamp">DO MEU ARQUIVO</span></a>
+      <a class="archive-record-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"><span class="archive-image-stamp">DO MEU ARQUIVO <i>✳</i></span></a>
       {% else %}
-      <a class="archive-record-image archive-record-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>
+      <a class="archive-record-image archive-record-placeholder" href="{{ post.url | relative_url }}"><span>MP</span><small>SEM IMAGEM</small></a>
       {% endif %}
       <div class="archive-record-copy">
         <div class="archive-record-meta"><span>{{ post.categories.first | default: "TEXTO" }}</span><span>PUBLICADO EM {{ post.date | date: "%Y" }}</span></div>
