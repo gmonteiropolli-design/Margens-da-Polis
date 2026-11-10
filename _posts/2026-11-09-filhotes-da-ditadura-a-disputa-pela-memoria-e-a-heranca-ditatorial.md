@@ -2,6 +2,10 @@
 title: “Filhotes da ditadura”, a disputa pela memória e a herança ditatorial
 date: 2024-04-01
 categories: Sociedade e Poder
+temas:
+  - "Memória e autoritarismo"
+  - "Democracia e poder"
+
 author: Giulia Polli
 description: No dia 1 de abril comemora-se 60 anos da ditadura militar
   brasileira e o presidente Lula cancela todas as comemorações oficiais para não
