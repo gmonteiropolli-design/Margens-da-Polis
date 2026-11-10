@@ -6,7 +6,7 @@ permalink: /categoria/cultura-e-ideias/
 ---
 <section class="listing-page section-page culture-page">
   <header class="culture-masthead">
-    <span class="culture-edition">MARGENS DA PÓLIS <i>／</i> SECÇÃO 02</span>
+    <span class="culture-edition">SECÇÃO 02 <i>／</i> ENSAIOS VISUAIS &amp; CRÍTICOS</span>
     <div class="culture-title-wrap"><span class="culture-side-note">LIVROS<br>IMAGENS<br>PENSAMENTO<br>CRIAÇÃO</span><h1>Cultura<br><em>e Ideias</em></h1><span class="culture-asterisk">✳</span></div>
     <div class="culture-intro"><p>Um lugar para a criação, a leitura e o pensamento. Livros, arte, cinema e ideias que ajudam a interpretar o mundo.</p><span>02 — ENSAIOS<br>VISUAIS & CRÍTICOS</span></div>
   </header>
@@ -16,7 +16,7 @@ permalink: /categoria/cultura-e-ideias/
     {% for post in posts %}
     <article class="culture-card{% cycle ' culture-card-tall', '', ' culture-card-wide' %}">
       <a class="culture-card-image" href="{{ post.url | relative_url }}">{% if post.image %}<img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy">{% else %}<span class="card-placeholder"><b>MP</b></span>{% endif %}<span class="culture-image-index">FIG. {{ forloop.index | prepend: "00" | slice: -2, 2 }}</span></a>
-      <div class="culture-card-copy"><span class="section-kicker">CULTURA E IDEIAS <i>／</i> {{ post.date | date: "%d.%m.%Y" }}</span><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<a class="section-read-link" href="{{ post.url | relative_url }}">ABRIR LEITURA <span>↗</span></a></div>
+      <div class="culture-card-copy"><span class="section-kicker">{{ post.date | date: "%d.%m.%Y" }}</span><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<a class="section-read-link" href="{{ post.url | relative_url }}">ABRIR LEITURA <span>↗</span></a></div>
     </article>
     {% endfor %}
   </div>
