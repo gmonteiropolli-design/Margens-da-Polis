@@ -2,6 +2,10 @@
 title: Reflexões e indicações de prosa lírica
 date: 2024-01-19
 categories: Cultura e Ideias
+temas:
+  - "Literatura e criação"
+  - "Pensamento e cultura"
+
 author: Giulia Polli
 image: /assets/uploads/WhatsApp Image 2026-11-09 at 22.45.38.jpeg
 from_archive: false
