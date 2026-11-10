@@ -4,18 +4,25 @@ title: "Cadernos"
 description: "Ensaios, crónicas, comentários e reflexões livres."
 permalink: /categoria/cadernos/
 ---
-<section class="listing-page">
-  <span class="section-kicker">SECÇÃO</span>
-  <h1>Cadernos</h1>
-  <p class="lead-summary">Ensaios, crónicas, comentários e reflexões livres.</p>
-  <div class="story-grid">
-    {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Cadernos'" | where_exp: "post", "post.from_archive != true" %}
+<section class="listing-page section-page notebooks-page">
+  <header class="notebooks-masthead">
+    <div class="notebooks-topline"><span>MARGENS DA PÓLIS / CADERNOS</span><span>SECÇÃO 03</span></div>
+    <div class="notebooks-title-row"><span class="notebooks-index">03</span><div><p class="section-kicker">ENSAIOS · CRÓNICAS · REFLEXÕES</p><h1>Cadernos<span>.</span></h1></div></div>
+    <p class="notebooks-intro">Textos de trabalho, pensamento em movimento e reflexões sem uma forma única. Um espaço para desenvolver ideias, registar perguntas e acompanhar percursos.</p>
+    <div class="notebooks-rule"><span>NOTAS PARA PENSAR O PRESENTE</span><span>ABERTO / EM CONSTRUÇÃO</span></div>
+  </header>
+  {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Cadernos'" | where_exp: "post", "post.from_archive != true" %}
+  <div class="notebooks-list-heading"><span>ÍNDICE DE TEXTOS</span><span>{{ posts.size }} REGISTOS</span></div>
+  <div class="notebooks-list">
     {% for post in posts %}
-    <article class="story-card">
-      {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% else %}<a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>{% endif %}
-      <div class="card-content"><span class="section-kicker">Cadernos</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<div class="story-meta">{{ post.date | date: "%d.%m.%Y" }} · {{ post.author | default: "Autor" }}</div></div>
+    <article class="notebook-entry">
+      <span class="notebook-entry-number">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
+      {% if post.image %}<a class="notebook-entry-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy"></a>{% else %}<a class="notebook-entry-image notebook-image-placeholder" href="{{ post.url | relative_url }}">MP</a>{% endif %}
+      <div class="notebook-entry-copy"><span class="section-kicker">CADERNOS <i>／</i> {{ post.date | date: "%d.%m.%Y" }}</span><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<a class="section-read-link" href="{{ post.url | relative_url }}">LER CADERNO <span>↗</span></a></div>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
     </article>
     {% endfor %}
   </div>
   {% if posts.size == 0 %}<div class="empty-state"><span class="empty-rule"></span><h3>Ainda não existem artigos nesta secção.</h3><p>Os textos dos Cadernos aparecerão aqui.</p></div>{% endif %}
+  <footer class="section-colophon"><span>MP / 03</span><span>O PENSAMENTO TAMBÉM SE ESCREVE À MARGEM</span></footer>
 </section>
