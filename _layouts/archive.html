@@ -4,36 +4,36 @@ layout: default
 <article class="archive-page">
   {% assign archive_posts = site.posts | where: "from_archive", true %}
   <header class="archive-masthead">
-    <div class="archive-overline"><span>HEMEROTECA</span><span>MEMÓRIA EDITORIAL / 01—∞</span></div>
+    <div class="archive-overline"><span>ARQUIVO AUTORAL</span><span>MARGENS DA PÓLIS / MEMÓRIA DE ESCRITA</span></div>
     <div class="archive-title-row">
       <div>
-        <p class="archive-eyebrow">TEXTOS QUE REGRESSAM</p>
+        <p class="archive-eyebrow">UM PERCURSO EM TEXTOS</p>
         <h1>Do <em>Arquivo</em></h1>
       </div>
       <div class="archive-count"><strong>{{ archive_posts.size | prepend: "00" | slice: -2, 2 }}</strong><span>TEXTOS<br>RECUPERADOS</span></div>
     </div>
     <div class="archive-intro-row">
       <span class="archive-index-mark">MP<br>—<br>ARQ</span>
-      <p>Textos recuperados de outros momentos do projecto. Leituras que regressam porque continuam a ajudar-nos a pensar o presente.</p>
-      <span class="archive-rule-note">CONSULTA<br>CRONOLOGIA EDITORIAL</span>
+      <p>Este é o arquivo dos meus textos antigos: escritos e publicados em diferentes momentos do meu percurso. Reúno-os aqui para que continuem acessíveis, com as imagens e as datas das suas primeiras publicações. São registos de um caminho de leitura, pesquisa e escrita — não textos novos, mas ideias que vale a pena voltar a encontrar.</p>
+      <span class="archive-rule-note">TEXTOS DE AUTORIA PRÓPRIA<br>ORGANIZADOS POR DATA</span>
     </div>
   </header>
   {% if archive_posts.size > 0 %}
   <section class="archive-catalogue" aria-label="Textos do arquivo">
-    <div class="archive-catalogue-heading"><span>REGISTO</span><span>DOCUMENTO / TÍTULO</span><span>DATA</span></div>
+    <div class="archive-catalogue-heading"><span>N.º</span><span>IMAGEM / TEXTO</span><span>DATA ORIGINAL</span></div>
     {% for post in archive_posts %}
     <article class="archive-record">
       <div class="archive-record-number">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</div>
       {% if post.image %}
-      <a class="archive-record-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>
+      <a class="archive-record-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"><span class="archive-image-stamp">DO MEU ARQUIVO</span></a>
       {% else %}
       <a class="archive-record-image archive-record-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>
       {% endif %}
       <div class="archive-record-copy">
-        <div class="archive-record-meta"><span>{{ post.categories.first | default: "DO ARQUIVO" }}</span><span>{{ post.date | date: "%Y" }}</span></div>
+        <div class="archive-record-meta"><span>{{ post.categories.first | default: "TEXTO" }}</span><span>PUBLICADO EM {{ post.date | date: "%Y" }}</span></div>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         {% if post.description %}<p>{{ post.description }}</p>{% endif %}
-        <a class="archive-record-link" href="{{ post.url | relative_url }}">CONSULTAR DOCUMENTO <span>↗</span></a>
+        <a class="archive-record-link" href="{{ post.url | relative_url }}">LER TEXTO ORIGINAL <span>↗</span></a>
       </div>
       <time class="archive-record-date" datetime="{{ post.date | date_to_xmlschema }}"><span>{{ post.date | date: "%d" }}</span><span>{{ post.date | date: "%m.%Y" }}</span></time>
     </article>
