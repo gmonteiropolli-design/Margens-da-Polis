@@ -4,18 +4,26 @@ title: "Sociedade e Poder"
 description: "Política, história, instituições, economia e dinâmicas sociais."
 permalink: /categoria/sociedade-e-poder/
 ---
-<section class="listing-page">
-  <span class="section-kicker">SECÇÃO</span>
-  <h1>Sociedade e Poder</h1>
-  <p class="lead-summary">Política, história, instituições, economia e dinâmicas sociais.</p>
-  <div class="story-grid">
-    {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Sociedade'" | where_exp: "post", "post.from_archive != true" %}
+<section class="listing-page section-page society-page">
+  <header class="section-masthead society-masthead">
+    <div class="section-overline"><span>MARGENS DA PÓLIS</span><span>SECÇÃO 01 / ANÁLISE</span></div>
+    <p class="section-kicker">POLÍTICA · HISTÓRIA · SOCIEDADE</p>
+    <h1>Sociedade <i>&</i><br>Poder</h1>
+    <div class="section-intro-line"><p>Política, história, instituições, economia e dinâmicas sociais.</p><span>OBSERVAR<br>QUESTIONAR<br>COMPREENDER</span></div>
+  </header>
+  {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Sociedade'" | where_exp: "post", "post.from_archive != true" %}
+  <div class="section-feed-heading"><span>01 — CADERNO DE LEITURA</span><span>{{ posts.size }} TEXTOS</span></div>
+  <div class="society-feed">
     {% for post in posts %}
-    <article class="story-card">
-      {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% else %}<a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>{% endif %}
-      <div class="card-content"><span class="section-kicker">Sociedade e Poder</span><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<div class="story-meta">{{ post.date | date: "%d.%m.%Y" }} · {{ post.author | default: "Autor" }}</div></div>
+    <article class="society-card{% if forloop.first %} society-card-lead{% endif %}">
+      <div class="society-card-visual">
+        {% if post.image %}<a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy"></a>{% else %}<a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>{% endif %}
+        <span class="society-card-number">ESTUDO / {{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
+      </div>
+      <div class="society-card-copy"><span class="section-kicker">SOCIEDADE E PODER <i>／</i> {{ post.date | date: "%Y" }}</span><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<div class="story-meta">{{ post.date | date: "%d.%m.%Y" }} · {{ post.author | default: "Autor" }}</div><a class="section-read-link" href="{{ post.url | relative_url }}">LER ANÁLISE <span>↗</span></a></div>
     </article>
     {% endfor %}
   </div>
   {% if posts.size == 0 %}<div class="empty-state"><span class="empty-rule"></span><h3>Ainda não existem artigos nesta secção.</h3><p>As publicações sobre sociedade e poder aparecerão aqui.</p></div>{% endif %}
+  <footer class="section-colophon"><span>MP / 01</span><span>LER A SOCIEDADE A PARTIR DAS SUAS MARGENS</span></footer>
 </section>
