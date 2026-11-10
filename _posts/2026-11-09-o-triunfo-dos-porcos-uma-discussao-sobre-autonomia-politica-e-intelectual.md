@@ -2,6 +2,11 @@
 title: "O Triunfo dos Porcos: uma discussão sobre autonomia política e intelectual"
 date: 2023-09-16
 categories: Cultura e Ideias
+temas:
+  - "Literatura e criação"
+  - "Democracia e poder"
+  - "Pensamento e crítica social"
+
 author: Giulia Polli
 description: O Triunfo dos Porcos é uma metáfora crítica acerca da Revolução
   Russa que destaca as principais características dos animais e suas atividades
