@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
 </head>
-<body class="{% if page.url == '/' %}home{% endif %}{% if page.layout == 'archive' %} archive-site{% endif %}">
-  <div class="utility-bar"><span>PUBLICAÇÃO INDEPENDENTE</span><span>SOCIEDADE · PODER · CULTURA · IDEIAS</span><span class="margin-easter-egg" tabindex="0" aria-label="Nota à margem: a margem também é lugar de pensamento." title="A margem também é lugar de pensamento.">∴<span class="margin-easter-egg-note">A MARGEM TAMBÉM É LUGAR DE PENSAMENTO.</span></span></div>
+<body class="{% if page.url == '/' %}home{% endif %}{% if page.url contains '/arquivo' %} archive-site{% endif %}">
+  <div class="utility-bar"><span>PUBLICAÇÃO INDEPENDENTE</span><span>SOCIEDADE · PODER · CULTURA · IDEIAS</span></div>
   <header class="site-header">
     <a class="masthead" href="{{ '/' | relative_url }}" aria-label="Margens da Polis — página inicial">
     <img
