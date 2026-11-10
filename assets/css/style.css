@@ -2516,3 +2516,129 @@ body.home .lead-summary{font-size:15px!important;line-height:1.52!important}
  .weekly-date{font-size:8px}
  .weekly-colophon{font-size:7px;letter-spacing:.7px}
 }
+
+
+/* SISTEMA DE SINAIS — pequenas descobertas editoriais */
+.utility-bar{position:relative}
+.margin-easter-egg{
+  position:relative;display:inline-flex;align-items:center;justify-content:center;
+  width:20px;height:20px;margin-left:9px;border:1px solid rgba(248,246,240,.48);
+  border-radius:50%;color:#F8F6F0;font:700 13px/1 Georgia,serif;
+  cursor:help;transition:transform .25s ease,background .25s ease;
+}
+.margin-easter-egg:hover,.margin-easter-egg:focus-visible{
+  transform:rotate(90deg);background:var(--wine-mid,#741321);outline:none;
+}
+.margin-easter-egg-note{
+  position:absolute;z-index:30;right:0;top:calc(100% + 10px);
+  width:max-content;max-width:min(270px,80vw);padding:9px 11px;
+  background:var(--paper,#F8F6F0);color:var(--wine,#5B0D17);
+  border:1px solid var(--wine,#5B0D17);font:700 8px/1.5 'DM Sans',sans-serif;
+  letter-spacing:1.1px;opacity:0;visibility:hidden;transform:translateY(-4px);
+  transition:opacity .2s ease,transform .2s ease,visibility .2s ease;
+}
+.margin-easter-egg:hover .margin-easter-egg-note,
+.margin-easter-egg:focus-visible .margin-easter-egg-note{
+  opacity:1;visibility:visible;transform:translateY(0);
+}
+.footer-motto{position:relative}
+.footer-hidden-note{
+  display:inline-block;color:var(--gold,#C4A27A);font-size:.72em;
+  opacity:.22;transition:opacity .25s ease,letter-spacing .25s ease;
+  letter-spacing:0;
+}
+.footer-motto:hover .footer-hidden-note{opacity:1;letter-spacing:.4px}
+
+/* ARQUIVO AUTORAL — assinatura gráfica e linguagem de documento recuperado */
+.archive-site main#conteudo{position:relative}
+.archive-site main#conteudo::before{
+  content:"ARQUIVO VIVO  /  MP—ARQ";
+  position:absolute;top:28px;right:0;z-index:1;
+  color:var(--wine,#5B0D17);font:700 8px/1 'DM Sans',sans-serif;
+  letter-spacing:2px;writing-mode:vertical-rl;opacity:.58;
+}
+.archive-page{
+  position:relative;
+  background-image:repeating-linear-gradient(0deg,transparent 0,transparent 39px,rgba(91,13,23,.025) 40px);
+}
+.archive-masthead::after{
+  content:"EX LIBRIS\A MARGENS\A DA PÓLIS";
+  white-space:pre;position:absolute;right:12px;top:74px;
+  width:86px;height:86px;border:1px solid rgba(91,13,23,.68);
+  outline:1px solid rgba(91,13,23,.35);outline-offset:4px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  color:var(--wine,#5B0D17);font:700 8px/1.5 'DM Sans',sans-serif;
+  letter-spacing:1.2px;transform:rotate(11deg);opacity:.72;
+}
+.archive-margin-note{
+  position:relative;display:grid;grid-template-columns:150px minmax(0,1fr) 34px;
+  align-items:center;gap:15px;margin-top:20px;padding:10px 0 0;
+  border-top:1px dashed rgba(91,13,23,.42);
+  color:var(--wine,#5B0D17);
+}
+.archive-margin-note span:first-child{
+  font:700 8px/1.4 'DM Sans',sans-serif;letter-spacing:1.5px;
+}
+.archive-margin-note span:nth-child(2){
+  font:italic 13px/1.4 'DM Sans',sans-serif;
+}
+.archive-registration{
+  font-size:25px;line-height:1;text-align:center;
+  color:var(--gold,#C4A27A);transform:rotate(-12deg);
+}
+.archive-record{
+  position:relative;
+  transition:background .25s ease,padding .25s ease;
+}
+.archive-record::before{
+  content:"";position:absolute;left:-13px;top:28px;bottom:28px;width:3px;
+  background:var(--wine,#5B0D17);transform:scaleY(0);transform-origin:top;
+  transition:transform .25s ease;
+}
+.archive-record:hover{background:rgba(196,162,122,.09)}
+.archive-record:hover::before{transform:scaleY(1)}
+.archive-record-number{
+  display:flex;flex-direction:column;align-items:flex-start;gap:4px;
+  color:var(--wine,#5B0D17);
+}
+.archive-record-number small{
+  font:700 7px/1 'DM Sans',sans-serif;letter-spacing:1px;opacity:.6;
+}
+.archive-image-stamp{transform:rotate(-2deg)}
+.archive-image-stamp i{font-style:normal;color:var(--gold,#C4A27A);padding-left:4px}
+.archive-record-image{overflow:hidden}
+.archive-record-image img{transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .35s ease}
+.archive-record:hover .archive-record-image img{
+  transform:scale(1.045);filter:grayscale(0) saturate(1) contrast(1.04);
+}
+.archive-record-placeholder small{
+  position:absolute;bottom:9px;left:10px;color:var(--wine,#5B0D17);
+  font:700 7px/1 'DM Sans',sans-serif;letter-spacing:1.2px;
+}
+.archive-record-copy h2 a{background-image:linear-gradient(var(--gold,#C4A27A),var(--gold,#C4A27A));background-position:0 100%;background-repeat:no-repeat;background-size:0 2px;transition:background-size .25s ease}
+.archive-record-copy h2 a:hover{background-size:100% 2px}
+.archive-colophon{position:relative}
+.archive-colophon::before{
+  content:"✳";position:absolute;left:50%;top:-17px;padding:0 9px;
+  background:var(--paper,#F8F6F0);color:var(--wine,#5B0D17);
+  font-size:14px;transform:translateX(-50%) rotate(15deg);
+}
+@media(max-width:900px){
+ .archive-masthead::after{right:8px;top:66px;width:68px;height:68px;font-size:7px}
+ .archive-margin-note{grid-template-columns:115px minmax(0,1fr) 26px}
+ .archive-record::before{left:-8px}
+}
+@media(max-width:600px){
+ .archive-site main#conteudo::before{top:15px;right:0;font-size:6px}
+ .archive-masthead::after{top:28px;right:5px;width:52px;height:52px;font-size:6px;outline-offset:2px}
+ .archive-title-row{padding-right:55px}
+ .archive-margin-note{grid-template-columns:1fr 24px;gap:8px;margin-top:15px}
+ .archive-margin-note span:first-child{grid-column:1;font-size:7px}
+ .archive-margin-note span:nth-child(2){grid-column:1;font-size:11px}
+ .archive-registration{grid-column:2;grid-row:1/3;font-size:21px}
+ .archive-record::before{left:-5px;top:17px;bottom:17px;width:2px}
+ .archive-record-number small{font-size:6px}
+}
+@media(prefers-reduced-motion:reduce){
+ .margin-easter-egg,.margin-easter-egg-note,.archive-record,.archive-record-image img,.archive-record-copy h2 a,.footer-hidden-note{transition:none}
+}
