@@ -9,7 +9,7 @@ permalink: /categoria/sociedade-e-poder/
   <h1>Sociedade e Poder</h1>
   <p class="lead-summary">Política, história, instituições, economia e dinâmicas sociais.</p>
   <div class="story-grid">
-    {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Sociedade'" %}
+    {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Sociedade'" | where_exp: "post", "post.from_archive != true" %}
     {% for post in posts %}
     <article class="story-card">
       {% if post.image %}<a class="card-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}"></a>{% else %}<a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>{% endif %}
