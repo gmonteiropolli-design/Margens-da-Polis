@@ -1,18 +1,6 @@
 ---
-layout: default
-title: "Do arquivo"
-description: "Arquivo de artigos, ensaios e reflexões publicados em Margens da Pólis."
+layout: archive
+title: "Do Arquivo"
+description: "Textos recuperados de outros momentos do projecto Margens da Pólis."
 permalink: /arquivo/
 ---
-<section class="listing-page special-listing">
-  <span class="section-kicker">MEMÓRIA EDITORIAL</span>
-  <h1>Do arquivo</h1>
-  <p class="listing-intro">Textos que merecem uma segunda leitura. Um arquivo vivo para revisitar ideias, recuperar contextos e acompanhar a continuidade dos debates.</p>
-  {% if site.posts.size > 0 %}
-  <div class="archive-strip archive-full">{% for post in site.posts %}
-    <a href="{{ post.url | relative_url }}"><span>{{ post.date | date: "%d.%m.%Y" }}</span><strong>{{ post.title }}</strong><i>{{ post.categories.first | default: "ARTIGO" }}</i></a>
-  {% endfor %}</div>
-  {% else %}
-  <div class="empty-state"><h3>O arquivo começa com a primeira publicação.</h3><p>Todos os artigos publicados ficarão disponíveis nesta página, por ordem cronológica.</p></div>
-  {% endif %}
-</section>
