@@ -3,6 +3,11 @@ title: "Subdesenvolvimento e dependência económica: o caso da indústria
   farmacêutica brasileira"
 date: 2024-05-20
 categories: Cadernos
+temas:
+  - "Economia e desenvolvimento"
+  - "Estado e políticas públicas"
+  - "Ciência e conhecimento"
+
 author: Giulia Polli
 description: Debate sobre o desenvolvimento económico e social do Brasil,
   evidenciado pela pandemia de COVID-19, à luz da teoria da dependência. Tem
