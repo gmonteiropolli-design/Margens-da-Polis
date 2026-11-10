@@ -2,6 +2,10 @@
 title: "Criador e Criação: A Hora e a Vez de Augusto Matraga"
 date: 2023-07-30
 categories: Cultura e Ideias
+temas:
+  - "Literatura e criação"
+  - "Pensamento e cultura"
+
 author: Giulia Polli
 description: "A Hora e a Vez de Augusto Matraga, escrito por Guimarães Rosa,
   descreve a vida de Augusto Matraga, personagem que passa por diversos
