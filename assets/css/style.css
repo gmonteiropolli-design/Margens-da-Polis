@@ -1503,3 +1503,55 @@ body.home .lead-copy .text-link{margin-top:8px !important}
  .thematic-card{grid-template-columns:1fr}
  .thematic-card-image{aspect-ratio:16/8}
 }
+
+
+/* PÁGINAS DE ARTIGO — apresentação editorial consistente com o índice */
+.article-page{max-width:1120px;padding:34px 0 20px}
+.article-breadcrumb{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 24px;color:var(--muted);font-size:9px;letter-spacing:1.2px;text-transform:uppercase}
+.article-breadcrumb a:hover{color:var(--wine)}
+.article-header{max-width:900px;margin:0 auto 24px;padding:0 0 20px;text-align:left;border-bottom:2px solid var(--wine)}
+.article-kicker{display:block;color:var(--wine);font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.article-header h1{max-width:880px;margin:13px 0 14px;color:var(--ink);font-family:inherit;font-size:clamp(38px,5.2vw,66px);font-weight:800;line-height:.99;letter-spacing:-.045em}
+.article-deck{max-width:790px;margin:0;color:#625b56;font-family:inherit;font-size:clamp(16px,1.6vw,20px);line-height:1.6}
+.article-meta{justify-content:flex-start;flex-wrap:wrap;gap:10px 22px;margin-top:18px;font-size:9px;letter-spacing:.7px;text-transform:uppercase}
+.article-meta strong{color:var(--ink)}
+.article-topics{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:17px}
+.article-topics>span{margin-right:5px;color:var(--muted);font-size:8px;font-weight:800;letter-spacing:1.4px}
+.article-topics a{padding:6px 9px;border:1px solid var(--line);color:var(--wine);font-size:9px;font-weight:700}
+.article-topics a:hover{background:var(--wine);color:var(--paper)}
+.article-cover{max-width:1000px;margin:24px auto 34px}
+.article-cover img{display:block;width:100%;max-height:520px;object-fit:cover}
+.article-cover figcaption{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:8px;border-top:1px solid var(--line);font-size:9px;line-height:1.5}
+.article-cover figcaption span{color:var(--muted)}
+.article-reading-layout{max-width:820px;margin:0 auto}
+.article-body{max-width:760px;margin:30px auto 42px;font-family:var(--sans);font-size:17px;line-height:1.85;text-align:justify;color:#302b28}
+.article-body p{margin:0 0 23px}
+.article-body>p:first-of-type:first-letter{float:left;padding:5px 9px 0 0;color:var(--wine);font-family:inherit;font-size:4.1em;font-weight:800;line-height:.78}
+.article-body h2,.article-body h3{font-family:var(--sans);font-weight:800;letter-spacing:-.025em}
+.article-body h2{font-size:clamp(25px,3vw,34px);margin:42px 0 15px}
+.article-body h3{font-size:21px;margin:32px 0 12px}
+.article-body a{color:var(--wine);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px}
+.article-body ul,.article-body ol{padding-left:24px;margin:0 0 24px}
+.article-body li{padding-left:4px;margin:0 0 8px}
+.article-body blockquote{margin:32px 0;padding:16px 22px;border-left:3px solid var(--wine);background:rgba(91,13,23,.045);font-size:18px;line-height:1.65;color:#514743}
+.article-footer{display:flex;justify-content:space-between;align-items:center;gap:25px;max-width:820px;margin:35px auto;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.article-end{font-family:var(--sans);font-size:18px}
+.article-end p{font-size:10px;font-weight:800;letter-spacing:1.4px}
+.article-end small{font-size:10px;color:var(--muted)}
+.article-share{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.article-share>span{width:100%;font-size:8px;font-weight:800;letter-spacing:1.3px;color:var(--muted)}
+.article-share a{font-size:10px;color:var(--wine)}
+.related-section{max-width:1120px;margin:48px auto 0}
+.related-section .section-heading{border-bottom:2px solid var(--wine)}
+.related-section .story-card h3{font-family:var(--sans);font-weight:800}
+.article-page>.back-link{display:inline-block;margin:30px 0 45px;padding-bottom:7px;border-bottom:1px solid var(--gold);font-size:9px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase}
+@media(max-width:700px){
+ .article-page{padding-top:25px}
+ .article-header h1{font-size:clamp(34px,9vw,46px)}
+ .article-meta{gap:8px 13px}
+ .article-cover{margin:18px 0 25px}
+ .article-body{font-size:16px;line-height:1.8;text-align:left}
+ .article-body>p:first-of-type:first-letter{font-size:3.5em}
+ .article-footer{align-items:flex-start;flex-direction:column}
+ .article-share{gap:12px}
+}
