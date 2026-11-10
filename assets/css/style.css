@@ -3025,3 +3025,33 @@ body.archive-site .archive-page{
 @media(max-width:600px){
   .about-masthead h1{font-size:clamp(40px,10.5vw,56px)}
 }
+
+
+/* SOCIEDADE E PODER + CULTURA E IDEIAS — maior densidade sem mudar a composição */
+.society-feed{gap:20px 18px}
+.society-card-lead{gap:20px;padding-bottom:18px}
+.society-card-lead .society-card-visual>a{aspect-ratio:16/8.5}
+.society-card-visual>a{aspect-ratio:16/10}
+.society-card-copy{padding:12px 0 14px}
+.society-card-lead .society-card-copy{padding:8px 8px 8px 0}
+.society-card-copy h2{font-size:clamp(21px,2.4vw,30px);margin:8px 0}
+.society-card-lead h2{font-size:clamp(29px,3.3vw,42px)}
+.society-card-copy p{font-size:12px;line-height:1.5;margin:0}
+.society-card-copy .story-meta{margin-top:9px}
+.society-card-copy .section-read-link{margin-top:9px}
+.culture-feed{gap:26px 22px}
+.culture-card-image{aspect-ratio:4/3}
+.culture-card-tall .culture-card-image{aspect-ratio:4/3}
+.culture-card-wide{gap:20px}
+.culture-card-copy{padding:10px 2px 0}
+.culture-card-copy h2{font-size:clamp(22px,2.4vw,31px);margin:7px 0}
+.culture-card-wide .culture-card-copy h2{font-size:clamp(27px,3vw,39px)}
+.culture-card-copy p{font-size:12px;line-height:1.5;margin:0}
+.culture-card-copy .section-read-link{margin-top:9px}
+@media(max-width:760px){
+ .society-feed,.culture-feed{gap:20px 15px}
+ .society-card-lead .society-card-visual>a{aspect-ratio:16/9}
+ .society-card-copy h2{font-size:24px}
+ .society-card-lead h2{font-size:30px}
+ .culture-card-tall .culture-card-image{aspect-ratio:16/10}
+}
