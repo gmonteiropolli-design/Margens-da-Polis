@@ -3225,3 +3225,10 @@ body.home .lead-copy .story-meta{font-size:8px!important;margin-top:8px}
 @media(max-width:600px){
   .site-footer .footer-logo{width:min(158px,44vw);max-height:42px}
 }
+
+
+/* RODAPÉ — logótipo maior, ainda equilibrado com os restantes elementos */
+.site-footer .footer-logo{width:min(230px,52vw);max-height:60px}
+@media(max-width:600px){
+  .site-footer .footer-logo{width:min(188px,52vw);max-height:50px}
+}
