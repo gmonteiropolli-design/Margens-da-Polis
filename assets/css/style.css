@@ -3218,3 +3218,10 @@ body.home .lead-copy .story-meta{font-size:8px!important;margin-top:8px}
 @media(max-width:600px){
   .site-footer .footer-logo{width:min(126px,38vw);max-height:34px}
 }
+
+
+/* RODAPÉ — logótipo com maior presença, mantendo proporção discreta */
+.site-footer .footer-logo{width:min(190px,44vw);max-height:50px}
+@media(max-width:600px){
+  .site-footer .footer-logo{width:min(158px,44vw);max-height:42px}
+}
