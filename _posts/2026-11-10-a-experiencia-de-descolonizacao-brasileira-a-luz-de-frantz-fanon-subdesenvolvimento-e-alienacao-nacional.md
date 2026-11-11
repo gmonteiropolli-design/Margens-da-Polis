@@ -5,17 +5,14 @@ date: 2025-06-17
 categories: Cadernos
 author: Giulia Polli
 description: >
-  Analisam-se duas questões centrais: a dependência económica e a alienação
-  nacional como resquícios da experiência de descolonização brasileira à luz do
-  pensamento de Frantz Fanon. Argumenta-se que o trabalho de Fanon é relevante
-  pois permite analisar o Brasil mesmo se tratando de tempos históricos
-  distintos e em territórios diferentes. O pensamento de Fanon evidencia a
-  construção de um Brasil independente que reproduz diversas heranças coloniais
-  e padrões de dominação externos, contribuindo para a manutenção da
-  desigualdade económica e da subordinação cultural. Evidencia-se que a
-  descolonização no Brasil foi incompleta ou até inexistente, provando também a
-  utilidade do seu pensamento para questões além do que seus textos propõem
-  diretamente.
+  Argumenta-se que o trabalho de Fanon é relevante pois permite analisar o
+  Brasil mesmo se tratando de tempos históricos distintos e em territórios
+  diferentes. O pensamento de Fanon evidencia a construção de um Brasil
+  independente que reproduz diversas heranças coloniais e padrões de dominação
+  externos, contribuindo para a manutenção da desigualdade económica e da
+  subordinação cultural. Evidencia-se que a descolonização no Brasil foi
+  incompleta, provando também a utilidade do seu pensamento para questões além
+  do que seus textos propõem diretamente.
 image: /assets/uploads/images (6).jpg
 from_archive: false
 featured: true
