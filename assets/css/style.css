@@ -3164,3 +3164,50 @@ body.archive-site .archive-page{
   .society-card-copy .story-meta{font-size:6px}
   .society-card-copy .section-read-link,.culture-card-copy .section-read-link{font-size:6px;letter-spacing:.7px}
 }
+
+
+/* HOMEPAGE — manchete principal mais baixa, larga e equilibrada */
+body.home .lead-story{
+  grid-template-columns:minmax(250px,.72fr) minmax(0,1.28fr)!important;
+  gap:clamp(22px,3vw,42px)!important;
+  align-items:center!important;
+  width:100%!important;
+  max-width:none!important;
+  padding:16px 0 20px!important;
+}
+body.home .lead-image,
+body.home .lead-art{
+  height:clamp(175px,19vw,235px)!important;
+  max-height:235px!important;
+  aspect-ratio:16/10!important;
+}
+body.home .lead-image img{width:100%!important;height:100%!important;object-fit:cover!important}
+body.home .lead-copy{max-width:none!important}
+body.home .lead-copy h1{
+  max-width:100%!important;
+  font-size:clamp(27px,2.35vw,35px)!important;
+  line-height:1.04!important;
+  letter-spacing:-.02em!important;
+  margin:8px 0 10px!important;
+}
+body.home .lead-summary{
+  max-width:100%!important;
+  font-size:13px!important;
+  line-height:1.6!important;
+  text-align:justify!important;
+  text-justify:inter-word;
+  margin:0 0 10px!important;
+}
+body.home .feature-label{font-size:8px!important;letter-spacing:1.3px}
+body.home .lead-copy .story-meta{font-size:8px!important;margin-top:8px}
+@media(max-width:900px){
+  body.home .lead-story{grid-template-columns:minmax(210px,.8fr) minmax(0,1.2fr)!important;gap:20px!important}
+  body.home .lead-image,body.home .lead-art{height:190px!important}
+  body.home .lead-copy h1{font-size:clamp(25px,3.2vw,31px)!important}
+}
+@media(max-width:620px){
+  body.home .lead-story{grid-template-columns:1fr!important;gap:12px!important;padding:14px 0 18px!important}
+  body.home .lead-image,body.home .lead-art{height:auto!important;max-height:none!important;aspect-ratio:16/9!important}
+  body.home .lead-copy h1{font-size:clamp(25px,7vw,31px)!important}
+  body.home .lead-summary{font-size:12px!important;line-height:1.55!important}
+}
