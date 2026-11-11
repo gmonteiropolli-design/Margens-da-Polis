@@ -3211,3 +3211,10 @@ body.home .lead-copy .story-meta{font-size:8px!important;margin-top:8px}
   body.home .lead-copy h1{font-size:clamp(25px,7vw,31px)!important}
   body.home .lead-summary{font-size:12px!important;line-height:1.55!important}
 }
+
+
+/* RODAPÉ — logótipo ligeiramente maior, sem dominar a página */
+.site-footer .footer-logo{width:min(150px,38vw);max-height:40px}
+@media(max-width:600px){
+  .site-footer .footer-logo{width:min(126px,38vw);max-height:34px}
+}
