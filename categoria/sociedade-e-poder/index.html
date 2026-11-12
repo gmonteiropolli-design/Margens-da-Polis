@@ -9,7 +9,7 @@ permalink: /categoria/sociedade-e-poder/
     <div class="section-overline"><span>SECÇÃO 01 / ANÁLISE</span><span>POLÍTICA · HISTÓRIA · SOCIEDADE</span></div>
     <p class="section-kicker">POLÍTICA · HISTÓRIA · SOCIEDADE</p>
     <h1>Sociedade <i>&</i><br>Poder</h1>
-    <div class="section-intro-line"><p>Política, história, instituições, economia e dinâmicas sociais.</p><span>OBSERVAR<br>QUESTIONAR<br>COMPREENDER</span></div>
+    <div class="section-intro-line"><p>Política, história, instituições, economia e dinâmicas sociais.</p></div>
   </header>
   {% assign posts = site.posts | where_exp: "post", "post.categories contains 'Sociedade'" | where_exp: "post", "post.from_archive != true" %}
   <div class="section-feed-heading"><span>01 — CADERNO DE LEITURA</span><span>{{ posts.size }} TEXTOS</span></div>
@@ -18,7 +18,6 @@ permalink: /categoria/sociedade-e-poder/
     <article class="society-card{% if forloop.first %} society-card-lead{% endif %}">
       <div class="society-card-visual">
         {% if post.image %}<a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title }}" loading="lazy"></a>{% else %}<a class="card-placeholder" href="{{ post.url | relative_url }}"><span>MP</span></a>{% endif %}
-        <span class="society-card-number">ESTUDO / {{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
       </div>
       <div class="society-card-copy"><span class="section-kicker">{{ post.date | date: "%Y" }}</span><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>{% if post.description %}<p>{{ post.description }}</p>{% endif %}<div class="story-meta">{{ post.date | date: "%d.%m.%Y" }} · {{ post.author | default: "Autor" }}</div><a class="section-read-link" href="{{ post.url | relative_url }}">LER ANÁLISE <span>↗</span></a></div>
     </article>
