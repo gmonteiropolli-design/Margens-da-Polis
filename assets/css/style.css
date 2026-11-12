@@ -3246,3 +3246,41 @@ body.home .lead-copy .story-meta{font-size:8px!important;margin-top:8px}
 @media(max-width:600px){
   .site-footer .footer-logo{width:min(210px,62vw)!important}
 }
+
+
+/* SOBRE — uniformizar a tipografia e eliminar variações acidentais */
+.about-page,
+.about-page *{
+  font-family:'DM Sans',Arial,Helvetica,sans-serif;
+}
+.about-masthead h1,
+.about-masthead h1 em{
+  font-family:'Barlow Condensed',Arial,Helvetica,sans-serif;
+}
+.about-content{
+  font-family:'DM Sans',Arial,Helvetica,sans-serif;
+  font-size:16px;
+  line-height:1.8;
+}
+.about-content p,
+.about-content>p:nth-of-type(3),
+.about-content blockquote,
+.about-content blockquote p,
+.about-content blockquote p:last-child{
+  font-family:'DM Sans',Arial,Helvetica,sans-serif!important;
+  font-size:16px!important;
+  font-weight:400;
+  line-height:1.8!important;
+}
+.about-content h2{
+  font-family:'DM Sans',Arial,Helvetica,sans-serif!important;
+  font-size:24px;
+  font-weight:700;
+  line-height:1.25;
+  letter-spacing:-.02em;
+  text-transform:none;
+}
+.about-content blockquote p:last-child{
+  font-style:normal;
+  opacity:.8;
+}
