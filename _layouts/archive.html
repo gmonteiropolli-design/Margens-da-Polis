@@ -4,8 +4,8 @@ layout: default
 <article class="archive-page">
   {% assign archive_posts = site.posts | where: "from_archive", true | sort: "date" | reverse %}
   <header class="archive-masthead">
-    <div class="archive-overline"><span>SECÇÃO ESPECIAL / TEXTOS ANTERIORES</span><span>MEMÓRIA DE ESCRITA</span></div>
-    <div class="archive-title-row"><div><p class="archive-eyebrow">REGISTOS DE OUTROS TEMPOS</p><h1>Do <em>Arquivo</em></h1></div><div class="archive-count"><strong>{{ archive_posts.size | prepend: "00" | slice: -2, 2 }}</strong><span>TEXTOS<br>DE AUTORIA PRÓPRIA</span></div></div>
+    <div class="archive-overline"><span>SECÇÃO ESPECIAL / TEXTOS ANTERIORES</span></div>
+    <div class="archive-title-row"><div><h1>Do <em>Arquivo</em></h1></div><div class="archive-count"><strong>{{ archive_posts.size | prepend: "00" | slice: -2, 2 }}</strong><span>TEXTOS<br>DE AUTORIA PRÓPRIA</span></div></div>
     <div class="archive-intro-row"><p>Textos meus, escritos e publicados em diferentes momentos do meu percurso. Reúno-os aqui para que continuem acessíveis, com as imagens e as datas das primeiras publicações.</p><span class="archive-rule-note">ORGANIZADOS<br>POR DATA ORIGINAL</span></div>
   </header>
   {% if archive_posts.size > 0 %}
