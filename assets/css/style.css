@@ -3284,3 +3284,8 @@ body.home .lead-copy .story-meta{font-size:8px!important;margin-top:8px}
   font-style:normal;
   opacity:.8;
 }
+
+
+/* SOCIEDADE E PODER — retirar selos sobre fotografias e palavras decorativas */
+.society-card-number,
+.society-masthead .section-intro-line>span{display:none!important}
